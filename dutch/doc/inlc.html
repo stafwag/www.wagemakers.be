@@ -1,0 +1,1584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Inleiding C - Staf Wagemakers</title>
+<link rel="stylesheet" type="text/css" href="../../stafwag/css/stafwag.css" />
+<link rel="stylesheet" type="text/css" href="../../stafwag/css/stafwag-webgui.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="generator" content="WebGUI 7.10.23" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><script type="text/javascript">function getWebguiProperty (propName) {var props = new Array();props["extrasURL"] = "/extras/";props["pageURL"] = "/dutch/doc/inlc";props["firstDayOfWeek"] = "0";return props[propName];}</script>
+<meta http-equiv="Cache-Control" content="must-revalidate" />
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+
+		<!-- header -->
+
+		<div id="header">
+<!-- google analytics -->
+
+<script type="text/javascript">
+<!--
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37258385-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//-->
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* head_banner */
+google_ad_slot = "5954810285";
+google_ad_width = 468;
+google_ad_height = 58;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+					
+
+			<ul>
+				<li><a href="../../index.html"><span>Home</span></a></li>
+				<li><a href="../../dutch.html"><span>Nederlands</span></a></li>
+				<li><a href="../../english.html"><span>English</span></a></li>
+				<li><a href="../../downloads.html"><span>Downloads</span></a></li>
+				<li><a href="../../links.html"><span>links</span></a></li>
+							
+			</ul>								
+		</div>
+		
+		<div id="header-logo">
+                        <div id="mylogo">Staf&nbsp;Wagemakers</div>
+
+<div id="google-search">
+
+<div id="cse-search-form" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011952366183077168952:clxrudllfuo', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.enableSearchboxOnly("http://www.google.com/cse?cx=011952366183077168952:clxrudllfuo", null, true);
+    customSearchControl.draw('cse-search-form', options);
+  }, true);
+</script>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+				
+		
+
+	<div id="sidebar">
+		<div class="sidebar">
+
+<a name="idIjSy9C91wSVONrzWFkETgg" id="idIjSy9C91wSVONrzWFkETgg"></a>
+
+
+
+
+	<h1>Navigation</h1>
+
+
+
+
+
+<!--
+<ul class="menu bulletList">
+-->
+<div class="left-box">
+<ul class="sidemenu">
+
+
+
+
+	<li class="ancestor">
+	<a href="../../home.html">Home</a>
+
+
+    <ul class="level0">
+
+
+
+
+
+
+	<li class="ancestor">
+	<a href="../../dutch.html">Nederlands</a>
+
+
+    <ul class="level1">
+
+
+
+
+
+
+	<li>
+	<a href="../programs.html">Programma's</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li class="ancestor">
+	<a href="../doc.html">Documentatie</a>
+
+
+    <ul class="level2">
+
+
+
+
+
+
+	<li class="current">
+	<a href="inlc.html">Inleiding C</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="inl_perl.html">Inleiding tot Perl</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="vga.html">Grafisch programmeren in ASM</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="quota.html">Quota snelgids</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="samba.html">Samba snelgids</a>
+
+
+    </li>
+
+
+
+
+
+    </ul>
+    </li>
+
+
+	<li>
+	<a href="../toys.html">Speelgoed</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../who_am_i.html">Wie ben ik?</a>
+
+
+    </li>
+
+
+
+
+
+    </ul>
+    </li>
+
+
+	<li>
+	<a href="../../english.html">English</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../../downloads.html">Downloads</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../../links.html">links</a>
+
+
+    </li>
+
+
+
+    
+    </ul>
+    </li>
+    
+
+
+
+</ul>
+</div>
+
+
+<!--/nav2234b2f42f75c1254e36bcd616411382 /nav bulletedList-->
+</div>
+
+		<h1>About me</h1>
+<div class="left-box">
+<ul class="sidemenu">
+<li>
+<ul class="level0">
+
+<li class="ancestor">
+<b>Homepage:</b> <a href="../../index.html">www.wagemakers.be</a>
+</li>
+
+<li class="ancestor">
+<b>Blog:</b> <a href="http://stafwag.github.io/blog">stafwag.github.io/blog</a>
+</li>
+
+<li class="ancestor">
+
+<a href="http://be.linkedin.com/in/stafwagemakers" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View staf wagemakers's LinkedIn profile" style="vertical-align:middle" />View staf wagemakers's profile</span></a>
+
+
+</li>
+
+<li class="ancestor">
+
+<img src="http://ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+<a href="https://google.com/+StafWagemakers"> Staf Wagemakers</a> <br /><br />
+
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//google.com/+StafWagemakers" data-rel="author" >
+
+</div>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</li>
+
+<li class="ancestor">
+
+<a href="https://github.com/stafwag">@stafwag</a> on GitHub
+
+
+</li>
+
+</ul>
+</li>
+</ul>
+
+
+
+		<h1>Login</h1>
+
+		<div class="left-box">
+			<ul class="sidemenu">
+				<li><a class="loginToggleLink" href="inlc%3Fop=auth%3Bmethod=init.html">Login</a></li>
+				<li><a href="inlc%3Fop=auth%3Bmethod=init.html">View My Account</a></li>
+				
+			</ul>
+		</div>
+
+
+
+
+		</div>
+
+
+
+	    
+
+<!--
+		<h1>WebGUI Links</h1>	
+		<div class="left-box">
+			<ul class="sidemenu"><li><a href="http://webgui.org/addons">Addons and Plugins</a></li></ul>
+		</div>	
+-->
+
+            
+
+	    <div class="ads">
+
+		<br /><br />
+
+
+            <p>
+<a href="http://www.procolix.com"><img src="../../root/themes/staf/images/hosted_by_procolix.png" alt="hosted by procolix" /></a>
+             </p>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a><br />
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valide CSS!" />
+    </a>
+</p>
+
+<p>
+
+
+<!-- vertical link ad -->
+    <br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* side-block */
+google_ad_slot = "2562895628";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+
+
+<!-- vertical link ad ends -->
+
+
+        </p>
+        </div>
+
+	</div>				
+							
+	<div id="main"><div id="folderl05x0Cp-wtO9u8ieRd52mQ" class="folder">
+
+<a name="idl05x0Cp-wtO9u8ieRd52mQ" id="idl05x0Cp-wtO9u8ieRd52mQ"></a>
+
+
+	
+
+	<h3>Inleiding C</h3>
+
+		
+
+<div class="description">
+	<div class="download"><hr />
+<p><a href="../../downloads/doc/inleiding_c_tex.tar.gz"><span style="font-size: xx-small;"><sup>Download</sup></span> <span style="font-size: xx-small;"><sup>L<sup><span>A</span></sup>T</sup>E<sup>X</sup></span><span style="font-size: xx-small;"><sup> versie (tgz 36 KB)</sup></span></a> <a href="../../downloads/doc/inleiding_c.pdf">Download PDF (1,5 MB)</a></p>
+<hr /></div>
+<h1>Inleiding C</h1>
+<p><em>Dit document is afgeleid van "Coronado Enterprises C TUTOR (ver 2.00) Nov 21, 1987"</em></p>
+<h1>Inhoudsopgave</h1>
+<ul>
+<li><a href="inlc.html#SECTION1">1. Je eerste C programma.</a>
+<ul>
+<li><a href="inlc.html#SECTION1-1">1.1 Alle begin is moeilijk!</a></li>
+<li><a href="inlc.html#SECTION1-2">1.2 Een programma dat iets doet!</a></li>
+<li><a href="inlc.html#SECTION1-3">1.3 En cijfers?</a></li>
+<li><a href="inlc.html#SECTION1-4">1.4 Hoe plaatsen we kommentaar in een C programma?</a></li>
+<li><a href="inlc.html#SECTION1-5">1.5 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION2">2. Lussen en sprongen.</a>
+<ul>
+<li><a href="inlc.html#SECTION2-1">2.1 De "while" lus</a></li>
+<li><a href="inlc.html#SECTION2-2">2.2 De "do ... while" lus</a></li>
+<li><a href="inlc.html#SECTION2-3">2.3 De "for" lus</a></li>
+<li><a href="inlc.html#SECTION2-4">2.4 De "if" en "else" instrukties</a></li>
+<li><a href="inlc.html#SECTION2-5">2.5 break en continue</a></li>
+<li><a href="inlc.html#SECTION2-6">2.6 De "switch" instruktie.</a></li>
+<li><a href="inlc.html#SECTION2-7">2.7 De "goto" instruktie.</a></li>
+<li><a href="inlc.html#SECTION2-8">2.8 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION3">3. Datatypes, bewerkingen &amp; vergelijkingen</a>
+<ul>
+<li><a href="inlc.html#SECTION3-1">3.1 Eenvoudige bewerkingen</a></li>
+<li><a href="inlc.html#SECTION3-2">3.2 Andere datatypes</a></li>
+<li><a href="inlc.html#SECTION3-3">3.3 Uitgebreide datatypes</a></li>
+<li><a href="inlc.html#SECTION3-4">3.4 Konversie karakters</a></li>
+<li><a href="inlc.html#SECTION3-5">3.5 Eenvoudige vergelijkingen</a></li>
+<li><a href="inlc.html#SECTION3-6">3.6 waar of nietwaar?????</a></li>
+<li><a href="inlc.html#SECTION3-7">3.7 "and" en "or" vergelijkingen.</a></li>
+<li><a href="inlc.html#SECTION3-8">3.8 Pas op!!!</a></li>
+<li><a href="inlc.html#SECTION3-9">3.9 Verkorte notaties.</a>
+<ul>
+<li><a href="inlc.html#SECTION3-9-1">3.9.1 Verkorte bewerkingen.</a></li>
+<li><a href="inlc.html#SECTION3-9-2">3.9.2 Verkorte vergelijkingen.</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION3-10">3.10 Samenvatting</a>
+<ul>
+<li><a href="inlc.html#SECTION3-10-1">3.10.1 Datatypes</a></li>
+<li><a href="inlc.html#SECTION3-10-2">3.10.2 Vergelijkingen</a></li>
+<li><a href="inlc.html#SECTION3-10-3">3.10.3 Bitmanipulaties</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION3-11">3.11 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION4">4.funkties</a>
+<ul>
+<li><a href="inlc.html#SECTION4-1">4.1 Lokale &amp; globale variabelen</a></li>
+<li><a href="inlc.html#SECTION4-2">4.2 Waarden doorgeven zonder globale variabelen te gebruiken.</a></li>
+<li><a href="inlc.html#SECTION4-3">4.3 funkties, welke geen integer teruggeven.</a></li>
+<li><a href="inlc.html#SECTION4-4">4.4 Variabelen en funkties</a></li>
+<li><a href="inlc.html#SECTION4-5">4.5 "automatische" variabelen</a></li>
+<li><a href="inlc.html#SECTION4-6">4.6 "void" funkties</a></li>
+<li><a href="inlc.html#SECTION4-7">4.7 Dezelfde variabele teruggebruiken</a></li>
+<li><a href="inlc.html#SECTION4-8">4.8 Wat is een "register" variabele?</a></li>
+<li><a href="inlc.html#SECTION4-9">4.9 Wat is een "prototype"?</a></li>
+<li><a href="inlc.html#SECTION4-10">4.10 "static" variabelen</a></li>
+<li><a href="inlc.html#SECTION4-11">4.11 Wat is "rekursie"??</a></li>
+<li><a href="inlc.html#SECTION4-12" name="tex2html41"></a>4.12 Programmeer opdrachten!</li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION5">5. Defines &amp; Macros</a>
+<ul>
+<li><a href="inlc.html#SECTION5-1">5.1 Wat is een "define"?</a></li>
+<li><a href="inlc.html#SECTION5-2">5.2 Wat is een "macro"?</a>
+<ul>
+<li><a href="inlc.html#SECTION5-2-1">5.2.1 Kijk uit!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION5-3">5.3 Wat doet "enum" instruktie?</a></li>
+<li><a href="inlc.html#SECTION5-4">5.4 Programmeeropdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION6">6. Strings &amp; Arrays</a>
+<ul>
+<li><a href="inlc.html#SECTION6-1">6.1 Wat is array?</a></li>
+<li><a href="inlc.html#SECTION6-2">6.2 Wat is een string?</a></li>
+<li><a href="inlc.html#SECTION6-3">6.3 Enkele "string" instrukties</a></li>
+<li><a href="inlc.html#SECTION6-4">6.4 Een array van integers</a></li>
+<li><a href="inlc.html#SECTION6-5">6.5 Een array van floats</a></li>
+<li><a href="inlc.html#SECTION6-6">6.6 Data terugkrijgen uit een funktie</a></li>
+<li><a href="inlc.html#SECTION6-7">6.7 Multigedimensioneerde arrays</a></li>
+<li><a href="inlc.html#SECTION6-8">6.8 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION7">7. "pointers"</a>
+<ul>
+<li><a href="inlc.html#SECTION7-1">7.1 Een voorbeeldje ...</a></li>
+<li><a href="inlc.html#SECTION7-2">7.2 Twee belangrijke regels.</a></li>
+<li><a href="inlc.html#SECTION7-3">7.3 Er is maar &eacute;&eacute;n variabele!</a></li>
+<li><a href="inlc.html#SECTION7-4">7.4 Hoe maken we een pointer aan?</a></li>
+<li><a href="inlc.html#SECTION7-5">7.5 Een string is eigenlijk een pointer.</a></li>
+<li><a href="inlc.html#SECTION7-6">7.6 Data aan een funktie geven als een pointer.</a></li>
+<li><a href="inlc.html#SECTION7-7">7.7 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION8">8. standaard invoer / uitvoer.</a>
+<ul>
+<li><a href="inlc.html#SECTION8-1">8.1 Include bestanden.</a></li>
+<li><a href="inlc.html#SECTION8-2">8.2 Een eerste voorbeeld.</a></li>
+<li><a href="inlc.html#SECTION8-3">8.3 De "scanf()" funktie.</a></li>
+<li><a href="inlc.html#SECTION8-4">8.4 Inlezen van een string.</a></li>
+<li><a href="inlc.html#SECTION8-5">8.5 Geheugen invoer / uitvoer.</a></li>
+<li><a href="inlc.html#SECTION8-6">8.6 foutmeldingen...</a></li>
+<li><a href="inlc.html#SECTION8-7">8.7 foutkodes ...</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION9">9. Lezen &amp; schrijven van bestanden.</a>
+<ul>
+<li><a href="inlc.html#SECTION9-1">9.1 Openen van een bestand.</a></li>
+<li><a href="inlc.html#SECTION9-2">9.2 Sluiten van een bestand.</a></li>
+<li><a href="inlc.html#SECTION9-3">9.3 Schrijven naar een bestand.</a></li>
+<li><a href="inlc.html#SECTION9-4">9.4 Data bijvoegen aan een bestand.</a></li>
+<li><a href="inlc.html#SECTION9-5">9.5 Lezen uit een bestand.</a></li>
+<li><a href="inlc.html#SECTION9-6">9.6 Pas op!</a></li>
+<li><a href="inlc.html#SECTION9-7">9.7 Lezen van een woord.</a></li>
+<li><a href="inlc.html#SECTION9-8">9.8 De funktie "fgets(string,aantal,fp)"</a></li>
+<li><a href="inlc.html#SECTION9-11">9.9 Een string gebruiken als bestandsnaam.</a></li>
+<li><a href="inlc.html#SECTION9-10">9.10 Aansturen van de printer.</a></li>
+<li><a href="inlc.html#SECTION9-11">9.11 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION10">10. "struct" &amp; "union".</a>
+<ul>
+<li><a href="inlc.html#SECTION10-1">10.1 De "struct" instruktie</a></li>
+<li><a href="inlc.html#SECTION10-2">10.2 Een array van strukturen.</a></li>
+<li><a href="inlc.html#SECTION10-3">10.3 Het gebruik van "pointers" in strukturen.</a></li>
+<li><a href="inlc.html#SECTION10-4">10.4 Strukturen zonder naam.</a></li>
+<li><a href="inlc.html#SECTION10-5">10.5 Wat is een "union"??</a></li>
+<li><a href="inlc.html#SECTION10-6">10.6 Een ander voorbeeld ...</a></li>
+<li><a href="inlc.html#SECTION10-7">10.7 Een nieuwe instruktie "typedef".</a></li>
+<li><a href="inlc.html#SECTION10-8">10.8 Wat is een "bitveld"?</a></li>
+<li><a href="inlc.html#SECTION10-9">10.9 Programmeer Opdrachten.</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION11">11. Dynamisch geheugen</a>
+<ul>
+<li><a href="inlc.html#SECTION11-1">11.1 Een voorbeeld ...</a></li>
+<li><a href="inlc.html#SECTION11-2">11.2 Het dynamisch kre&euml;ren van variabelen.</a></li>
+<li><a href="inlc.html#SECTION11-3">11.3 Wat is een "heap"?</a></li>
+<li><a href="inlc.html#SECTION11-4">11.4 De "sizeof()" funktie.</a></li>
+<li><a href="inlc.html#SECTION11-5">11.5 Wat is een "cast"?</a></li>
+<li><a href="inlc.html#SECTION11-6">11.6 Het gebruiken van dynamisch aangemaakt geheugen.</a></li>
+<li><a href="inlc.html#SECTION11-7">11.7 Het terug vrijmaken van geheugen met "free()".</a></li>
+<li><a href="inlc.html#SECTION11-8">11.8 Een array van pointers.</a></li>
+<li><a href="inlc.html#SECTION11-9">11.9 Een gelinkte lijst</a></li>
+<li><a href="inlc.html#SECTION11-10">11.10 De "calloc" funktie.</a></li>
+<li><a href="inlc.html#SECTION11-11">11.11 Programmeer opdrachten!</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION12">12. Karakter &amp; bit manipulatie</a>
+<ul>
+<li><a href="inlc.html#SECTION12-1">12.1 Grote &amp; kleine letters.</a></li>
+<li><a href="inlc.html#SECTION12-2">12.2 Verschillende soorten van karakters.</a></li>
+<li><a href="inlc.html#SECTION12-3">12.3 Logische bewerkingen.</a></li>
+<li><a href="inlc.html#SECTION12-4">12.4 Schuif bewerkingen.</a></li>
+</ul>
+</li>
+<li><a href="inlc.html#SECTION13" name="tex2html111"></a>13. Gebruikte Software</li>
+</ul>
+<p></p>
+<hr />
+<h1><a name="SECTION1"></a>1. "Je eerste C programma."</h1>
+<p><em>Een nieuwe programmeertaal leren is niet zo eenvoudig, men moet nieuwe instrukties en begrippen gebruiken, oude gewoontes afleren, ... De beste programmeertaal is immers deze welke men kent en gewoon is om te gebruiken!</em></p>
+<h2><a name="SECTION1-1"></a>1.1 Alle begin is moeilijk!</h2>
+<p>Bij C moet men met de volgende zaken rekening houden.<br /> 1. C maakt een onderscheid tussen grootte en kleine letters, de variabele "INDEX" is dus niet hetzelfde als "InDeX" of "index".<br /> 2. C houdt enkel rekening met de eerste 32 karakters.</p>
+<p>De manier om een programmeertaal te leren is te kijken naar een simpel programma dat in deze taal geschreven is. Onderstaand voorbeeld is zo'n eenvoudig programma ( het doet namelijk niets).</p>
+<pre><code><br /></code>main()<br />{<br />}</pre>
+<p>Het woord "main" is erg belangrijk in een C programma, het moet namelijk eenmaal voorkomen of beter het mag maar eenmaal voorkomen in een C programma. De ronde haakjes geven aan dat het om een procedures gaat, tussen deze haakjes kunnen we eventueel ook variabelen plaatsen (hierover later meer). Met het woordje "main" geven we aan waar een programma begint. De {} geven het begin en het einde van de procedure aan.</p>
+<h2><a name="SECTION1-2"></a>1.2 Een programma dat iets doet!</h2>
+<p>Onderstaand programma is een meer intersant voorbeeld. Dit programmaatje zet "Dit is een test!" op het scherm. Met de instruktie printf kunnen we dus data op het scherm zetten. De data die aan een instruktie of een procedure doorgegeven wordt staat in C altijd tussen ronde haakjes, met de aanhalingstekens geven we aan dat het om tekst gaat welke rechtstreeks naar het scherm gestuurd moet worden. Met ";" geven we het einde van een instruktie of funktie aan, dit moet in C altijd gebeuren!</p>
+<pre><code><br />main()<br />{<br /> printf ("Dit is een test!");<br />}</code></pre>
+<p>Het volgende programma zet wat meer tekst op het scherm, "\n" komt overeen met een return of m.a.w. ga naar de volgende lijn.</p>
+<pre><code><br />main()<br />{<br /> printf("Dit is de eerste lijn.\n");<br /> printf("En dit is de");<br /> printf(" volgende lijn.\n\n");<br /> printf("Dit is de laatste lijn.\n");<br />}</code></pre>
+<h2><a name="SECTION1-3"></a>1.3 En cijfers?</h2>
+<p>Het volgende voorbeeld zet de waarde van een variabele op het scherm.</p>
+<pre><code><br />main()<br />{<br />int getal;<br /> getal = 13;printf(" De waarde van getal is %d\n",getal);<br /> getal = 27;printf(" De waarde van getal is %d\n",getal);<br /> getal = 10;printf(" De waarde van getal is %d\n",getal);<br />}</code></pre>
+<p>Met "int getal" defini&euml;ren we een integer met de naam "getal". In C moeten alle variabelen eerste gedefinieerd worden. Met "%d" bepalen hoe de variabele "getal" op het scherm gezet wordt, hier decimaal.</p>
+<h2><a name="SECTION1-4"></a>1.4 Hoe plaatsen we kommentaar in een C programma?</h2>
+<p>Kommentaar wordt vaak gebruikt in een programma het dient om de werking van een programma te verduidelijken, voor jezelf &eacute;n iemand anders. Met "/*" geven we het begin van de kommentaar aan, met "*/" het einde.</p>
+<pre><code><br />/* Met deze tekst houdt de C compiler geen rekening */<br />main() /* Hiermee ook niet! */<br />{<br /> printf("Wat is kommentaar?!"); /* Kommentaar mag doorlopen<br /> op de volgende regel(s) */<br />}</code></pre>
+<h2><a name="SECTION1-5"></a>1.5 Programmeer opdrachten!</h2>
+<p>1. Schrijf een programma dat je naam, adres en telefoonnummer op het scherm zet. Voor de postkode en nummer gebruiken we variabelen.</p>
+<hr />
+<h1><a name="SECTION2"></a>2. Lussen en sprongen.</h1>
+<p><em>In dit hoofdstuk bekijken we een belangrijk onderdeel namelijk "programma kontrole". Hiermee kunnen we bepaalde zaken een aantal keer uitvoeren, de werking van ons programma be&iuml;nvloeden enz.</em></p>
+<h2><a name="SECTION2-1"></a>2.1 De "while" lus</h2>
+<p>Onderstaand programma demonstreert de werking van de while instruktie. Het programma begint met het defini&euml;ren van een integer met de naam "x", deze variabele wordt eerste op 0 gezet. Integenstelling tot andere programmeertalen (zoals bv. BASIC) heeft een nieuwe variabele in C een willekeurige waarde. De "while" lus wordt uitgevoerd totdat er niet meer aan de voorwaarde wordt voldaan, de instrukties die tot de "while" lus behoren worden gegroepeerd door de akkolades.</p>
+<pre><code><br />main()<br />{<br />int x;<br /> x = 0;<br /> while(x&lt;6) {printf("x = %d\n",x);x=x+1;}<br />}<br /></code></pre>
+<h2><a name="SECTION2-2"></a>2.2 De "do ... while" lus</h2>
+<p>Een variant van de "while" lus is de "do ... while" lus, het volgende voorbeeld illustreert deze. Dit programma is bijna identiek aan het vorige, alleen wordt de lus gestart met de "do" instruktie, de voorwaarde staat hier achteraan de lus namelijk de "while" instruktie. Dit heeft als gevolg dat de "do ... while" lus altijd &eacute;&eacute;nmaal doorlopen wordt! Indien we dus x=0 vervangen door x=7 zal het programma de waarde van x eenmaal afprinten, ook al is er niet aan de voorwaarde voldaan!</p>
+<pre><code><br />main()<br />{<br />int x;<br /> x=0;<br /> do {printf("De waarde van x is %d\n",x); x=x+1;} while (x&lt;66);<br />}</code></pre>
+<h2><a name="SECTION2-3"></a>2.3 De "for" lus</h2>
+<p>De "for" lus is eigelijk niets anders dan een verkorte notatie van de "while" lus, volgend voorbeeld illustreert de "for" lus. Net zoals bij de "while" lus geven we een variabele een bepaalde waarde, stellen we een voorwaarde en verhogen (of verlagen) deze variabele, alleen is de notatie v&eacute;&eacute;l korter.</p>
+<pre><code><br />main()<br />{<br />int x;<br /> for (x=0;x&lt;6;x=x+1) printf ("x = %d\n",x);<br />}</code></pre>
+<h2><a name="SECTION2-4"></a>2.4 De "if" en "else" instrukties</h2>
+<p>Met de "if" instruktie kunnen we een bepaalde voorwaarde stellen, hierdoor is een mogelijk de werking van een programma te be&iuml;nvloeden door bv. een variabele. Met de "else" instruktie kunnen we bepaalde delen van het programma laten uitvoeren die niet aan de "if" voorwaarde voldeden.</p>
+<pre><code><br />main()<br />{<br />int x;<br /> for (x=0;x&lt;10;x=x+1) {<br /> if (x==5) printf("x is nu 5\n");<br /> if (x&lt;5) printf("x = %d, dit is kleiner dan 5\n",x);<br /> else<br /> printf("x = %d, dit is groter dan 5\n",x);<br /> }<br />}</code></pre>
+<p>Let op de dubbele gelijk - aan tekens bij de "if" instruktie, C maakt een onderscheidt tussen een vergelijking (aangeduid met "=="), en een overdracht ( aangeduid met "="). Achter de "if" of "else" verwacht de C - kompiler slecht &eacute;&eacute;n instruktie, voor meerdere kommando's moeten we gebruik maken van de akkolades ( { &lt;instr. 1&lt; ; &lt;instr. 2&lt; ; ... ;} ).</p>
+<h2><a name="SECTION2-5"></a>2.5 break en continue</h2>
+<p>Met break en continue kunnen we een procedure of een instruktie onderbreken en voorzetten.</p>
+<pre><code><br />main()<br />{<br />int x;<br /> for (x=5;x&lt;15;x=x+1) {<br /> if(x==8) break;<br /> printf("De break - lus, x = %d\n",x);<br /> }<br /> for (x=5;x&lt;15;x=x+1) {<br /> if(x==8) continue;<br /> printf("De continue - lus, x = %d\n",x);<br /> }<br />}</code></pre>
+<p>In de eerste "for" lus, de "break" lus dus, zal de lus door if(x==8) break; onderbroken worden indien x gelijk is aan 8. Tijdens de tweede "for" lus, de "continue" lus dus, zal indien x=8, het programma verder gaan aan het einde "for" - lus. Of m.a.w. de waarde 8 zal niet afgeprint worden, maar de "for" lus loopt normaal door!</p>
+<h2><a name="SECTION2-6"></a>2.6 De "switch" instruktie.</h2>
+<p>Met de "switch" instruktie kunnen net zoals bij de "if - else" instrukties de werking van ons programma be&iuml;nvloedden door een variabele. Dankzij de "switch" instruktie kunnen we echter lange en onoverzichtelijke "if - else" opeenvolgingen vermijden!</p>
+<pre><code><br />main()<br />{<br />int x;<br /> for (x=3;x&lt;13;x=x+1) {<br /> switch (x) {<br /> case 3 : printf("x is nu 3\n");break;<br /> case 4 : printf("x is nu 4\n");break;<br /> case 5 :<br /> case 6 :<br /> case 7 :<br /> case 8 : printf("x is nu tussen 5 &amp; 8\n");break;<br /> case 11 : printf("x is nu 11\n");break;<br /> default : printf("x voldoet niet aan voorwaarde\n");break;<br /> } /* einde switch */<br /> } /* einde for */<br />}</code></pre>
+<h2><a name="SECTION2-7"></a>2.7 De "goto" instruktie.</h2>
+<p>De "goto" instruktie is een omstreden instruktie, er zijn namelijk mensen die er boeken over geschreven hebben. Hierin (probeerde) ze duidelijk te maken dat de "goto" instruktie niet thuis hoorde in een "gestruktureerde" programmeertaal. De "goto" instruktie is echter een volwaardige instruktie in C en vele andere programmeertalen, bovendien zijn er situaties te bedenken waarin de "goto" instruktie de eenvoudigste (en dus de beste) oplossing is. Het zou dus stom zijn om dan g&eacute;&eacute;n "goto" te gebruiken!</p>
+<pre><code><br />main()<br />{<br />int hond, kip, kat;<br /> goto echte_start;<br /> ergens: printf("Dit is nog een lijn met tekst\n");<br /> goto gedaan;<br />/* In dit gedeelte staat de enige zinvolle "goto" */<br />/* -----------------------------------------------*/<br /> echte_start:<br /> for(hond=1;hond&lt;6;hond=hond+1) {<br /> for(kat=1;kat&lt;6;kat=kat+1) {<br /> for(kip=1;kip&lt;4;kip=kip+1) {<br /> printf("Hond = %d Kat = %d Kip = %d\n",hond,kat,kip);<br /> if ((hond + kat + kip) &gt; 8) goto voldoende;<br /> };<br /> };<br /> };<br /> voldoende: printf("Dit zijn voldoende dieren ( te veel eigenlijk ).\n");<br />/* -----------------------------------------------*/<br /> printf("Dit is een eerste lijn\n"); goto lab1;<br /> lab2:<br /> printf("De derde ... \n"); goto ergens;<br /> lab1:<br /> printf("En dit ... de tweede\n");goto lab2;<br /> gedaan:<br /> printf("dit is echt de laatste!\n");<br />}</code></pre>
+<h2><a name="SECTION2-8"></a>2.8 Programmeer opdrachten!</h2>
+<p>1. Schrijf een programma dat je naam 10 keer op het scherm zet. Maak dit programma 3 maal, elke keer met een andere lus metode.</p>
+<p>2. Schrijf een programma dat van 1 tot 10 telt, print elk getal op het scherm. Bij 3 &eacute;n 7 toon je een ekstra berichtje op het scherm.</p>
+<hr />
+<h1><a name="SECTION3"></a>3. Datatypes, bewerkingen &amp; vergelijkingen</h1>
+<p><em>In de twee vorige hoofdstukken hebben al een datatype leren kennen nl. de integer, in dit hoofdstuk gaan we meer datatypes bekijken. Ook gaan we dieper in op wiskundige bewerkingen en vergelijkingen, C heeft hiervoor ook verkorte notaties dit maak de bronkode vaak moeilijk leesbaar voor mensen die C niet zo goed kennen.</em></p>
+<h2><a name="SECTION3-1"></a>3.1 Eenvoudige bewerkingen</h2>
+<p>In het onderstaand voorbeeld zie we enkele eenvoudige bewerkingen nl.: +(optelling), -(aftrekking), *(vermenigvuldiging), /(deling), %(rest).</p>
+<pre><code><br />main()<br />{<br />int a,b,c;<br /> a=14;<br /> b=3; printf("a=13;b=3");<br /> c=a+b;printf("c=a+b=%d\n",c); /* optelling */<br /> c=a-b;printf("c=a-b=%d\n",c); /* aftrekking */<br /> c=a*b;printf("c=a*b=%d\n",c); /* vermenigvuldiging */<br /> c=a/b;printf("c=a/b=%d\n",c); /* deling */<br /> c=a%b;printf("c=a%b=%d\n",c); /* rest berekening */<br /> c=12*a+b/2-a*b*2/(a*c+b*2);printf("c=12*a+b/2-a*b*2/(a*c+b*2)=%d\nn",c);<br /> a=a+1;printf("a=a+1=%d\n",a);<br /> b=b*5;printf("b=b*5=%d\n",b);<br /> a=b=c=20;printf("a=b=c=20");<br /> a=b=c=12*13/4;printf("a=b=c=%d\n");<br />}</code></pre>
+<h2><a name="SECTION3-2"></a>3.2 Andere datatypes</h2>
+<pre><code><br />main()<br />{<br />int a,b,c; /* -32768 ... 32767 zonder decimaal punt */<br />char x,y,z; /* -128 ... 127 zonder decimaal punt */<br />float d,e,f; /* 3.4E-38 ... 3.4E+38 met decimaal punt */<br /> a=b=c=27;<br /> x=y=z='A';<br /> d=e=f=3.6792;<br /> a=y; /* a is nu 65 (karakter 'A') */<br /> x=b; /* x is nu -27 */<br /> d=b; /* d is nu -27.00 */<br /> a=e; /* a is nu 3 */<br />}<br /></code></pre>
+<p>In het vorige voorbeeld leren we een aantal nieuwe datatypes kennen (int kenden we al).</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">int</td>
+<td align="center" valign="top">:</td>
+<td align="left" valign="top">Integer, wordt door de komputer voorgesteld als 2 bytes en kan bijgevolg</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="left" valign="top">een getalwaarde aannemen van -32768 tot +32767.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">char&nbsp;</td>
+<td align="center" valign="top">:</td>
+<td align="left" valign="top">Dit type is eigenlijk bedoeld voor een karakter voor te stellen (meestal in ASCII)</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="left" valign="top">en wordt in het geheugen van de komputer bewaard als een byte.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="left" valign="top">Hierdoor kan een "char" een getalwaarde aannemen van -127 tot +128.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">float</td>
+<td align="center" valign="top">:</td>
+<td align="left" valign="top">Is bedoeld voor het weergeven van getallen na de komma, bij de meeste C kompilers</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="left" valign="top">tot 7 cijfers na de komma.</td>
+</tr>
+</tbody>
+</table>
+<p>Laten toch nog even dieper ingaan op de werking van het vorige programma. Zoals hierboven besproken is een "char" in wezen een "int" die door 1 byte voorgesteld wordt, we kunnen dus zonder problemen een "char" omzetten in een "int". In de andere richting (van "int" naar char" dus) is er geen standaard, indien de integer buiten het bereik van de "char" valt zal deze een waarde krijgen tussen de -127 en de +128.</p>
+<p>Zetten we een integer om in een "float" zal deze laatste de getalwaarde van de integer aannemen. In andere richting (van "float" naar "int"), zal de C - kompiler de cijfers na de komma laten vallen.</p>
+<h2><a name="SECTION3-3"></a>3.3 Uitgebreide datatypes</h2>
+<p>C heeft nog variaties op degene die we al besproken hebben. Zo heeft een "int" de volgende uitbreidingen:</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">long int</td>
+<td align="center" valign="top">:</td>
+<td align="left" valign="top">lange integer, heeft bij de meeste C kompilers een bereik van -2147483648 tot 2147483647.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">short int</td>
+<td align="center" valign="top">:</td>
+<td align="left" valign="top">korte integer, is bij de meeste C kompiler hetzelfde als een "int" en heeft dus een bereik van -32768 tot 32767.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">unsigned int&nbsp;</td>
+<td align="center" valign="top">:</td>
+<td align="left" valign="top">integer zonder teken, van 0 tot 65535.</td>
+</tr>
+</tbody>
+</table>
+<p>Enkel de "long", "short" en&nbsp; "unsigned" moet men eigelijk in een programma schrijven, de "int" zal door ervaren programmeurs weggelaten worden.</p>
+<p>Het "float" datatype heeft ook een uitbreiding nl. de "double" en heeft een bereik van 1.7E-308 tot 1.7E+308, het aantal cijfers na de komma verschilt soms van C kompiler tot C kompiler. Er zijn nog andere samenstellingen mogelijk zoals de "long unsigned int", "unsigned char", enz.</p>
+<h2><a name="SECTION3-4"></a>3.4 Konversie karakters</h2>
+<p>We hebben al een konversie karakter van "printf" bekeken nl. "%d", met "printf" kunnen echter nog andere datatypes weergeven.</p>
+<pre><code><br />main()<br />{<br />int a; /* normale integer */<br />long b; /* lange integer */<br />short c; /* korte integer */<br />unsigned d; /* integer zonder teken */<br />char e; /* karakter */<br />float f; /* float */<br />double g; /* dubbele precisie float */<br /> a=1023;b=2222;c=123;d=1234;e='X';f=3.14159;g=3.1415926535898;<br /> printf("a=%d\n",a); /* decimale uitvoer */<br /> printf("a=%o\n",a); /* oktale uitvoer */<br /> printf("a=%x\n",a); /* hex. uitvoer */<br /> printf("b=%ld\n",b); /* lange dec. uitvoer */<br /> printf("c=%d\n",c); /* korte decimale */<br /> printf("d=%u\n",d); /* zonder teken */<br /> printf("e=%c\n",e); /* karakter */<br /> printf("f=%f\n",f); /* float */<br /> printf("g=%f\n\n",f); /* double float */<br /> printf("a=%d\n",a); /* normale int. uitvoer */<br /> printf("a=%7\n",a); /* rechts uitgelijnd */<br /> printf("a=%-7d\n",a); /* links uitgelijnd */<br /> c=5;d=8;<br /> printf("a=%*d\n",c,a);<br /> printf("a=%*d\n\n",d,a);<br /> printf("f=%f\n",f); /* normale float uitvoer */<br /> printf("f=%12f\n",f);<br /> printf("f=%12.3f\n",f); /* drie cijfers na de komma */<br /> printf("f=%12.5f\n",f); /* vijf cijfers na de komma */<br />} <br /></code></pre>
+<p>Andere konversie karakters zijn:</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%d"&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">decimale uitvoer, deze kenden we al.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%o"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">oktale uitvoer.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%x"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">hexadecimaal.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%ld"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">lange decimale uitvoer.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%u"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">decimaal zonder teken.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%c"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">karakter.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "%f"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">"float", wordt ook gebruikt voor een "double".</td>
+</tr>
+</tbody>
+</table>
+<p>Ook is het mogelijk om met "printf" de uitvoer op een bepaalde manier te schikken, om bv. waarde in kolommen op het scherm te krijgen. In het voorgaande programma zien we ook hier een voorbeeld van. Met "%7d" bv. wordt alles rechts uitgelijnd met een veldbreedte van zeven, met&nbsp; "%-7d" links uitgelijnd met een veldbreedte van zeven.</p>
+<p>Algemeen:</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">-&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">links uitlijnen.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">(n)&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">veldbreedte van de cijfers voor de komma, hiervoor kunnen we ook een variabele</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top"></td>
+<td align="left" valign="top"></td>
+<td align="left" valign="top">gebruiken door gebruik te maken van "*".</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">.&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">scheidt (n) van (m)</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">(m)&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">aantal cijfers na de komma, ook hier kunnen we gebruik maken van een variabele.</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION3-5"></a>3.5 Eenvoudige vergelijkingen</h2>
+<p>Het volgende programma illustreert enkele eenvoudige vergelijkingen, in de kommentaar wordt het resultaat vermeld. Misschien nieuw is de logische "not" en inverteert het resultaat van een vergelijking of een andere bewerking, zo is != niet gelijk aan.</p>
+<pre><code><br />main()<br />{<br />int x=11,y=11,z=11;<br />float r=12.987,s=12.987;<br /> if (x==y) z=-13; /* Dit maakt z gelijk aan z-13 */<br /> if (x&gt;z) z=-10; /* Dit maakt z gelijk aan z-10 */<br /> if (!(x&gt;z)) z=500 /* Dit verandert niets */<br /> if (b&lt;=c) z=0; /* Dit maakt z gelijk aan 0 */<br /> if (r!=s) z=20; /* Dit maakt z gelijk aan 20 */<br />}</code></pre>
+<p>Groter dan of gelijk, kleiner dan, ... vergelijkingen bestaan natuurlijk ook in C, maar worden in dit voorbeeld niet aangehaald.</p>
+<h2><a name="SECTION3-6"></a>3.6 waar of nietwaar?????</h2>
+<p>Het is misschien niet slecht om eens te bekijken wat waar ("true") en nietwaar ("false") voor C is. C bekijkt nietwaar als gelijk aan nul, en waar als groter dan nul of m.a.w. positief, de meeste C kompilers nemen voor waar "1" aan maar het is niet aan te raden deze "1" te gebruiken in een wiskundige bewerking.</p>
+<pre><code><br />main()<br />{<br />int x=11,y=11,z=11;<br /> if (x=(r!=s)) z=111; /* Dit maakt x positief, en z = 111 */<br /> if (x=y) z=222; /* Dit maakt z = 222 */<br /> y=0; if (x=y) z=333; /* Dit verandert niets */<br /> y=3;x=1; if (x=y) z=444; /* Dit maakt z = 333 */<br /> if (x) z=555; /* Dit maakt z = 555 */<br /> x=0; if (x) z=666; /* Dit verandert niets */<br />}</code></pre>
+<p>In de eerste vergelijking is het resultaat waar, x wordt dus positief en z 111.</p>
+<p>De tweede vergelijking is geen vergelijking, de getalwaarde van "y" wordt overgedragen naar "x" vermits deze positief is wordt dit door de C kompiler als waar bekeken. In de derde vergelijking wordt dit verduidelijkt vermits "x" nul wordt, wordt deze als nietwaar bekeken. De vierde vergelijking is eigelijk analoog de getalwaarde van "y" (3 dus ) wordt overgedragen op "x" het resultaat is dus waar ongeacht de vorige waarde van "x".</p>
+<p>De laatste vergelijk is vrij duidelijk vermits "x" gelijk is aan nul wordt deze als nietwaar bekeken.</p>
+<h2><a name="SECTION3-7"></a>3.7 "and" en "or" vergelijkingen.</h2>
+<p>Een "and" - vergelijking wordt in C voorgesteld als "&amp;&amp;", en een "or" - vergelijking als "||", het volgende voorbeeld illustreert "and" -en "or" vergelijkingen.</p>
+<pre><code><br />main()<br />{<br />int x,y,z;x=y=z=77;<br /> if ((x==y) &amp;&amp; (x==77)) z=33; /* Dit maakt z =33 */<br /> if ((x&gt;y) || (z&gt;12)) z=12; /* Dit maakt z = 12 */<br /> if (x &amp;&amp; y &amp;&amp; z) z=11; /* Dit maakt z = 11 */<br /> if ((x=1) &amp;&amp; (y=2) &amp;&amp; (z=3)) z=22; /* Dit maakt x=1, y=2, z=3, z=22.0 */<br /> if ((x==2) &amp;&amp; (y=3) &amp;&amp; (z=4)) z=14; /* Dit verandert niets */<br />}</code></pre>
+<p>De eerste is vrij duidelijk de twee vergelijkingen zijn waar, het resultaat is ook waar. De tweede (een "or" vergelijking) is ook waar vermits z&gt;12. Nummer vier is een goed voorbeeld van een "and" vergelijking vermits zowel "x", "y" en "z" groter zijn dan nul (waar dus) is de vergelijking ook waar. De vijfde is analoog, vermits "x" niet gelijk is aan 2, is deze nietwaar.</p>
+<h2><a name="SECTION3-8"></a>3.8 Pas op!!!</h2>
+<p>De volgende vergelijkingen zijn veel gemaakte fouten.</p>
+<pre><code> <br /> if (x &gt; x); z=27; /* z verandert altijd ongeacht de vgl. */<br /> if (x!=x) z=27.345; /* z zal nooit veranderen */<br /> if (x=0) z=27.345; /* x wordt 0, z verandert nooit! */<br /> if (x==1) &amp; (y==4); /* Dit is geen and vergelijking, maar bewerking */<br /> if (x==1) | (y==4) /* Dit is geen or vergelijking, maar bewerking */<br /></code></pre>
+<h2><a name="SECTION3-9"></a>3.9 Verkorte notaties.</h2>
+<p>Verkorte notaties zijn zeer populair in C, toch zijn veel mensen er geen voorstanders en gebruiken deze dan ook niet. Het programma wordt op deze manier h&eacute;&eacute;l wat minder duidelijk voor andere (zeker voor beginnende programmeurs), toch is het belangrijk deze te begrijpen om de bronkode van iemand anders te kunnen lezen. Bovendien bespaard het veel wat schrijfwerk.</p>
+<h3><a name="SECTION3-9-1"></a>3.9.1 Verkorte bewerkingen.</h3>
+<pre><code><br />main()<br />{<br />int x=0,y=2,z;<br /> printf("x=%d, y=%d,z=%d\n",x,y,z); /* Dit verhoogt x met 1 */<br /> x=x+1; printf("x=x+1=%d\n",x); /* Dit ook! */<br /> x++; printf("x++,x=%d\n",x); /* Dit ook! */<br /> z=y++; printf("z=y++, z=%d,y=%d\n",z,y); /* z=2, y=3 */<br /> z=++y; printf("z=++y, z=%d,y=%d\n",z,y); /* z=4, y=4 */<br /> y=y-1; printf("y=y-1=%d\n",y); /* Dit vermindert y met 1 */<br /> y--; printf("y--,y=%d\n",y); /* Dit ook! */<br /> --y; printf("--y,y=%d\n",y); /* Dit ook! */<br /> z=y--; printf("z=y--, z=%d, y=%d\n",z,y); /* z=1, y=0 */<br /> z=--y; printf("z=-y, z=%d, y=%d\n",z,y); /* z=-1 y=-1 */<br />}</code></pre>
+<p>Vorig programma demonstreert enkele verkorte notaties van bewerkingen, met x++ en ++x doe we hetzelfde als x=x=+1. Toch bestaat er een verschil tussen deze twee, dit wordt in de twee volgende bewerkingen duidelijk.<br /> Met z=y++, wordt eerst de getal waarde van "y" overgedragen aan "z" daarna wordt "y" met 1 vermeerderd. Met z=++y, wordt eerst "y" met 1 vermeerderd deze nieuwe getalwaarde van "y" wordt dan overgedragen aan "z". De volgende voorbeelden zijn analoog aan de vorige, met -y en y- wordt "y" met 1 verminderd.</p>
+<pre><code><br />main()<br />{<br />float a=0.0,b=3.14159;<br /> printf("a=%.5f, b=%.5f\n",a,b);<br /> a=a+12; printf("a=a+12=%.5f\n",a); /* Dit telt 12 bij a */<br /> printf("a+=12=%.5f\n",a); /* Dit ook! */<br /> a*=4.3; printf("a*=4.3=%.5f\n",a); /* Dit vermenigvuldigt a met 4.3 */<br /> a-=b; printf("a-=b=%.5f\n",a); /* Dit vermindert a met b */<br /> a/=10.0;printf("a/=10.0=%.5f\n",a); /* Dit deelt a door 10 */<br />}<br /></code></pre>
+<p>In het bovenstaand programma hebben nog enkele voorbeelden van verkorte bewerkingen, hierbij wordt een variabele met zichzelf bewerkt door een vast getal of een andere variabele.</p>
+<h3><a name="SECTION3-9-2"></a>3.9.2 Verkorte vergelijkingen.</h3>
+<p>Ook voor vergelijkingen bestaan er verkorte notaties het volgende programma is hier een voorbeeld van.</p>
+<pre><code><br />main()<br />{<br />int a=5,b=4,c=10;printf("a=%d, b=%d, c=%d\n",a,b,c);<br /> if (b &gt;=3) a = 2;<br /> else a=10;<br /> printf("a=%d\n",a);<br /> a=5;b=4;c=10; /* Dit doet hetzelfde als */<br /> a = ((b &gt;= 3) ? 2 : 10) /* de vorige vgl. */<br /> printf("a=%d\n",a);<br /> c = (a&gt;b?a:b);printf("c=b=%d\n",c);<br /> c = (a&gt;b?b:a);printf("c=a=%d\n",c);<br />}</code></pre>
+<p>De eerste vergelijking is de "normale" uitdrukking, de tweede is de verkorte schrijfwijze van de eerste. Indien de voorwaarde (b&gt;=3) waar is wordt a 2, indien de voorwaarde nietwaar is wordt a gelijk 10. De twee volgende vergelijkingen zijn analoog aan de vorige.</p>
+<h2><a name="SECTION3-10"></a>3.10 Samenvatting</h2>
+<h3><a name="SECTION3-10-1"></a>3.10.1 Datatypes</h3>
+<table border="1" cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="center" valign="top">type</td>
+<td align="center" valign="top">bit breedte</td>
+<td align="center" valign="top">getalwaarde</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">char</td>
+<td align="center" valign="top">8</td>
+<td align="center" valign="top">-128 ... +127</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">unsigned char</td>
+<td align="center" valign="top">8</td>
+<td align="center" valign="top">0 ... 256</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">signed char (=char)</td>
+<td align="center" valign="top">8</td>
+<td align="center" valign="top">-128 ... +127</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">int</td>
+<td align="center" valign="top">16</td>
+<td align="center" valign="top">-32768 ... +32767</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">short int of short (=int)</td>
+<td align="center" valign="top">16</td>
+<td align="center" valign="top">-32768 ... +32767</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">unsigned int of unsigned</td>
+<td align="center" valign="top">16</td>
+<td align="center" valign="top">0 ... 65536</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">float</td>
+<td align="center" valign="top">32</td>
+<td align="center" valign="top">-3.4E+38 ... +3.4E+38</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">double</td>
+<td align="center" valign="top">64</td>
+<td align="center" valign="top">-1.7E+308 ... +1.7E+308</td>
+</tr>
+</tbody>
+</table>
+<h3><a name="SECTION3-10-2"></a>3.10.2 Vergelijkingen</h3>
+<table border="1" cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="center" valign="top">&lt;</td>
+<td align="left" valign="top">kleiner dan</td>
+<td align="center" valign="top">!</td>
+<td align="left" valign="top">not</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">&gt;</td>
+<td align="left" valign="top">groter dan</td>
+<td align="center" valign="top">!=</td>
+<td align="left" valign="top">niet gelijk aan</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">&lt;=</td>
+<td align="left" valign="top">kleiner dan of gelijk aan</td>
+<td align="center" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;</td>
+<td align="left" valign="top">and</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;=&nbsp;</td>
+<td align="left" valign="top">groter dan of gelijk aan</td>
+<td align="center" valign="top">||</td>
+<td align="left" valign="top">or</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">==</td>
+<td align="left" valign="top">gelijk aan</td>
+<td align="center" valign="top"></td>
+<td align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+<h3><a name="SECTION3-10-3"></a>3.10.3 Bitmanipulaties</h3>
+<p>In dit hoofdstuk hebben geen bit manipulaties besproken in de onderstaande tabel staan de meeste gebruikte bewerkingen op bit niveau vermeld.</p>
+<table border="1" cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="center" valign="top">&amp;</td>
+<td align="center" valign="top">and</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">|</td>
+<td align="center" valign="top">or</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">i &lt;&lt;n&nbsp;</td>
+<td align="center" valign="top">SHL, i = i * 2^n&nbsp;</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">i &gt;&gt;n</td>
+<td align="center" valign="top">SHR, i = i / 2^n</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">~</td>
+<td align="center" valign="top">inv</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION3-11"></a>3.11 Programmeer opdrachten!</h2>
+<p>1.Schrijf een programma dat van 1 tot 12 telt en dat telkens ook het kwadraat uitrekent.</p>
+<p><code> 1 1 2 4 3 9 enz </code></p>
+<p>2.Schrijf een programma dat van 1 tot 12 telt en dat telkens ook 1/x uitrekent tot 5 cijfers na de komma.</p>
+<p><code> 1 1.00000 2 0.50000 3 0.33333 4 0.25000 enz. </code></p>
+<p>3. Schrijf een programma dat van 1 tot 100 telt, maar enkel de waardes tussen 32 en 39 op het scherm print.</p>
+<hr />
+<h1><a name="SECTION4"></a>4. funkties</h1>
+<p><em>Tot nu hebben we enkel funkties gebruikt welke al in C zelf voorhanden waren zoals printf(), het is ook mogelijk om zelf funkties aan te maken. Deze maken om veel gebruikte handelingen te groeperen, bovendien wordt het programma er beter leesbaar door.</em></p>
+<h2><a name="SECTION4-1"></a>4.1 Lokale &amp; globale variabelen</h2>
+<p>Het volgende programma voorbeeld van programma met funkties.</p>
+<pre><code><br />int som; /* Dit is een globale variabele */<br />main()<br />{<br />int index;<br />hoofding() /* Dit roept de funktie hoofding aan! */<br />for (index=1;index&lt;=7;index++)<br />kwadraat(index) /* Dit roept de funktie kwadraat aan! */<br />einde(); /* Dit roept de funktie einde aan! */<br />}<br />hoofding() /* Dit is de funktie hoofding */<br />{<br />som=0;<br />printf("Dit is het begin van het prg\n\n");<br />}<br />kwadraat(getal) /* Dit is de funktie kwadraat */<br />int getal;<br />{<br />int a;<br />a=getal*getal;<br />som+=a;<br />printf("Het kwadraat van %d is %d\n",getal,a);<br />}<br />einde() /* Dit is de funktie einde */<br />{<br />printf("De som van de kwadraten is %d\n",som);<br />}<br /></code></pre>
+<p>Het programma begin met het defini&euml;ren van een integer met de naam som, vermits deze niet in een funktie gedefinieerd is spreken we van een globale variabele. Een globale variabele kan in alle funkties gebruikt worden en is voor al deze funkties ook hetzelfde. Variabelen welke in een funktie gedefinieerd zijn lokale variabelen, en kunnen enkel in de funktie gebruikt worden waarin ze gedefinieerd zijn. De funktie "kwadraat" is een voorbeeld hoe we een integer aan een funkties kunnen doorgeven, door kwadraat(index)wordt de getalwaarde van "index" overdragen aan "getal". Vermits "getal" in "kwadraat" gedefinieerd is kunnen we deze getalwaarde in de funktie kwadraat gebruiken. De werking van dit programma is vrij eenvoudig, in de "for" lus doorloopt index de getalwaarden van 1 tot 7, deze worden overdragen aan de funktie kwadraat welke (hoe kan het anders) het kwadraat uitrekent en afprint. In kwadraat wordt ook de som van al de kwadraten berekend, vermits som een globale variabele is, kan deze in heel het programma gebruikt worden. Met de funktie einde() printen wij de som van al de kwadraten af.</p>
+<h2><a name="SECTION4-2"></a>4.2 Waarden doorgeven zonder globale variabelen te gebruiken.</h2>
+<p>In het voorgaande voorbeeld maakten we gebruik van de globale variabele "som" om een getalwaarde aan het hoofdprogramma terug door te geven. Dit kan ook anders het volgende programma is hier een voorbeeld van.</p>
+<pre><code><br />main()<br />{<br />int x,y;<br /><br />for (x=0;x&lt;=7;++x) {<br />y = kwadraat(x);<br />printf("Het kwadraat van %d is %d\n",x,y);<br />}<br />printf("\n");<br />for (x=0;x&lt;=7;++x) {printf("Het kwaadraat van %d is %d\n",x,kwadraat(x));}<br />}<br />kwadraat(a)<br />int a;<br />{<br />a*=a;<br />return(a);<br />}<br /></code></pre>
+<p>Door de in de funktie "kwadraat", de instruktie return(a) toe te voegen kan de waarde van "a" in het hoofdprogramma gebruikt worden. In de eerste "for" lus wordt deze waarde overgedragen aan "y", in de tweede wordt ze direkt gebruikt bij het afprinten.</p>
+<p><em><strong>Nota:</strong>&nbsp;&nbsp; In tegenstelling tot andere programmeertalen zoals bv. Pascal maakt C geen onderscheidt tussen "funkties" en "procedures". In Pascal is een funktie een stukje programma wat een getalwaarde uitrekent. Voor C zijn funkties en procedures hetzelfde, beide termen worden dan ook door elkaar gebruikt!</em></p>
+<h2><a name="SECTION4-3"></a>4.3 funkties, welke geen integer teruggeven.</h2>
+<p>C gaat er altijd vanuit dat een funktie een "int" terug geeft, indien we andere datatypes gebruiken dienen we dit aan de C - kompiler "te vertellen".</p>
+<pre><code><br />float z; /* Dit is een globale variabele */<br />main()<br />{<br />int index;<br />float x,y,sqr(),glsqr();<br />for (index=0;index&lt;=7;index++) {<br />x = index;y = sqr(x);<br />printf("Het kwadraat van %d is %10.4f\n",index,y);<br />}<br />for (index=0;index&lt;=7;index++) {<br />z=index; y = glsqr();<br />printf("Het kwadraat van %d is %10.4f\n",index,y);<br />}<br />}<br />float sqr(inval)<br />float inval;<br />{<br />float square;<br />square=inval*inval;<br />return(square);<br />}<br />float glsqr()<br />{<br />return(z*z);<br />}</code></pre>
+<p>Het vorige programma is een vb. van funktie welke een "float" terug geeft. Het begint met het defini&euml;ren van een globale variabele "z", welke we later zullen gebruiken. Daarna wordt in het hoofdprogramma "main" een integer gedefinieerd, gevolgd door 2 "floats". Hierna komen 2 vreemde "floats", "sqr()" en "glsqr()" lijken op funkties, wat ze ook zijn. Dit is de manier waarop we C duidelijk maken dat in het de procedure "main" een funktie een variabele terug geeft welke geen integer is, in dit voorbeeld een float.</p>
+<p>In het midden van de listing staat de funktie "sqr(inval)", welke voorafgegaan wordt door het woordje "float", hiermee maken we duidelijk dat deze een variabele teruggeeft welke geen integer is. Dit lijkt misschien een beetje vreemd. Waarom moeten twee keer aangeven dat de funktie een "float" gaat teruggeven???? In C kunnen we echter gebruik maken van externe funkties, welke niet in &eacute;&eacute;n keer gekompileerd worden, in zo'n geval kan C niet weten welke datatype een externe funktie aan het hoofdprogramma gaat weergeven!</p>
+<h2><a name="SECTION4-4"></a>4.4 Variabelen en funkties</h2>
+<pre><code><br />#include "stdio.h" /* Prototypes voor invoer / uitvoer */<br />void sub1(void); /* Prototype */<br />void sub2(void); /* Prototype voor */<br />void sub3(void); /* Prototype voor sub3 */<br /><br />int teller; /* Dit is globale var., in heel het prg. bruikbaar! */<br /><br />main()<br />{<br />register int index; /* Enkel bruikbaar in "main" */<br />teller=37;<br />sub1();<br />sub2();<br />sub3();<br />for (index=8;index&gt;0;index-) {<br />int a; /* Enkel bruikbaar in de "for"-lus */<br />for (a=0;a&lt;=6;a++) printf("%d ",a);<br />printf(" index is nu %d\n",index);<br />}<br />}<br />int teller2; /* Deze is vanaf nu bruikbaar */<br />void sub1(void)<br />{<br />int index; /* Enkel beschikbaar in sub1 */<br />index=23;<br />printf("De sub1 waarde is %d\n",index);<br />printf("teller = %d\n",teller);<br />}<br />void sub2(void)<br />{<br />int teller; /* Deze var. is enkel bruikbaar in sub2<br /> en overschrijft de globale teller */<br />teller=53;<br />printf("De sub2 waarde is %d\n",teller);<br />teller2=77;<br />}<br />void sub3(void)<br />{<br />printf("De sub3 waarde is %d\n",teller2);<br />}</code></pre>
+<p>Het vorige programma is een voorbeeld van variabele gebruik in funkties, tot nu hebben variabelen altijd in het begin van het programma of een funkties gedefinieerd. Dit is echter geen verplichting!</p>
+<p>Als we het voorbeeld programma bekijken zien eerst 4 "rare" regels, negeer deze voorlopig hierop zullen we later terug komen.</p>
+<p>Hierna beginnen we met het defini&euml;ren van een globale variabele "teller", vermits deze buiten een procedure definieert is zal deze in al de volgende procedures bruikbaar zijn. Dit is ook zo voor "teller2" welke in het midden van het programma gedefinieerd is. De variabele "teller2" is echter niet bruikbaar in ons hoofdprogramma "main", omdat ze na deze procedure is aangemaakt.</p>
+<h2><a name="SECTION4-5"></a>4.5 "automatische" variabelen</h2>
+<p>Kijken we terug naar het hoofdprogramma dan zien we dat er een integer wordt gedefinieerd "index", voor "int index" staat ook nog het woordje "register" hierop zullen later terug komen. Deze variabele ("index") is enkel in het hoofdprogramma "main" bruikbaar vermits deze in de funktie gedefinieerd is. Dit noemt men ook soms een "automatische" (automatic voor de engelstaligen) variabelen, dit betekend dat de variabele enkel bruikbaar is in de funktie waarin ze is aangemaakt. En ander voorbeeld van een automatische variabele in de integer "a" in de "for" lus, vermits ze in de akkolades is aangemaakt is ze enkel bruikbaar in deze lus. Dit verklaart ook de term automatische variabelen, ze worden automatisch aangemaakt en weer vrijgegeven.</p>
+<h2><a name="SECTION4-6"></a>4.6 "void" funkties</h2>
+<p>Kijken we de subprocedures "sub1", "sub2" en "sub3" dan zien we dat deze worden voorafgegaan door het woordje "void", dit zelfde woordje staat ook tussen de ronde haakjes. Door "void" tussen de ronde haakjes te plaatsen maken we C duidelijk dat we aan deze funktie geen variabele willen doorgeven. Met het woordje "void" voor de funktie maken we C duidelijk dat deze geen waarde kan teruggeven.</p>
+<h2><a name="SECTION4-7"></a>4.7 Dezelfde variabele teruggebruiken</h2>
+<p>In de funktie "sub1" wordt dezelfde variabele naam "index" gebruikt als in het hoofdprogramma, vermits in beide funkties "index" een lokale variabele is er probleem. Beide variabele hebben wel dezelfde naam maar hebben een aparte plaatst in het geheugen van de komputer.</p>
+<p>Hetzelfde gebeurt in de funktie "sub2" hier wordt dezelfde variabele naam gebruikt als de globale variabele "teller". Door deze naam opnieuw te gebruiken als een lokale in de funktie "sub2" is globale variabele "teller" niet beschikbaar in "sub2".</p>
+<h2><a name="SECTION4-8"></a>4.8 Wat is een "register" variabele?</h2>
+<p>Zoals de meeste onder jullie weten bevat een microprocessor registers, welke veel sneller zijn het geheugen. Door het woord "register" voor de variabele definitie te plaatsen geven we C aan dat we een register van de &micro;P willen gebruiken i.p.v. het geheugen. Het aantal registers is wel beperkt.</p>
+<h2><a name="SECTION4-9"></a>4.9 Wat is een "prototype"?</h2>
+<p>In de regels 2 tot 4 maken we een prototypes aan voor de procedures "sub1", "sub2" en "sub3". Hiermee geven we aan hoe deze funkties er gaan uitzien, tijdens het kompileren zal C kijken of we tegen deze voorwaarden geen fouten maken indien dit wel het geval is zal C dit melden met een foutmelding. Of m.a.w. hiermee beveiligen we onszelf tegen programmeer fouten!</p>
+<h2><a name="SECTION4-10"></a>4.10 "static" variabelen</h2>
+<p>Automatische variabele zijn enkel gekend in de funktie waarin ze aangemaakt zijn, ze worden aangemaakt in het geheugen bij het de deklaratie en weer vrijgegeven bij het be&euml;indigen van de funktie. Hierdoor gaat echter ook de waarde verloren!! Bij "static" variabelen, wordt een vaste geheugenplaats gereserveerd, de variabele in enkel bruikbaar binnen de funktie maar wordt niet uit het geheugen gewist, of m.a.w. de waarde blijft behouden. Het volgende voorbeeld zal dit ver duidelijken.</p>
+<pre><code><br />main()<br />{<br />static int i;<br />for (i=1;i&lt;=5;i++) printf("%3d %3d\n",i,f(i));<br />}<br />int f(i) int i;<br />{<br />int s=100; return(s+=i);<br />}<br /></code></pre>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">Met static:&nbsp;</td>
+<td align="left" valign="top">1&nbsp;</td>
+<td align="left" valign="top">101&nbsp;</td>
+<td align="left" valign="top">Zonder static:&nbsp;</td>
+<td align="left" valign="top">1</td>
+<td align="right" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 101</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">2</td>
+<td align="left" valign="top">103</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">2</td>
+<td align="right" valign="top">102</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">3</td>
+<td align="left" valign="top">106</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">3</td>
+<td align="right" valign="top">103</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">...</td>
+<td align="left" valign="top">...</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">...</td>
+<td align="right" valign="top">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">5</td>
+<td align="left" valign="top">115</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">5</td>
+<td align="right" valign="top">105</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION4-11"></a>4.11 Wat is "rekursie"??</h2>
+<p>Een rekursieve funktie is een funktie dit zichzelf aanroept het volgende programma is hier een voorbeeld van.</p>
+<pre><code><br />#include &lt;stdio.h&gt;<br />main()<br />{<br />int index =8;<br />tel_af(index);<br />}<br />tel_af(teller)<br />int teller;<br />{<br />char c;<br />teller--;<br />printf("teller = %d\n",teller);<br />if (teller &gt;0) tel_af(teller);<br />printf("Teller is nu 0\n");<br />}<br /></code></pre>
+<h2><a name="SECTION4-12"></a>4.12 Programmeer opdrachten!</h2>
+<p>1. Schrijf een programma dat je naam tien keer op scherm print, het printen gebeurt in een funktie.</p>
+<hr />
+<h1><a name="SECTION5"></a>5. Defines &amp; Macros</h1>
+<p><em>Defines en macros zijn eigenlijk een hulp voor de programmeur, door van deze technieken gebruik te maken worden programma's duidelijker en overzichtelijker.</em></p>
+<h2><a name="SECTION5-1"></a>5.1 Wat is een "define"?</h2>
+<p>Met een define kunnen bv. een waardegetal en naam geven, hierdoor kan een programma duidelijker worden. Bovendien hoeven we niet heel het programma te doorlopen indien er een bepaalde waarde verandert moet worden. Een eenvoudig voorbeeldje ...</p>
+<pre><code><br />#define START 0 /* Start van de for-lus */<br />#define EINDE 9 /* Einde van de for-lus */<br />#define MAX(A,B) ((A)&gt;(B)?(A):(B)) /* MAX macro */<br />#define MIN(A,B) ((B)&gt;(A)?(A):(B)) /* MIN macro */<br />main()<br />{<br />int index,min,max;<br />int teller = 5;<br />for (index=START;index&lt;=EINDE;index++) {<br />max=MAX(index,teller);<br />min=MIN(index,teller);<br />printf("Max. = ; Min = %d\n",max,min);<br />}<br />}</code></pre>
+<p>Door de instruktie #define START 0 komt het woordje "START" overeen met de getalwaarde 0, met #define EINDE 9 komt "EINDE" overeen met&nbsp; 9. Deze twee worden later gebruikt om het begin en het einde in de "for"-lus aan te geven.</p>
+<h2><a name="SECTION5-2"></a>5.2 Wat is een "macro"?</h2>
+<p>Een macro is analoog met een gewone "define", alleen bestaat een macro uit &eacute;&eacute;n of meedere instrukties. In het voorgaande voorbeeldje staan 2 macro's nl. "MAX" en "MIN", welke gebruikt worden om het respektievelijk het maksimum en het minimum te berekenen. Toch bestaat er een belangrijk verschil tussen een procedure (of een funktie) en een macro, bij een macro zal de C - kompiler telkens als hij dezelfde macro tegenkomt vervangen door de instrukties van deze macro. Bij een funktie wordt ernaar het begint van de funktie gesprongen, of m.a.w. een funktie staat slecht &eacute;&eacute;n keer in het geheugen, een macro het aantal keer dat ze wordt gebruikt! Het gebruik van lange veel gebruikte macro is dus zeker niet aan te raden (hierbij wordt er veel geheugen verspilt).</p>
+<h3><a name="SECTION5-2-1"></a>5.2.1 Kijk uit!</h3>
+<p>Alhoewel macro's het leven van de programmeur moet vereenvoudigen zijn ze ook soms de reden van programatiefouten, het volgende voorbeeld bevat enkele fouten.</p>
+<pre><code><br />#define WRONG(A) A*A*A /* foute macro */<br />#define CUBE(A) (A)*(A)*(A) /* Goede macro */<br />#define SQUR(A) (A)*(A)<br />#define ADD_WRONG(A) (A)+(A) /* foute optelling */<br />#define ADD_RIGHT(A) ((A)+(A)) /* goede optelling */<br />#define START 1 <br />#define STOP 7<br />main()<br />{<br />int i,offset;<br />offset = 5;<br />for (i=START;i&lt;=STOP;i++) {<br />printf("Het kwadraat van %3d is %4d, de 3 de macht is %6d\n",<br />i+offset,SQUR(i+offset),CUBE(i+offset));<br />printf("De foute 3 de macht van %3d is %6d\n",i+offset,WRONG(i+offset));<br />}<br />printf("\n En nu ... De optelling macro's\n");<br />for (i=START;i=STOP;i++) {<br />printf("Foute optelling = %6d, de juiste = %6d\n",<br />5*ADD_WRONG(i),5*ADD_RIGHT(i));<br />}<br />}<br /></code></pre>
+<p>De eerste macro ("WRONG") is een voorbeeld van een foute derde machtsverheffing, in sommige gevallen zal ze werken in andere niet. De tweede ("CUBE") toont hoe het wel moet. Vervangen we "A" door bv. de eerste bewerking welke de macro moet uitvoeren dan krijgen we (1+5)*(1+5)*(1+5) = 216 voor de juiste ("CUBE"), voor de foute macro ("WRONG") krijgen we 1+5*1+5*1+5 = 16 wat een foutief antwoord is. De volgende macro ("SQUR") berekend het kwadraat, en is analoog aan de vorige macro's.</p>
+<p>De volgende macro ("ADD_WRONG") is een vb. van een foutieve optelling, dit kunnen we opnieuw het beste aantonen door getalwaarden in te vullen, 5 * (1) + (1) = 6, terwijl we eigelijk 10 als resultaat verwachten. De macro "ADD_RIGHT" zal wel de juiste uitkomst geven, 5*(1+1) = 10.</p>
+<h2><a name="SECTION5-3"></a>5.3 Wat doet "enum" instruktie?</h2>
+<pre><code><br />main()<br />{<br />enum {nul,een,twee,drie,vier,vijf,zes} resultaat;<br />enum {zon,ma,di,wo,don,vrij,zat} dag;<br />resultaat = nul; printf("resultaat = %d\n",resultaat);<br />resultaat = een; printf("resultaat = %d\n",resultaat);<br />resultaat = twee; printf("resultaat = %d\n",resultaat);<br />resultaat = drie; printf("resultaat = %d\n",resultaat);<br />resultaat = vier; printf("resultaat = %d\n",resultaat);<br />resultaat = vijf; printf("resultaat = %d\n",resultaat);<br />resultaat = zes; printf("resultaat = %d\n",resultaat);<br />for(dag=ma;dag &lt; vrij;dag++) printf("Dit is %d de dag\n");<br />}<br /></code></pre>
+<p>Met de "enum" instruktie in derde regel van het vb. maken we een integer aan met de naam resultaat, de namen tussen de akkolades stellen voor deze integer een getalwaarde voor van 0 tot 6, hetzelfde gebeurt met de integer dag. De "enum" kan bv. handig zijn om te gebruiken in kombinatie met de "switch" instruktie om zo een programma overzichtelijker te maken.</p>
+<h2><a name="SECTION5-4"></a>5.4 Programmeeropdrachten!</h2>
+<p>1.Schrijf een programma dat van 7 tot -5 telt, gebruik de "#define" instruktie om het begin en het einde aan te geven.</p>
+<hr />
+<h1><a name="SECTION6"></a>6. Strings &amp; Arrays</h1>
+<p><em>C maakt geen onderscheid tussen strings en arrays (in tegenstelling tot bv. BASIC), voor C is een string een verzameling van karakters. Wel zijn er bepaalde instrukties die het werken met strings eenvoudiger (zouden) maken.</em></p>
+<h2><a name="SECTION6-1"></a>6.1 Wat is array?</h2>
+<p>Een array kunnen we het best omschrijven als een verzameling van data, welke van hetzelfde type zijn bv. integers, "floats", ... Een array van het "char" type noemen we een string. Het werken met arrays kan soms vrij verwarrend zijn, vooral bij meergedimensioneerde.</p>
+<h2><a name="SECTION6-2"></a>6.2 Wat is een string?</h2>
+<p>Zoals eerder aangehaald is een string een verzameling van karakters, meestal gebruikt om tekst weer te geven bv. het beeldscherm. In C wordt (zoals in vele andere programmeertalen) een string afgelosten door de ASCII waarde nul, een voorbeeldje ...</p>
+<pre><code><br />main()<br />{<br />char naam[5];<br />naam[0] = 'D';<br />naam[1] = 'A';<br />naam[2] = 'V';<br />naam[3] = 'E';<br />naam[4] = 0; /* Nul kar. = einde string !!!! */<br />printf("De naam is %s\n",naam);<br />printf("Een letter van de naam is %c\n",naam[2]);<br />printf("Een deel van de naam is %s\n",&amp;naam[1]);<br />}</code></pre>
+<p>Met char naam[5]; maken we een array aan van karakters welke 5 groot is met de naam "naam". Of m.a.w. "naam" is een string welke 5 karakters kan bevatten. Met de volgende programmaregels kopi&euml;ren we de woord "DAVE" in de string. Met het "printf" - kontrole karakter %s kunnen we een string afprinten, ook is het mogelijk om &eacute;&eacute;n karakter van de string af te printen zoals in het voorbeeld ge&iuml;llustreerd. De laatste "printf" toont een deel van de string, hiervoor wordt gebruikt gemaakt van het "&amp;" teken, hiermee bedoelen we een adres. Dit is eigenlijk een inleiding tot het volgende hoofdstuk en zullen we ook dan behandelen, nog even geduld ...</p>
+<h2><a name="SECTION6-3"></a>6.3 Enkele "string" instrukties</h2>
+<p>In het vorig voorbeeld hebben we gezien hoe we data in een string kunnen plaatsen, dit was echter vrij omslachtig. C heeft echter instrukties die dit eenvoudiger maken, een voorbeeldje ...</p>
+<pre><code><br />main()<br />{<br />char naam1[12],naam2[12],alfa[25];<br />char titel[20];<br />strcpy(naam1,"Rosalinda");<br />strcpy(naam2,"Zeke");<br />strcpy(titel,"Dit is de titel");<br />printf(" %s\n\n",titel);<br />printf("Naam 1 is %s\n",naam1);<br />printf("Naam 2 is %s\n",naam2);<br />if (strcmp(naam1,naam2) /* geeft 1 als naam1 &gt; naam2 */<br />strcpy(alfa,naam1);<br />else<br />strcpy(alfa,naam2);<br />printf("alfa=%s\n",alfa);<br />strcpy(alfa,naam1);<br />strcat(alfa," ");<br />strcat(alfa,naam2);<br />printf("Beide zijn : %s\n",alfa);<br />}</code></pre>
+<p>De volgende "string" instruktie worden in het vb. gebruikt:</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">strcpy&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">Hiermee kopi&euml;ren we data in een string, inkl. de nul welke de string afsluit.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">strcmp&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">Hiermee kunnen we "strings" met elkaar vergelijken, voor de vergelijking wordt een</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">ASCII tabel gebruikt. Dit heeft als gevolg dat kleine - en hoofdletters invloed hebben</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">op de vergelijking. C heeft funkties om een string naar hoofdletter of kleine letters te</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">konverteren, hierover later meer ...</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">strcat&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">Deze instruktie kunnen we gebruiken om "strings" samen te voegen, de tweede</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">"string" tussen de haakjes wordt bij de eerst geplakt.</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION6-4"></a>6.4 Een array van integers</h2>
+<p>Het volgende programma is een voorbeeld van een array met integers, eerst wordt er een array aangemaakt met de naam "a" daarna een integer "x". In de eerste "for" lus wordt in de array data geladen, in de tweede wordt de array "a" achteruit apgeprint.</p>
+<pre><code><br />main()<br />{<br />int a[12];<br />int x;<br />for(x=0;x&lt;12;x++) a[x] = 2*(x+4);<br />for(x=11;x&gt;=0;x-) printf("a[%d]=%d\n",x,a[x]);<br />}</code></pre>
+<h2><a name="SECTION6-5"></a>6.5 Een array van floats</h2>
+<p>Het volgende programma illustreert de array's met "floats".</p>
+<pre><code><br />char naam1[]="Eerste programma titel";<br />main()<br />{<br />int index;<br />int brol[12];<br />float waarde[12];<br />static char naam2[]="Tweede programma titel";<br />for (index=0;index&lt;12;index++) {<br />brol[index]=index+10;<br />waarde[index]=12.0*(index+7);<br />}<br />printf("%s\n",naam1);<br />printf("%s\n",naam2);<br />for (index=0;index&lt;12;index++)<br />printf("%5d %5d %10.3f\n",index,brol[index],waarde[index]);<br />}</code></pre>
+<p>De eerste regel van het programma demonstreert hoe op een eenvoudigere manier data in string kunnen plaatsen. Let op de legen haakjes bij de aanmaak van de string, de kompiler zal zelf voldoende plaats voorzien in het geheugen en de data in de string kopi&euml;ren inklusief het afsluitkarakter nul. In het programma wordt nog een string op deze wijze aangemaakt, let op de het&nbsp; woordje "static", dit vermijdt dat ze een automatische zou zijn. Voor de rest is een eigelijk niets nieuws in het voorbeeld.</p>
+<h2><a name="SECTION6-6"></a>6.6 Data terugkrijgen uit een funktie</h2>
+<p>Array's gedragen zich in een funktie als de andere datatypes die we al kenden van de vorige hoofdstukken in een funktie. In het volgende voorbeeld wordt er een array van integers door gegeven aan de funktie "doe_maar".</p>
+<p>Zoals bij andere datatypes vertellen we de funktie door een variabele tussen de haakjes te plaatsen (hier "lijst"), hierna defini&euml;ren we dit het datatype van deze variabele. Let hierbij op de lege haakjes bij de definitie van de array "lijst", opnieuw zal C zelf voldoende plaats voorzien voor de array.</p>
+<pre><code><br />main()<br />{<br />int index;<br />int matrix[20];<br />for (index=0;index&lt;20;index++) matrix[index]=index+1;<br />for (index=0;index&lt;5;index++)<br />printf("Start matrix[%d] = %d\n",index,matrix[index]);<br />doe_maar(matrix);<br />for (index=0;index&lt;5;index++)<br />printf("Einde matrix[%d] = %d\n",index,matrix[index]);<br />}<br />doe_maar(lijst)<br />int lijst[];<br />{<br />int i;<br />for (i=0;i&lt;5;i++) printf("Originele matrix[%d] = %d\n",i,lijst[i]);<br />for (i=0;i&lt;20;i++) lijst[i]+=10;<br />for (i=0;i&lt;5;i++) printf("Bewerkte matrix[%d] = %d\n",i,lijst[i]);<br />}</code></pre>
+<h2><a name="SECTION6-7"></a>6.7 Multigedimensioneerde arrays</h2>
+<p>In het volgende voorbeeld worden meervoudige of multigedimensioneerde arrays gebruikt, dit wilt enkel zeggen dat de array uit meer dan &eacute;&eacute;n kolom bestaat. De arrays "m1" en "m2" zijn hier voorbeelden van, de rest van het programma is niet echt nieuw.</p>
+<pre><code><br />main()<br />{<br />int i,j;<br />int m1[8][8],m2[25][12];<br />for (i=0;i&lt;8;i++) for (j=0;j&lt;8;j++) m1[i][j]=i*j;<br />for (i=0;i&lt;25;i++) for (j=0;j&lt;j++) m2[i][j]=i+j;<br />m1[2][6] = m2[24][10]*22;<br />m1[2][2] = 5;<br />m1[m1[2][2]][m1[2][2]]=177; /* Dit is m1[5][5] = 177; */<br />for (i=0;i&lt;8;i++) {<br />for (j=0;j&lt;8;j++) printf("%5d ",m1[i][j]);<br />printf("\n");<br />}<br />}</code></pre>
+<h2><a name="SECTION6-8"></a>6.8 Programmeer opdrachten!</h2>
+<p>1.Schrijf een programma met drie korte strings welke elk zes karakters groot zijn, kopieer hier met "strcpy" &eacute;&eacute;n, twee, drie in. Voeg de drie strings samen en print het resultaat tien keer op het scherm.</p>
+<p>2.Defineer 2 integer arrays, van 10 integers lang.<br /> Vul deze met willekeurige data met een for lus, tel beiden op en plaats het resultaat in een andere array. Print het resultaat van de drie arrays op scherm.</p>
+<hr />
+<h1><a name="SECTION7"></a>7. "pointers"</h1>
+<p><em>Een "pointer" is niets anders dan een adres, de meeste hogere programmeertalen schermen de programmeur bij het normale gebruik volledig af van deze adressen. C echter niet, dit komt in het begin misschien een beetje verwarrend over...</em></p>
+<h2><a name="SECTION7-1"></a>7.1 Een voorbeeldje</h2>
+<pre><code><br />main()<br />{<br />int index,*pt1,*pt2;<br />index = 39;<br />pt1 = &amp;index;<br />pt2 = pt1;<br />printf("De waarde is %d %d %d\n",index,*pt1,*pt2);<br />*pt1 = 13; /* Dit verandert index */<br />printf("De waarde is %d %d %d\n",index,*pt1,*pt2);<br />}</code></pre>
+<p>In bovenstaande voorbeeld worden "pointers" gebruikt, voor het ogenblik negeren we de aanmaak van de 2 variabelen met een sterretje. In de volgende lijn gebeurt niets nieuws, de integer "index" wordt gelijkgesteld met 39. De volgende regel is echter iets raar, "pt1" wordt gelijkgesteld aan "index" voorafgegaan door "&amp;", hiermee bedoelen de adreswaarde van "index". Of nog anders gezegd, "pt1" is een "pointer" naar de variabele "index". Hierna wordt "pt2" gelijkgesteld aan "pt1", hierdoor is "pt2" ook een pointer naar "index".</p>
+<h2><a name="SECTION7-2"></a>7.2 Twee belangrijke regels.</h2>
+<p>Een variabele voorafgegaan door een "&amp;" is een adres naar deze variabele. Met pt1 = &amp;index is de waarde van "pt1" gelijk aan het adres van "index".</p>
+<p>&gt;2. Een "pointer" voorafgegaan door een sterretje komt overeen met de waarde van de variabele waarnaar de "pointer" wijst. Hierdoor zal het voorbeeld programma tijdens het afprinten 3 keer dezelfde waarde op het scherm zetten.</p>
+<table border="1" cellpadding="3">
+<tbody>
+<tr valign="top"><th align="center" valign="top"><strong>Geheugensteun :&nbsp;</strong></th>
+<td align="left" valign="top">1. Denk bij "&amp;" aan een adres</td>
+</tr>
+<tr valign="top">
+<td align="center" valign="top">&nbsp;</td>
+<td align="left" valign="top">2. Denk bij "*" aan een waarde</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION7-3"></a>7.3 Er is maar &eacute;&eacute;n variabele!</h2>
+<p>Het is belangrijk in te zien dat er in het vorige voorbeeld maar &eacute;&eacute;n variabele is nl. "index", "pt1" en "pt2" zijn pointers naar deze variabele. Dit wordt aangetoond met de regel *pt1 = 13; hierdoor wordt de variabele "index" veranderd.</p>
+<h2><a name="SECTION7-4"></a>7.4 Hoe maken we een pointer aan?</h2>
+<p>In de derde regel van het programma maken we een variabele "index" aan, gevolgd door 2 pointers "pt1" en "pt2" dit maken we C duidelijk door een sterretje. Een pointer wijst altijd naar een bepaald type van een variabele, hierdoor kunnen de pointers "pt1" en "pt2" niet naar een andere variabele wijzen dan een integer.</p>
+<h2><a name="SECTION7-5"></a>7.5 Een string is eigenlijk een pointer.</h2>
+<p>Aan de hand van het vorige voorbeeld hebben we heel wat teorie bekeken, belangrijke teorie, in C programma's worden pointers zeer vaak toegepast. Het is dus belangrijk om het werken met pointers goed te begrijpen. In het volgende voorbeeld bekijken hoe pointers toegepast kunnen worden op een string.</p>
+<pre><code><br />main()<br />{<br />char string[40],*daar,een,twee;<br />int *pt,lijst[100],index;<br />strcpy(string,"Dit is een string...");<br />printf("De string is :%s\n",string);<br />een=string[0];<br />twee=*string; /* een en twee zijn hetzelfde */<br />printf("De eerste uitvoer is %c %c\n",een,twee);<br />een=string[8];<br />twee=*(string+8); /* een en twee zijn hetzelfde */<br />printf("De tweede uitvoer is %c %c\n",een,twee);<br />daar = string+11; /* string+10 is hetzelfde als string[10] */<br />printf("De derde uitvoer is %c %c\n",string[11],*daar);<br />for (index = 0;index &lt; 100;index++) lijst[index]=index+100;<br />pt = lijst+27;<br />printf("De vierde uitvoer is %d %d\n",lijst[27],*pt);<br />}<br /></code></pre>
+<p>In het vorige hoofdstuk hebben we gezien dat een string een array is van karakters, we kunnen een string (en dus ook een array) echter ook bekijken als een pointer naar het begin van een array. Dit kunnen we begrijpen aan de hand van het voorbeeld. Eerst maken we een string aan met de naam "string", gevolg door een pointer naar een karakter ("daar") en twee karakters ("een" en "twee").</p>
+<p>Hierna plaatsen we met de instruktie "strcpy" data in de string, het karakter "een" wordt gelijkgesteld aan de eerste karakter van de string. Vermits een string per definitie ook een pointer is doen we hetzelfde met "twee", "twee" neemt ook de waarde aan van het eerste karakter in de string. Het resultaat is dat beide karakters "een" en "twee" gelijk zijn aan 'D'.</p>
+<p>In het volgende deel van het programma gebeurt ongeveer hetzelfde, "een" wordt gelijkgesteld aan het negende karakter van de string (we beginnen vanaf 0 te tellen). Met "twee" gebeurt dit ook door gebruikt te maken van een string als een pointer. Het is fout om zaken te schrijven zoals "twee=*string[8];".</p>
+<p>Vermits een "daar" een pointer is kunnen we "daar" gelijk stellen aan een adreswaarde van een element uit een string. Dit wordt gedemonstreerd met daar = string + 11. Laten we toch opmerken dat vermits "daar" aangemaakt is een pointer naar een karakter, het enkel naar een karakter kan wijzen. Daar een element uit een string een karakter is kan "daar" ook hiernaar wijzen.</p>
+<h2><a name="SECTION7-6"></a>7.6 Data aan een funktie geven als een pointer.</h2>
+<p>In het volgende voorbeeld geven data aan funktie door als een pointer.</p>
+<pre><code><br />main()<br />{<br />int pindas,appelen;<br />pindas=100;<br />appelen=101;<br />printf("De startwaarden zijn %d %d\n",pindas,appelen);<br />verander(pindas,&amp;appelen);<br />printf("De eindwaarde zijn %d %d\n",pindas,appelen);<br />}<br />verander(noten,fruit)<br />int noten,*fruit;<br />{<br />printf("De waarde zijn %d %d\n",noten,*fruit);<br />noten=135;<br />*fruit=172;<br />printf("De waarden zijn %d %d\n",noten,*fruit);<br />}</code></pre>
+<p>We beginnen met 2 variabelen te defini&euml;ren "pindas" en "appelen", merk op dat beide normale variabelen zijn en geen pointers. We geven beiden een waarde en printen deze uit, roepen we de funktie "verander" aan. De variabele "pindas" wordt als een normale variabele aan de funktie door gegeven, de variabele "appelen" wordt als een adres doorgegeven. In de funktie "verander" geven dit aan door "noten" als een normale integer te defini&euml;ren en "fruit" als een pointer naar een integer.</p>
+<p>In de funktie "verander" printen we de twee waarden nogmaals uit, hierna veranderen we ze en printen de nieuwe waarden op het scherm. Dit zou vrij duidelijk moeten, vermits hier niets nieuws gebeurt.</p>
+<p>Bij het verlaten van de funktie gebeurt er echter iets raars, bij het opnieuw afdrukken van de twee&nbsp; variabelen in het hoofdprogramma zien we dat "pindas" terug haar oude waarde heeft. Dit komt omdat C een kopie maakt van de waarde en deze aan de funktie doorgeeft, en dus de originele intakt laat. De variabele "appelen" is echter wel verandert door de funktie, C heeft hier een kopie gemaakt van de adres waarde en deze aan de funktie doorgegeven. Hierdoor hebben we in de funktie een pointer naar de integer "appelen" en wordt deze wel aangepast.</p>
+<h2><a name="SECTION7-7"></a>7.7 Programmeer opdrachten!</h2>
+<p>1. Maak een string aan kopieer hier data in met strcpy.<br /> Druk deze letter per letter af door gebruikt te maken van een "for" lus.</p>
+<p>2. Pas nu het programma aan zodat de string achterstevoren op het scherm komt.</p>
+<hr />
+<h1><a name="SECTION8"></a>8. standaard invoer / uitvoer.</h1>
+<p><em>Dit komt misschien een beetje raar over, maar de C taal heeft geen invoer / uitvoer instrukties, deze moeten in principe door de gebruiker (de programmeur dus) zelf aangemaakt worden. Toch zijn in de loop der jaren enkele libraries ontwikkeld welk een "facto" standaard zijn geworden. Hierbij moeten we echter wel opletten bij het overzetten we van onze programma's naar een ander platform of C - kompiler vermits we hier niet met een offici&euml;le te maken hebben ...</em></p>
+<h2><a name="SECTION8-1"></a>8.1 Include bestanden.</h2>
+<p>In &eacute;&eacute;n van de vorige hoofdstukken hebben we al gebruik gemaakt van een zgn. "header" bestand nl. "stdio.h", hierin zijn enkele standaard funkties in opgenomen om invoer/uitvoer van data in programma eenvoudiger te maken. Door gebruik te maken van deze "header" bestanden, worden deze in het programma opgenomen, of het programma wordt hierdoor groter. Dit is dan ook een reden waarom deze instrukties niet standaard bestaan in C. Er bestaan nog andere "header" bestanden raadpleeg de dokumentatie van uw C kompiler voor meer informatie. Ook is het mogelijk om zelf "header" bestanden aan te maken om zo funkties aan te maken, welke in meerdere verschillende programma's bruikbaar zijn.We kunnen op twee manieren "header" bestanden in ons programma opnemen :</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">"bestand.h"&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">hier gaat C het "header" bestand zoeken in de huidige direktorie, indien hij</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">&nbsp;</td>
+<td align="left" valign="top">het bestand hierin niet vindt, zal hij verder zoeken in de "include" direktorie.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&lt;bestand.h&gt;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">hier gaat C enkel zoeken in de include direktorie.</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION8-2"></a>8.2 Een eerste voorbeeld.</h2>
+<pre><code><br />#include &lt;stdio.h&gt;<br />main()<br />{<br />char c;<br />printf("Type een kar., X = stop\n");<br />do {<br />c=getchar();putchar(c);<br />} while (c != 'X');<br />}</code></pre>
+<p>In het bovenstaande voorbeeld zien we twee instrukties uit "stdio.h" nl. "getchar" en "putchar", zoals de namen dienen deze om een karakter te lezen ("getchar") en om het scherm te plaatsen ("putchar"). Indien we dit programma echter kompileren en uitvoeren zien echter iets raar. De funktie "getchar" wacht tot dat we&nbsp; de "return" toets indrukken het eerste getypte karakter wordt dan aan het programma doorgegeven. Via "putchar(c)" dit karakter dan nogmaals afgedrukt. Dit komt raar over omdat dit minder bruikbaar is in een programma. Gelukkig bestaan er andere instruktie om een karakter in te lezen.</p>
+<h2><a name="SECTION8-3"></a>8.3 De "scanf()" funktie.</h2>
+<p>Met de "scanf()" instruktie kunnen we allerei data van het toetsenbord lezen zoals integers, "floats", strings, ... Het volgende programma lees een integer in.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />int x;<br />printf("Geef een getal van 0 tot 32767, type 100 om te stoppen.\n");<br />do {<br />scanf("%d",&amp;x);<br />printf("Het getal is %d\n",x);<br />} while (x!=100);<br /><br />printf("Einde ...\n");<br />}</code></pre>
+<p>Met scanf("%d",&amp;x); lezen we een integer in, de data komt in x. Net zoals bij "printf" moeten we aangeven om welke type van data het gaat, we gebruiken hiervoor dezelfde konversie karakters. Let ook op het "&amp;" voor x, hiermee geven we de adreswaarde door aan de funktie, "scanf()" verwacht altijd een pointer. Met de teorie uit het vorige hoofdstuk moet het duidelijk zijn waarom dit zo gebeurt. De rest van het programma zou vrij duidelijk moeten zijn, er telkens een integer ingelezen en afgedrukt totdat we het getal 100 ingeven.</p>
+<h2><a name="SECTION8-4"></a>8.4 Inlezen van een string.</h2>
+<p>Met "scanf()" kunnen we ook een string inlezen het konversie karakters is hetzelfde als bij "printf", het volgende programma is hier een voorbeeld van. Let ook op het ontbreken van "&amp;" bij de "scanf" instruktie, vermits tekst een array is en per definitie een al pointer is (zie vorige hoofdstuk). Verder zou de werking van het programma vrij duidelijk moeten zijn. Het programma vraag telkens een string en druk deze daarna af, totdat van een string beginnen met 'X'.</p>
+<p>Indien we dit programma kompileren en uitvoeren merken tot iets raars op, indien we in een string een spatie gebruiken wordt deze hierna weergegeven. Of beter gezegd, een spatie betekent voor "scanf()" einde string, ook dit komt vreemd over vermits dit minder bruikbaar is in programma. Er zijn echter ook libraries ontwikkeld welk invoer / uitvoer beter afhandelen dan "stdio.h" voorbeelden hiervan zijn "ncurses" uit de Unix wereld (ook overgebracht naar andere platformen), en "TurboVision" van Borland C++ ( enkel dos).</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />char tekst[25];<br />printf("Geef een string in, tot 25 karakters.\n");<br />printf("Een 'X' als eerste karakters zal het prg. stoppen.\n");<br />do {<br />scanf("%s",tekst);<br />printf("De string is -&gt; %s\n",tekst);<br />} while (tekst[0]!='X');<br />printf("Einde ...\n");<br />}<br /></code></pre>
+<p>Er bestaat echter nog een andere manier om een string in te lezen, via de "fgets()" funktie welke eigelijk bedoel is om een string uit een bestand te lezen, hierover meer in het volgende hoofdstuk. Het onderstaande programma is hier een voorbeeld van. Met fgets(string,10,stdin)laden we een string van maksimaal 10 karakters in "a", we kunnen wel meer karakters intypen maar enkel de eerste 10 zullen in "a" ingeladen worden. Met "stdin" geven we "fgets()" aan dat we de data inladen van het "standard input device", het toetsenbord, i.p.v. uit een bestand.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />char a[10];<br />fgets(a,10,stdin);<br />printf("U type :%s",string);<br />}</code></pre>
+<h2><a name="SECTION8-5"></a>8.5 Geheugen invoer / uitvoer.</h2>
+<p>De volgende instrukties komen misschien raar over, en komen we ook niet in vele andere hoger programmeertalen tegen. In "stdio.h" bestaan er variaties van "printf()" en "scanf()" welke zaken in het geheugen kunnen schrijven of lezen, een voorbeeldje ...</p>
+<pre><code><br />main()<br />{<br />int nummers[5],resultaat[5],index;<br />char lijn[80];<br />nummers[0]=74;<br />nummers[1]=18;<br />nummers[2]=33;<br />nummers[3]=30;<br />nummers[4]=97;<br />sprintf(lijn,"%d %d %d %d %d\n",nummers[0],nummers[1],<br />nummers[2],nummers[3],nummers[4]);<br />printf("%s",lijn);<br />sscanf(lijn,"%d %d %d %d %d\n",&amp;resultaat[0],&amp;resultaat[1],&lt;<br />&amp;resultaat[2],&amp;resultaat[3],&amp;resultaat[4]);<br />for (index=0;index&lt;5;index++)<br />printf("Het eindresultaat is %d\n",resultaat[index]);<br />}</code></pre>
+<p>De eerste nieuwe instruktie die we tegenkomen is "sprintf()", deze is identiek aan "printf()" enkel wordt de data hier niet op het scherm gezet, maar in een string in het geheugen geprint. In het voorbeeld wordt er data in "lijn" gekopieerd, deze data o.a. bevat de getalwaarden van de array "nummers". Hierna de string "lijn" via een normale "printf()" op het scherm gezet.</p>
+<p>De volgende nieuwe instruktie is "sscanf()" welke analoog is aan "scanf()" enkel werkt ook deze met string in het geheugen. In het voorbeeld wordt de data van array "nummers" op deze manier terug uit de string "lijn" gehaald en in de array "resultaat" geplaatst. Tenslotte drukken we via een "for" lus de array resultaat op het scherm.</p>
+<p>Deze technieken kunnen handig zijn om bv. een string in te lezen en daarna in het geheugen de konversie te doen.</p>
+<h2><a name="SECTION8-6"></a>8.6 foutmeldingen...</h2>
+<p>Het kan in sommige toepassingen nodig zijn om zaken die op scherm komen naar een bestand te sturen. Dit kunnen we onder DOS of Unix eenvoudig doen door "prg(.exe) &gt; test" aan de kommandolijn in te typen, hiermee sturen we data van "prg" naar het bestand test. Het kan echter ook nodig zijn dat de foutmeldingen op scherm blijven, en enkel de echte data naar het bestand worden gestuurd. Het volgende programma is hier een voorbeeld van. De instruktie "fprintf()" zal in het volgende hoofdstuk verder uitgelegd worden, zoals hier toegepast stuurt ze de data naar het "standard error device" of "stderr" het scherm dus. Runnen we het programma dan al de data op het scherm zetten, voeren we het uit met "prg(.exe) &gt; test" dan zal de data die via "printf()" verzonden wordt in het bestand "test" komen, de foutmeldingen komen nog steeds op het scherm.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />int index;<br />for (index=0;index&lt;5;index++) {<br />printf("Deze lijn gaat naar het scherm.\n");<br />fprintf(stderr,"Deze lijn gaat naar het stderr.\n");<br />}<br />exit(4);<br />}</code></pre>
+<h2><a name="SECTION8-7"></a>8.7 foutkodes...</h2>
+<p>Foutkodes of "errorlevels" voor de engelstaligen, is een kode welke door een programma terug naar het besturingssysteem worden gezonden, deze zijn onder de meeste besturingssystemen bruikbaar. Dit gebeurt in vorige programma met exit(4), hiermee wordt het getal vier na het be&euml;indigen van het programma aan het besturingssysteem doorgegeven.</p>
+<hr />
+<h1><a name="SECTION9"></a>9. Lezen &amp; schrijven van bestanden.</h1>
+<p><em>In "stdio.h" bestaan ook funkties om bestand aan te maken, te lezen en te schrijven. Eigenlijk is "stdio.h" hiervoor geschreven, dit verklaart ook waarom sommige funktie uit het vorige hoofdstuk niet echt deden werken zoals we zouden verwachten.</em></p>
+<h2><a name="SECTION9-1"></a>9.1 Openen van een bestand.</h2>
+<p>Het openen van een bestand kunnen we doen door gebruik te maken van de funktie "fopen()", welke er als volgt uit ziet:</p>
+<p>fp = fopen("&lt;Bestandsnaam&gt;","operatie")</p>
+<p>Met "fp" wordt&nbsp; een "filepointer" bedoeld, hiervoor is in "stdio.h" een definitie nl. "FILE", we kunnen een "filepointer" of bestandswijzer eenvoudig aanmaken door bv. "FILE *bestand;". Met &lt;Bestandsnaam&gt;bedoelen we de naam van het te openen bestand ( dat had je wel door zeker ;-) ), hiervoor kunnen we eventueel ook van een string gebruik maken. Met "operatie" geven we aan hoe het bestand gaan openen, de volgende mogelijkheden kunnen we hiervoor gebruiken:</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">"r"&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">read, lezen van een bestaand bestand.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">"w"</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">write, aanmaken van een nieuw bestand bestaat de</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top"></td>
+<td align="left" valign="top"></td>
+<td align="left" valign="top">bestandsnaam al, dan wordt het oude bestand gewist.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">"a"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">append, bijvoegen van data aan een bestand.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">"r+"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">update, lezen en schrijven naar een bestand.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">"w+"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">schrijven + lezen.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">"a+"&nbsp;</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">bijvoegen + lezen.</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="SECTION9-2"></a>9.2 Sluiten van een bestand.</h2>
+<p>Elk bestand dat via de funktie "fopen()" geopend is, moet ook voor het programmaeinde gesloten. Enkel waarmee het bestand gesloten is zijn we zeker dat de veranderingen aan het bestand ook daadwerkelijk zijn aangebracht. De funktie van "stdio.h" hiervoor is fclose(fp), waar "fp" de bestandswijzer is naar het te sluiten bestand.</p>
+<h2><a name="SECTION9-3"></a>9.3 Schrijven naar een bestand.</h2>
+<p>Het volgende programma is een voorbeeld voor de aanmaak van een nieuw bestand. Met FILE *fp; maken we een "filepointer" of bestandswijzer aan met de naam "fp". Hierna maken een string "a" en een integer "x" aan.</p>
+<p>Met fp = fopen("10lijnen.txt","w"); maken we nieuw bestand aan met de naam "10lijnen.txt", bestond dit bestand al dan wordt het overschreven. Hier kopi&euml;ren we data in de string "a". De tegenhanger van "printf()" om dat naar een bestand te schrijven is fprintf (fp,"&lt;DATA&gt;",&lt;VAR1&gt;,&lt;VAR2&gt;").</p>
+<p>In de "for" lus wordt data in het bestand geplaatst via deze instruktie.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp;<br />char a[25];<br />int x;<br />fp = fopen("10lijnen.txt","w"); /* een bestand open voor schrijven */<br />strcpy(a,"Dit is een lijn.");<br /><br />for(x=1;x&lt;=10;x++) fprintf(fp,"%s lijnnummer %d\n",a,x);<br />fclose(fp); /* sluiten van het bestand */<br />}<br /></code></pre>
+<h2><a name="SECTION9-4"></a>9.4 Data bijvoegen aan een bestand.</h2>
+<p>Het volgende voorbeeld voegt data bij aan het einde van een bestand. Hiervoor gebruiken we "a" in de "fopen()" funktie, om data aan&nbsp; het bestand bij te voegen gebruiken we nu de funktie "putc()" uit "stdio.h". Deze is de tegenhanger van "putchar()", of beter het is eigenlijk dezelfde funktie, "putchar(&lt;char&gt;)" is hetzelfde als "putc(&lt;char&gt;,stdin)". Deze techniek kunnen we voor al de funkties voor bestanden gebruiken, willen lezen van het toetsenbord (de standaard invoer) gebruiken "stdin" als "filepointer". Willen naar het scherm schrijven gebruiken we "stdout" als "filepointer". Kijken we terug naar ons programma dan zien we dat er voor de rest niets bijzonder gebeurt, misschien er op wijzen hoe de string naar het bestand wordt geschreven. In de tweede "for" lus wordt a[x]; als voorwaarde gebruikt, een string wordt afgesloten door een "0" dus deze wordt nietwaar bij het einde van de string.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp;<br />char a[35];<br />int x,teller;<br /><br />strcpy(a,"Andere lijnen.");<br />fp = fopen("10lijnen.txt","a"); /* open voor bijvoegen */<br /><br />for (teller=1;teller&lt;=10;teller++) {<br />for(x=0;a[x];x++) putc(a[x],fp);<br />putc('\n',fp);<br />}<br />fclose(fp);<br />}</code></pre>
+<h2><a name="SECTION9-5"></a>9.5 Lezen uit een bestand.</h2>
+<p>Het volgende programma lees uit een bestand hiervoor gebruiken "r" in de funktie "fopen()". In het programma wordt getest of te lezen bestand wel degelijk bestaat met if (fp ==NULL), "NULL" is voor ons aangemaakt in "stdio.h". Met de funktie "getc(fp)" halen we een karakter op uit het bestand. In de "do ... while" lus wordt er telkens een karakter opgehaald uit het bestand en op het scherm geplaatst totdat "c" gelijk is aan "EOF". Met "EOF" ( "End Of File") wordt het einde van het bestand bedoelt. Misschien opmerken dat er in het programma &eacute;&eacute;n karakter te veel wordt afdrukt, het "EOF" karakter wordt immers mee afgedrukt.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp;<br />char c;<br />fp=fopen("10lijnen.txt","r");<br />if (fp==NULL) printf("Sorry, het bestand bestaat niet...\n");<br />else {<br />do {<br />c=getc(fp); /* haal een karakter uit het bestand */<br />putchar(c);<br />} while(c!=EOF);<br />}<br />fclose(fp);<br />}<br /></code></pre>
+<h2><a name="SECTION9-6"></a>9.6 Pas op!</h2>
+<p>Het gebruik van "EOF" geeft problemen met bv. "unsigned char" als karakter te gebruiken. Dit komt omdat "EOF" overeenkomt met "-1", en zal dus bij een "unsigned char" vertaalt worden als een 255. Of met andere worden er zal nooit een bestandseinde gevonden worden!</p>
+<h2><a name="SECTION9-7"></a>9.7 Lezen van een woord.</h2>
+<p>De tegenhanger van "scanf()" is "fscanf()", in het vorige hoofdstuk hebben we gezien dat "scanf()" stop met lezen bij een spatie. Dit is ook zo bij "fscanf()", dit kan zijn zin hebben bij het lezen uit een bestand waar de data gescheiden is door een spatie. Het volgende programma is bijna identiek aan het vorige enkel wordt de data nu per woord op gehaald en afgedrukt.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp;<br />char c;<br />char woord[100];<br />fp=fopen("10lijnen.txt","r");<br />if (fp==NULL) printf("Sorry, het bestand bestaat niet...\n");<br />else {<br />do {<br />c=fscanf(fp,"%s",woord); /* haal een woord uit het bestand */<br />printf("%s\n",woord);<br />} while(c!=EOF);<br />}<br />fclose(fp);<br />}</code></pre>
+<p>Ook hier drukken we &eacute;&eacute;n woord te veel af vermits we eerst een woord ophalen, afdrukken en daarna pas testen op een "EOF". Dit kunnen eenvoudig oplossen door een "if" regel bij toevoegen, ook is het mogelijk door gebruikt te maken van een "while" lus. In het volgende programma is dit probleem opgelost met een "if".</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp;<br />char c;<br />char woord[100];<br />fp=fopen("10lijnen.txt","r");<br />if (fp==NULL) printf("Sorry, het bestand bestaat niet...\n");<br />else {<br />do {<br />c=fscanf(fp,"%s",woord); /* haal een woord uit het bestand */<br />if (c!=EOF) printf("%s\\n",woord);<br />} while(c!=EOF);<br />}<br />fclose(fp);<br />}</code></pre>
+<h2><a name="SECTION9-8"></a>9.8 De funktie "fgets(string,aantal,fp)"</h2>
+<p>De funktie "fgets()" hebben in het vorige hoofdstuk al gebruikt om een string inlezen van het toetsenbord. We kunnen ook gebruiken om dat uit een string te lezen, net zoals bij het lezen van het toetsen stop "fgets()" met lezen bij een "return". Indien deze funktie het einde van het bestand heeft bereikt geeft het de waarde "NULL" door. Voor de rest gebeurt er eigenlijk niets nieuws in het volgende programma.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp1;<br />char lijn[100];<br />char *c;<br />fp1 = fopen("10lijnen.txt","r");<br />do {<br />c=fgets(lijn,100,fp1);<br />if (c!=NULL) printf("%s",lijn);<br />} while (c!=NULL);<br />fclose(fp1);<br />}</code></pre>
+<h2><a name="SECTION9-11"></a>9.9 Een string gebruiken als bestandsnaam.</h2>
+<p>Tot nu hebben in fopen altijd de bestandsnaam aan "fopen()" doorgeven tussen aanhalingstekens, we kunnen hiervoor ook een string gebruiken. Het volgende programma is identiek aan het vorige, enkel wordt er via "scanf()" een string lezen, welke we gebruiken als bestandsnaam in "fopen()".</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp1;<br />char lijn[100],bestandsnaam[25];<br />char *c;<br />printf("Geef een bestandsnaam -&gt;");<br />scanf("%s",bestandsnaam);<br />fp1=fopen(bestandsnaam,"r");<br />do {<br />c = fgets(lijn,100,fp1);<br />if (c!=NULL) printf("%s",lijn);<br />} while (c!=NULL);<br />fclose(fp1);<br />}<br /></code></pre>
+<h2><a name="SECTION9-10"></a>9.10 Aansturen van de printer.</h2>
+<p>Met de besproken funktie kunnen we ook de printer aansturen, vermits onder dos "PRN" als een bestand wordt bekeken (voor Unix kunnen we bv. "/dev/lp1" gebruiken). Het volgende programma is hier een voorbeeld van.</p>
+<pre><code><br />#include "stdio.h"<br />main()<br />{<br />FILE *fp1,*printer;<br />char c;<br />fp1 = fopen("10lijnen.txt","r");<br />printer=fopen("PRN","w");<br />do {<br />c=getc(fp1);<br />if (c!=EOF) { putc(c,printer);putc(c,stdout); }<br />} while (c!=EOF);<br />fclose(fp1);<br />fclose(printer);<br />}<br /></code></pre>
+<h2><a name="SECTION9-11"></a>9.11 Programmeer opdrachten!</h2>
+<p>1.Schrijf een programma dat twee bestandsnamen vraagt, &eacute;&eacute;n om een bestand te lezen &eacute;&eacute;n om te schrijven.<br /> Open beiden bestanden plus de printer, schrijf hierna een lus welke karakter per karakter het bestand lees. Stuur dit karakter naar de printer en naar het andere bestand.</p>
+<p>2.Vraag een bestandsnaam. Lees het bestand lijnen per lijn, druk deze lijn samen met een lijnnummer op het scherm af.</p>
+<hr />
+<h1><a name="SECTION10"></a>10. "struct" &amp; "union".</h1>
+<p><em>In dit hoofdstuk gaan we 2 nieuwe datatypes bekijken nl.&nbsp; "structure" en "union", alhoewel nieuw misschien foutief uitgedrukt is. Ze zijn bedoeld om data van verschillende types welke bij elkaar horen te groeperen.</em></p>
+<h2><a name="SECTION10-1"></a>10.1 De "struct" instruktie</h2>
+<pre><code><br />main()<br />{<br />struct {<br />char init;<br />int leeftijd;<br />int graad;<br />} jongen,meisje;<br />jongen.init='R';<br />jongen.leeftijd=15;<br />jongen.graad=75;<br />meisje.leeftijd=jongen.leeftijd-1; /* zij is 1 j. jonger */<br />meisje.graad=82;<br />meisje.init='H';<br />printf("%c is %d jaar en heeft een graad van %d\n",<br />meisje.init,meisje.leeftijd,meisje.graad);<br />printf("%c is %d jaar en heeft een graad van %d\n",<br />jongen.init,jongen.leeftijd,jongen.graad);<br />}<br /></code></pre>
+<p>Het programma begint met een defini&euml;ren van een "struktuur". De instruktie "struct" wordt gevolgd met enkele eenvoudige variabelen tussen de "{ }", welke onderdelen zijn van de struktuur. Na de "{ }" staan er 2 variabelen nl. "jongen" en "meisje", dit zijn de namen van de aangemaakte struktuur. Of m.a.w. "jongen" is een variabele met drie elementen "init", "leedtijd" en "graad" welke enkel data kan bevatten van het gedefinieerde type. Dit is ook zo voor "meisje" welk dus ook drie variabelen bevat, in het totaal hebben we dus 6 variabelen aangemaakt.</p>
+<p>Verder zien we in het programma hoe we deze variabelen kunnen aanspreken, met "jongen.init" spreken we het variabele "init" van de struktuur "jongen" aan. Deze techniek maakt het programmeren dus heel wat eenvoudiger en het programma wordt er veel overzichtelijker door.</p>
+<h2><a name="SECTION10-2"></a>10.2 Een array van strukturen.</h2>
+<pre><code><br />main()<br />{<br />struct {<br />char init;<br />int leeftijd;<br />int graad;<br />} kind[12];<br />int index;<br />for (index=0;index&lt;12;index++) {<br />kind[index].init='A'+index;<br />kind[index].leeftijd=16;<br />kind[index].graad=84;<br />}<br />leeftijd=kind[5].leedtijd=17;<br />kind[2].graad=kind[6].graad=92;<br />kind[4].graad=57;<br />kind[10]=kind[4];<br />for (index=0;index&lt;12;index++)<br />printf("%c is %d jaar en heeft een graad van %d\n",kind[index].init,<br />kind[index].leedtijd,kind[index].graad);<br />}</code></pre>
+<p>In het vorige programma maken we gebruik van array waar de element van deze array bestaan uit een struktuur. We defini&euml;ren zo'n array simpelweg door de "{&nbsp; }" een array naam te plaatsen. Voor de rest gebeurt in het programma niet echt iets nieuws, misschien er toch even op wijzen dat het ook mogelijk is om twee strukturen aan elkaar gelijk te stellen. Dit wordt in het voorbeeld ge&iuml;llustreerd met de regel kind[10]=kind[4]; hiermee worden alle elementen van "kind[10]" gelijk aan de element van kind[4].</p>
+<h2><a name="SECTION10-3"></a>10.3 Het gebruik van "pointers" in strukturen.</h2>
+<p>Het volgende programma is bijna identiek aan het vorige, enkel worden er bij sommige operaties gebruikt gemaakt van pointers.</p>
+<pre><code><br />main()<br />{<br />struct {<br />char init;<br />int jaar;<br />int graad;<br />} kind[12],*point,extra;<br />int index;<br />for (index=0;index&lt;12;index++) {<br />point=kind + index;<br />point-&gt;init = 'A'+index;<br />point-&gt;jaar = 16;<br />point-&gt;graad= 84;<br />}<br />kind[3].jaar=kind[5].jaar=17;<br />kind[2].graad=kind[6].graad=92;<br />for (index=0;index&lt;12;index++) {<br />point=kind+index;<br />printf("%c is %d jaar en heeft een graad van %d\n,(*point).init,<br />kind[index].jaar,point-&gt;graad);<br />}<br />extra=kind[12];<br />extra=*point;<br />}</code></pre>
+<p>Het eerste verschil gebeurt al bij de aanmaak van de struktuur, hier word er een "pointer" met de naam "point" aangemaakt, welke een "pointer" is naar de struktuur. Zoals in het hoofdstuk "pointers" kunnen "point" niet naar een ander datatype laten wijzen. In het hoofdstuk "strings &amp; array's" hebben we ook gezien dat een array een verzameling is van pointers. We kunnen "point" dus zonder problemen gelijk stellen aan "kind" welke een "pointer" is naar het eerste variabele, hier een struktuur, uit de array "kind[..]". C weet hoeveel geheugen plaatsen het moet reserveren voor een struktuur. Tellen we bij "kind" bv. 1 bij dan zal C zich op de tweede struktuur zetten, in werkelijkheid wordt er bij "kind" dus de struktuurgrootte bijgeteld.</p>
+<h2><a name="SECTION10-4"></a>10.4 Strukturen zonder naam.</h2>
+<pre><code><br />main()<br />{<br />struct persoon {<br />char naam[25];<br />int jaar;<br />char status; /*G = getrouwd V = vrijgezel */<br />};<br />struct data {<br />int graad;<br />struct persoon beschr;<br />char eten[25];<br />} student[53];<br />struct data leraar,sub;<br />leraar.graad=94;leraar.beschr.jaar=34;leraar.beschr.status='G';<br />strcpy(leraar.beschr.naam,"Eddy Smith");<br />strcpy(leraar.eten,"eet niet op school");<br />printf("%s is %d jaar status: %c eten: %s graad: %d\n",leraar.beschr.naam,<br />leraar.beschr.jaar,leraar.beschr.status,leraar.eten,leraar.graad);<br />sub.beschr.jaar=87;sub.beschr.status='M';<br />strcpy(sub.beschr.naam,"Dikke oude Linda");<br />sub.graad=73;<br />strcpy(sub.eten,"Yogurt en brood");<br />printf("%s is %d jaar status: %c eten: %s graad: %d\n",sub.beschr.naam,<br />sub.beschr.jaar,sub.beschr.status,sub.eten,sub.graad);<br />}</code></pre>
+<p>De eerste struktuur "persoon" in het bovenstaande voorbeeld wordt niet gevolgd door een variabele naam, we hebben dus enkel een struktuur aangemaakt. Het nut hiervan wordt duidelijk gemaakt in de volgende struktuur "data", hierin wordt de struktuur "persoon" gebruikt als variabele "beshr". Door&nbsp; dus een struktuur zonder een variabele naam aan te maken kunnen we deze gebruiken in heel het programma zoals een ander datatype (int, char, long ...).</p>
+<h2><a name="SECTION10-5"></a>10.5 Wat is een "union"??</h2>
+<p>Het volgende programma is een voorbeeld van een "union". In dit voorbeeld bestaat de "union" uit twee delen, het eerste deel is een integer "waarde" welke in 2 bytes in het geheugen van de komputer bewaard wordt. Het tweede deel bevat twee karakter (welke elk 1 byte groot zijn) nl. "een" en "twee". Deze twee karakters worden op dezelfde geheugenplaats bewaard als de integer "waarde", dit komt door de instruktie "union". Veranderen we de integer "waarde" dan "een" het eerste deel van "waarde" bevatten en "twee" het tweede. Dit wordt in het programma aangetoond door de "for" lus.</p>
+<pre><code><br />main()<br />{<br />union {<br />unsigned waarde;<br />struct {<br />unsigned char een;<br />unsigned char twee;<br />} helft;<br />} nummer;<br />long index;<br />for (index=1;index&lt;65535;index+=3000) {<br />nummer.waarde=index;<br />printf ("%8x %6x %6x\n",nummer.waarde,nummer.helft.twee,<br />nummer.helft.een);<br />}<br />}</code></pre>
+<h2><a name="SECTION10-6"></a>10.6 Een ander voorbeeld ...</h2>
+<p>Het volgende programma is een meer praktisch voorbeeld, het houdt een database(je) bij van verschillende types van voertuigen. We zullen dit voorbeeld doorlopen van begin tot einde ...</p>
+<pre><code><br />#define AUTO 1<br />#define BOOT 2<br />#define LUCHT 3<br />#define SCHIP 4<br />main()<br />{<br />struct automobile { /* struktuur voor automobile */<br />int banden;<br />int schokdempers;<br />int deuren;<br />}<br />typedef struct { /* struktuur voor een boot of schip */<br />int plaats;<br />int lengte;<br />} BOATDEF;<br />struct {<br />char voertuig; /* welke type voertuig */<br />int gewicht; /* globaal gewicht v/h voertuig */<br />union {<br />struct automobile wagen; /* deel 1 v/d union */<br />BOATDEF boot; /* deel 2 v/d union */<br />struct {<br />char motors;<br />int breedte;<br />} vliegtuig; /* deel 3 v/d union */<br />BOATDEF ship; /* deel 4 v/d union */<br />} voertuig_type;<br />int waarde; /* waarde van het voertuig */<br />char eigenaar[32]; /* eigenaars naam */<br />} ford,schelde,f16; /* de drie namen van de strukturen */<br />ford.voertuig = AUTO;<br />ford.gewicht = 2742;<br />ford.voertuig_type.wagen.banden = 5;<br />ford.voertuig_type.wagen.deuren = 2;<br />schelde.waarde = 3742;<br />schelde.voertuig_type.boot.lengte = 20;<br />f16.voertuig = LUCHT;<br />f16.voertuig_type.vliegtuig.breedte = 27;<br />if (ford.voertuig == AUTO) /* wat zo is! */<br />printf("De ford heeft %d banden.\n",ford.voertuig_type.wagen.banden);<br />if (f16.voertuig == AUTO) /* wat nietwaar is */<br />printf("De f16 heeft %d banden.\n",f16.voertuig_type.wagen.banden);<br />}</code></pre>
+<p>We beginnen met het aanmaken van een paar konstanten met "#define". Hierna defini&euml;ren we een struktuur "automobile" welke enkele data velden bevat, dit is vrij duidelijk vermits we hier niets nieuws doen, we defini&euml;ren hier enkel de struktuur en maken nog g&eacute;&eacute;n variabelen aan.</p>
+<h2><a name="SECTION10-7"></a>10.7 Een nieuwe instruktie "typedef".</h2>
+<p>Hierna defini&euml;ren we data met een nieuwe instruktie nl. "typedef". Hiermee defini&euml;ren we een kompleet nieuw datatype welke gebruikt kan worden zoals bv. "int" of "char" gebruikt kan worden. Merk op dat de gedefinieerde struktuur geen naam heeft, op het einde waar normaal de variabele naam staat is nu ingenomen door "BOATDEF". We hebben nu een nieuw datatype "BOATDEF" welke gebruikt kan worden om een struktuur aan te maken waar we ook maar willen. Merk opnieuw op dat we hier g&eacute;&eacute;n variabelen aanmaken, maar enkel een nieuwe struktuur defini&euml;ren.</p>
+<p>Uiteindelijk defini&euml;ren we een grote struktuur hierbij maken we gebruikt van de datatypes welke we hiervoor gedefinieerd hadden. De struktuur is opgebouwd uit 5 delen, twee eenvoudige variabelen "voertuig" en "gewicht", gevolgd door een "union" en als laatste we andere eenvoudige variabelen "waarde" en "eigenaar". Laten we even bekijken hoe de "union" is opgebouwd. Deze is gemaakt uit vier delen, het eerste deel is de variabele "wagen" welke aangemaakt wordt aan de hand van de struktuur "automobile" welke we eerder gedefinieerd hadden. Het tweede deel is de variabele "boot" welke een struktuur is zoals we deze eerder al gedefinieerd hadden in "BOATDEF". Het derde deel is de variabele "vliegtuig" welke aangemaakt wordt door een struktuur. Het vierde en het laatste deel is de variabele "ship" welke ook van het type "BOATDEF" is.</p>
+<p>We hebben nu een struktuur welke gebruikt kan worden om elk van de vier verschillende types van data strukturen te bewaren. De grootte van welk record zal de grote zijn van de grootste "union". In dit geval is het eerste deel van de union het grootste vermits het bestaat uit 3 integers. Het eerste lid van union zal dus de werkelijke grootte bepalen. De resulteerde struktuur kan gebruikt worden om een van de vier datetypes te bewaren, maar het is aan de programmeur om bij te houden wat hij bewaard heeft. Hiervoor dient de variabele "voertuig" hiermee houden we bij welke type van voertuig (en dus ook het datatype) in de struktuur bewaard werd. De vier konstanten welke in het begin van het programma aangemaakt werden worden hiervoor gebruikt.</p>
+<p>In de volgende regels wordt aangetoond hoe de aangemaakte struktuur gebruikt kan worden. Aan enkele wordt een waarde toegekend, enkele worden afgedrukt als illustratie.</p>
+<p>Een "union" wordt niet al te vaak gebruikt, en bijna nooit door een beginnende programmeur. Je zult toch in sommige programma's tegen komen het is dus zeker de moeite om te weten wat een "union" is. Je moet zeker niet in het begin alle details te weten, besteed er dus niet t&eacute; veel tijd aan. Het is beter deze zaken te nader te bekijken wanneer je ze nodig hebt.</p>
+<h2><a name="SECTION10-8"></a>10.8 Wat is een "bitveld"?</h2>
+<p>Het volgende programma is een voorbeeld van een "bitveld" (bitfield voor de engelstaligen). In dit programma maken we en "union" aan bestaat uit een integer "index" en bijgevolg 4 bytes groot is. De "union" bevat nog een struktuur welke 3 leden bevat, deze struktuur wordt op dezelfde geheugenplaats bewaard als de integer "index". De variabele "x" is enkel 1 bit breed, "y" en "z" zijn er 2 breed. Vermits de struktuur op dezelfde geheugenplaats bewaard wordt is "x" de minst beduiden bit, "y" bevat devolgende 2 en "z" de laatste twee.</p>
+<p>Indien we "x", "y" en "z" elk &eacute;&eacute;n bit groot maken tellen we binair.</p>
+<pre><code><br />main()<br />{<br />union {<br />int index;<br />struct {<br />unsigned x : 1;<br />unsigned y : 2;<br />unsigned z : 2;<br />} bits;<br />} nummer;<br />for (nummer.index = 0;nummer.index &lt; 20;nummer.index++)<br />printf("index = %3d, bits = %3d%3d%3d\n",nummer.index,nummer.bits.z,<br />nummer.bits.y,nummer.bits.x);<br />}</code></pre>
+<h2><a name="SECTION10-9"></a>10.9 Programmeer Opdrachten.</h2>
+<p>1. Definieer een struktuur welke een veld bevat voor een string om naam in te bewaren, een integer voor voeten en een voor armen.<br /> Zet in deze struktuur zes keer data, en print deze hierna uit.</p>
+<p></p>
+<p>Een mens heeft 2 voeten en 2 armen</p>
+<p>Een hond&nbsp;heeft 4 voeten en 2 armen</p>
+<p>Een stoel heeft 4 voeten en 0 armen</p>
+<p>Een tafel heeft 4 voeten en 0 armen</p>
+<p>...</p>
+<p>&nbsp;</p>
+<p>2. Herschrijf 1. maar maak nu gebruik van "pointers".</p>
+<hr />
+<h1><a name="SECTION11"></a>11. Dynamisch geheugen</h1>
+<p><em>Bij dynamisch geheugen gaan we in ons programma pas geheugen bezetten als we het nodig hebben. Tot nu hebben we altijd gebruikt gemaakt van statisch geheugen, we definieerde een variabele en deze nam geduurde heel het programma geheugen in beslag. Met dynamisch geheugen kunnen we enkel geheugen gebruiken indien we het nodig hebben, met deze techniek kunnen we dus geheugen besparen. Bovendien weten we niet altijd op voorhand hoeveel geheugen we gaan nodig hebben.</em></p>
+<h2><a name="SECTION11-1"></a>11.1 Een voorbeeld...</h2>
+<p>Aan de hand van het volgende voorbeeld zullen we de belangrijkste instruktie en begrippen die met dynamisch geheugen te maken hebben bekijken.</p>
+<pre><code><br />main()<br />{<br />struct dier {<br />char naam[25];<br />char ras[25];<br />int leeftijd;<br />} *pt1, *pt2, *pt3;<br />pt1 = (struct dier *) malloc(sizeof(structdier));<br />strcpy(pt1-&gt;naam,"Brom");<br />strcpy(pt1-&gt;ras,"Beer");<br />pt1-&gt;leeftijd=1;<br />pt2=pt1; /* pt2 wijst nu naar de bovenstaande struktuur */<br />pt1=(struct dier *) malloc(sizeof(struct dier));<br />strcpy(pt1-&gt;naam,"Frank");<br />strcpy(pt1-&gt;ras,"Labrador");<br />pt1-&gt;leeftijd=3;<br />pt3=(struct dier *)malloc(sizeof(struct dier));<br />strcpy(pt3-&gt;naam,"Kristien");<br />strcpy(pt3-&gt;ras,"Poesje");<br />leeftijd=4;<br />/* Afdrukken van de data */<br />printf("%-10s is een %-10s en is %d jaar oud\n",pt1-&gt;naam,pt1-&gt;ras,<br />pt1-&gt;leeftijd);<br />printf("%-10s is een %-10s en is %d jaar oud\n",pt2-&gt;naam,pt2-&gt;ras,<br />pt2-&gt;leeftijd);<br />printf("%-10s is een %-10s en is %d jaar oud\n",pt3-&gt;naam,pt3-&gt;ras,<br />pt3-&gt;leeftijd);<br />pt1=pt3; /* pt1 wijst nu dezelfde struktuur als pt3 */<br />free (pt3); /* Dit maakt de struktuur vrij waar pt3 naar wijst */<br />free (pt2); /* Dit maakt de struktuur vrij waar pt2 naar wijst */<br />/* free (pt1); Dit kan niet !!! */<br />}</code></pre>
+<p>We starten het programma met het defini&euml;ren van een struktuur dier, welke drie velden bevat. Merk op dat we geen enkele variabele aanmaken (en dus ook g&eacute;&eacute;n geheugen bezetten!), we defini&euml;ren enkel drie pointers. In het programma zullen alle variabelen die er gebruikt worden dynamisch worden aangemaakt.</p>
+<h2><a name="SECTION11-2"></a>11.2 Het dynamisch kre&euml;ren van variabelen.</h2>
+<p>Na het defini&euml;ren van de pointers wordt er een variabele dynamisch aangemaakt, "pt1" zal naar een struktuur wijzen welke 3 variabelen bevat welk eerder in het programma gedefinieerd werden. Het hart van de aanmaak is de "malloc()" funktie, hiermee kunnen we geheugen bezetten. Met "malloc(n)" bezetten we een geheugendeel wat n bytes groot is in de "heap".</p>
+<h2><a name="SECTION11-3"></a>11.3 Wat is een "heap"?</h2>
+<p>Elke kompiler heeft zijn beperkingen op hoe groot een uitvoerbaar bestand kan zijn, hoeveel variabelen er gebruikt kunnen worden, hoe groot de bronkode mag zijn, ... Een van deze beperkingen bij DOS C-kompilers is de limiet van 64Kb, bij C-kompilers van andere besturingssystemen zoals Unix, OS/2 of een kompiler onder DOS met een zgn. DOS Extender bestaat deze beperking niet. Een "heap" is gebied van geheugen buiten deze 64Kb limiet welke gebruikt kan worden in het programma om variabelen in te bewaren (meestal via pointers). Met de "malloc()" funktie bezetten we geheugen in de "heap". C houdt bij waar geheugen bezet werd, het is ook mogelijk om een geheugengebied terug vrij te geven, welke gaten in de "heap" achter laat. Bij het opnieuw bezetten van geheugen zullen deze gaten, indien mogelijk, terug opgevuld worden.</p>
+<h2><a name="SECTION11-4"></a>11.4 De "sizeof()" funktie.</h2>
+<p>Met "sizeof()" kunnen we de grootte in bytes berekenen van een variabele, struktuur, enz. In dit voorbeeld gebruiken we de funktie in kombinatie met "malloc", om geheugen te bezetten welke juist voldoende plaats inneemt om de struktuur in te bewaren.</p>
+<h2><a name="SECTION11-5"></a>11.5 Wat is een "cast"?</h2>
+<p>Voor de "malloc" funktie hebben we nog een vreemd uitziende konstruktie, dit noemt men een "cast". Standaard geeft "malloc()" een "pointer" terug welke naar een karakter wijst (omdat een "char" 1 byte groot is), maar vaak hebben we geen "pointer" naar een karakter nodig. Het is echter mogelijk om de "pointer" welke "malloc()" teruggeeft om te rekenen naar een "pointer" welke wijst naar het datatype dat we in ons programma nodig hebben. Dit is precies wat deze "rare" konstruktie doet, het vertelt C dat we een "pointer" nodig naar een struktuur die er uitziet zoals "dier".</p>
+<h2><a name="SECTION11-6"></a>11.6 Het gebruiken van dynamisch aangemaakt geheugen.</h2>
+<p>Indien je de teorie over "pointers" en "strukturen" goed begrepen hebt moet de rest van het programma vrij duidelijk zijn. Via de "pointers" "pt1", "pt2" en "pt3" worden er dynamisch strukturen in het geheugen aangemaakt, via deze pointers wordt er ook data in deze strukturen geplaatst zoals we in het vorige hoofdstuk gezien hebben.</p>
+<h2><a name="SECTION11-7"></a>11.7 Het terug vrijmaken van geheugen met "free()".</h2>
+<p>Een andere nieuwe instruktie in het programma is "free(pt)", waar "pt" een "pointer" is naar het geheugenblok dat we terug wensen vrij te geven. Nadat in het programma de data afgeprint is stellen we "pt1" gelijk aan "pt3", hierdoor hebben we dus geen "pointer" meer naar het datagebied waar "pt1" naar wees. We kunnen dit datagebied dus ook niet meer vrijgeven! Dit voorbeeld is dit echter geen probleem, bij het verlaten van het programma wordt al het eerder bezette geheugen terug vrijgegeven.</p>
+<h2><a name="SECTION11-8"></a>11.8 Een array van pointers.</h2>
+<p>Het volgende programma is een andere voorbeeld van dynamisch geheugen, hier maken we gebruik van array van pointers.</p>
+<pre><code><br />#include &lt;malloc.h&gt;<br />main()<br />{<br />struct dier {<br />char naam[25];<br />char ras[25];<br />int leeftijd;<br />} *pt[12],*point; /* Hiermee defini&euml;ren we 13 pointers, gn variabelen */<br />int index;<br />/* aanmaken van van dynamische strukturen met nonsens data */<br />for (index=0;index&lt;;index++) {<br />pt[index]=(struct dier *)malloc(sizeof(struct dier));<br />strcpy(pt[index]-&gt;naam,"Kristien");<br />strcpy(pt[index]-&gt;ras,"poesje");<br />pt[index]-&gt;leeftijd=4;<br />}<br />pt[4]-&gt;leeftijd=12;<br />pt[5]-&gt;leeftijd=15;<br />pt[6]-&gt;leeftijd=10;<br />/* het afdrukken van de data */<br />for (index=0;index&lt;12;index++) {<br />point=pt[index];<br />printf("%15s is een %10s, en is %d jaar oud.\n",point-&gt;naam,<br />point-&gt;ras,point-&gt;leeftijd);<br />}<br />/* Het is een goede programmeer gewoonte om al het bezette geheugen<br />terug vrij te geven */<br />for (index=0;index&lt;12;index++) free(pt[index]);<br />}</code></pre>
+<p>We beginnen het programma met het "malloc.h" aan ons programma toe te voegen, dit is echter niet bij alle C-kompilers nodig. We gebruiken dezelfde struktuur als in het voorgaande programma, maar deze keer maken we array van 12 "pointers" plus een ekstra "pointer" aan. Met } *pt[12],*point; maken deze aan. Zoals we als gezien hadden is een array al een "pointer", dus is bv. "pt[0]" een "pointer" naar een "pointer" welke het begin van de struktuur aanwijst. Dit komt in C vaker voor zo is bij "int ****pt", "pt" een "pointer" naar een "pointer" naar een "pointer" naar een "pointer" welke een integer aanwijst.</p>
+<p>De rest van het programma komt vrij bekend over, nu we 12 pointers hebben gebruiken we een "for" lus om dynamisch struktuur variabelen aan te maken. Met de volgende "for" plaatsen we wat data in deze strukturen, daarna passen we via "pointers" enkele leeftijden aan. Met de voorlaatste "for" lus drukken we de velden van de strukturen af. De laatste "for" lus dient om het bezette geheugen terug vrij te geven, dit was in principe niet nodig vermits bij het verlaten van het programma dit geheugen toch terug vrijgegeven zou worden. Het echter een goede gewoonte om telkens indien we eerder bezet geheugen niet meer nodig hebben dit terug vrij te geven.</p>
+<h2><a name="SECTION11-9"></a>11.9 Een gelinkte lijst</h2>
+<p>Bij een gelinkte lijst of "linked list" in het engels wijst het eerste element (via een "pointer") de tweede aan, het tweede element wijst op zijn beurt naar het derde, de derde naar het vierde, ... enz ... Het volgende programma is hier een voorbeeld van.</p>
+<pre><code><br />#include &lt;malloc.h&gt;<br />#include &lt;stdio.h&gt; /* dit is enkel nodig om NULL te definieren */<br />#define RECORDS 6<br />main()<br />{<br />struct dier {<br />char naam[25]; /* De naam van het dier */<br />char ras[25]; /* Het type van dier */<br />int leeftijd; /* De leeftijd van het dier */<br />struct dier *volgende; /* Een pointer naar een ander variabele van dit type*/<br />}*point,*start,*vorige; /* Definieren van 3 pointer, geen aanmaak van variabelen*/<br />int index;<br />/* De eerste is altijd speciaal */<br />start=(struct dier*)malloc(sizeof(struct dier));<br />strcpy(start-&gt;naam,"Kristien");<br />strcpy(start-&gt;ras,"Poes");<br />start-&gt;leeftijd=4;<br />vorige=start;<br />/* Met een 'for' lus vullen we de andere in */<br />for (index=0;index&lt;RECORDS;index++) {<br />point=(struct dier*)malloc(sizeof(struct dier));<br />strcpy(point-&gt;naam,"Frank");<br />strcpy(point-&gt;ras,"Hond");<br />point-&gt;leeftijd=3;<br />vorige-&gt;volgende=point; /* Het vorige record wijst nu het huidige aan */<br />point-&gt;volgende=NULL; /* Hiermee geven we het einde aan */<br />vorige=point; /* point is nu het 'vorige' record */<br />/* Het afdrukken van de data */<br />point=start;<br />do {<br />vorige=point-&gt;volgende;<br />printf("%15s is een %10s, en is %d jaar oud\n",point-&gt;naam,<br />point-&gt;leeftijd);<br />point=point-&gt;volgende;<br />} while (vorige != NULL);<br />/* Het is een goede programmeer gewoonte om het bezette geheugen altijd terug vrij te geven */<br />point=start; /* Het eerste geheugengebied */<br />do {<br />vorige=point-&gt;volgende; /* Het volgende geheugengebied */<br />free(point); /* Vrijgeven van het geheugengebied */<br />point=vorige; /* point = adres v/h volgende */<br />} while (vorige!=NULL);<br />}</code></pre>
+<p>Het programma start op ongeveer dezelfde manier als de vorige programma's. We met het defini&euml;ren van een konstante "RECORDS" welke het aantal variabelen aan geeft. Hierna maken we een struktuur aan welke er bijna hetzelfde uitziet als in de twee vorige programma's, enkel hebben we via struct dier *volgende een ekstra "pointer" in de struktuur opgenomen. Deze zal het adres bevatten van de volgende variabele. We defini&euml;ren drie "pointers" naar deze struktuur plus een integer "index" welke we later zullen gebruiken als teller.</p>
+<p>Via de "malloc" funktie maken zoals in de vorige voorbeeld een eerste variabele aan, het adres van deze variabele wordt in de pointer "start" bewaard. Dit adres onthouden we ook de pointer "vorige".</p>
+<p>Met de eerste "for" lus&nbsp; maken we onze lijst aan, telkens de lus doorlopen wordt bezetten we geheugen, kopi&euml;ren we data in de juist aangemaakte variabele, en vullen we de pointers met de juiste adressen. De pointer "vorige" bevat het adres van de vorige variabele, met vorige-&gt;volgende=point kopi&euml;ren we het adres van de nieuwe struktuur in de pointer van de oude. Telkens we een nieuwe struktuur variabele aan maken stellen we de pointer hiervan gelijk aan "NULL", dit doen we om het einde van de lijst aan te geven.</p>
+<p>We doorlopen de lus zes keer, na het einde van de deze "for" hebben we een lijst aangemaakte welke er zo uitziet.</p>
+<p>1. De pointer "start" wijst naar de eerste struktuur in de lijst.</p>
+<p>2. Elke struktuur bevat een pointer welke naar de volgende struktuur wijst.</p>
+<p>3. De laatste struktuur bevat een pointer welke gelijk is aan "NULL", hiermee geven we het einde van de lijst aan.</p>
+<pre><code><br />start-&gt;struktuur1<br /> naam<br /> ras<br /> leeftijd<br /> volgende-&gt;struktuur2<br /> naam<br /> ras<br /> leeftijd<br /> volgende-&gt; . . . . . . . struktuur7<br /> naam<br /> ras<br /> leeftijd<br /> volgende-&gt;NULL"<br /></code></pre>
+<p>Het is duidelijk dat we via een dergelijke opbouw het niet mogelijk is om naar bv. het derde element in de lijst te gaan. De enige manier om dit element te bereiken is via het eerste te beginnen, en zo in de lijst "af te dalen". Niet alle datatypes zijn dus geschikt om bewaard te worden in een dergelijke lijst, omdat het te veel tijd vraagt om zo een bepaald element op te zoeken. In principe kunnen we de strukturen in de lijst zo aanpassen dat ze twee pointers bevatten, &eacute;&eacute;n naar het volgende element, en een andere naar het vorige om het opzoekingswerk te vereenvoudigen.</p>
+<p>Met de "do ... while" lus drukken we de data op het scherm, de metode die we hiervoor gebruiken is analoog met hoe we de data genereert hebben. De lus wordt doorlopen totdat de pointer van de struktuur gelijk is aan "NULL".</p>
+<p>Met de laatste "for" lus geven we het bezetten geheugen terug, dit was ook nu niet echt nodig, maar het is een goede gewoonte dit wel te doen.&nbsp; Ja ... Ik val in herhaling ;-)</p>
+<h2><a name="SECTION11-10"></a>11.10 De "calloc" funktie.</h2>
+<p>De "calloc" funktie lijkt hard op de "malloc" funktie, enkel vult het de bezette datablok met nullen, wat praktisch kan zijn in sommige gevallen.</p>
+<h2><a name="SECTION11-11"></a>11.11 Programmeer opdrachten!</h2>
+<p>1.Herschrijf het eerste programma van hoofdstuk 10 zo dat de twee strukturen dynamische aangemaakt worden.</p>
+<p>2.Herschrijf het tweede programma van hoofdstuk 10 zo dat de 12 strukturen dynamisch worden aangemaakt.</p>
+<h1><a name="SECTION12"></a>12. Karakter &amp; bit manipulatie</h1>
+<p><em>In dit laatste hoofdstuk gaan we nog enkel funkties bekijken voor karakter en bit manipulatie. Zo beschikt C over funkties voor konversie naar grootte en kleine letters, schuif ("shift") instrukties...</em></p>
+<h2><a name="SECTION12-1"></a>12.1 Grote &amp; kleine letters.</h2>
+<p>Grootte en kleine letters hebben een andere ASCII - waarde, zo komt "a" overeen met 97 en "A" met 65. Dit kan erg vervelend zijn voor sommige toepassingen zoals bv. sorteren. C heeft hiervoor enkele funkties om deze problemen op te lossen.</p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">isupper(&lt;char&gt;)&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">Is het een kleine letter?</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">islower(&lt;char&gt;)</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">Is het een grote letter?</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">toupper(&lt;char&gt;)</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">Maak van het karakter een grote letter.</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">tolower(&lt;char&gt;)</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">Maak van het karakter een kleine letter.</td>
+</tr>
+</tbody>
+</table>
+<p>Het volgende programma illustreert deze vier funkties, het leest een bestand regel per regel en drukt dit bestand op het scherm af. Alle grote letters worden verandert in kleine, alle kleine letters worden verandert grootte. Indien je de vorige hoofdstukken goed begrepen hebt zal het niet moeilijk zijn de werking van het programma te begrijpen.</p>
+<pre><code><br />#include &lt;stdio.h&gt;<br />#include &lt;ctype.h&gt;<br />void verander(char lijn[]);<br />main()<br />{<br />FILE *fp;<br />char lijn[80],bestand[24];<br />char *c;<br />printf("Geef een bestandsnaam &gt;");scanf("%s",bestand);<br />fp=fopen(bestand,"r");<br />do {<br />c=fgets(lijn,80,fp); /* haal een lijn tekst uit het bestand */<br />if (c!=NULL) verander(lijn);<br />} while (c!=NULL);<br />fclose(fp);<br />}<br />/* Deze procedure maakt van alle kleine letters grootte, en van alle grootte<br />kleine letters */<br />void verander(char lijn[])<br />{<br />int index;<br />for(index=0;lijn[index]!=0;index++) {<br />if (isupper(lijn[index])) /* 1 indien een grootte letter */<br />lijn[index]=tolower(lijn[index]);<br />else {<br />if (islower(lijn[index])) /* 1 indien een kleine letter */<br />lijn[index]=toupper(lijn[index]);<br />}<br />}<br />printf("%s",lijn);<br />}</code></pre>
+<h2><a name="SECTION12-2"></a>12.2 Verschillende soorten van karakters.</h2>
+<p>C maakt onderscheidt tussen bepaalde soorten van karakters, zo hebben we bv. kontrole karakter welke we al in "printf" gebruikt hebben. Misschien heb je al afgevraagd hoe we een ' " ' met "printf" kunnen afdrukken, zonder dit aanzien wordt als - einde van de data -, of hoe het mogelijk we is een "\" af te drukken. Ook hier is een oplossing voor onderstaande lijst vervolledig de lijst van kontrole karakters.</p>
+<p></p>
+&nbsp;
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">\n&nbsp;</td>
+<td align="left" valign="top">volgende lijn</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">\t&nbsp;</td>
+<td align="left" valign="top">tab</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">\b&nbsp;</td>
+<td align="left" valign="top">"backspace"</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">\\</td>
+<td align="left" valign="top">"backslash"</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">\"</td>
+<td align="left" valign="top">aanhallingstekens</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">\0&nbsp;</td>
+<td align="left" valign="top">NULL</td>
+</tr>
+</tbody>
+</table>
+<p>C heeft funkties om te testen met wat voor type van karakter we te maken hebben.</p>
+<p></p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">isalpha(&lt;char&gt;)&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">is het een normaal karakter?</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">isdigit(&lt;char&gt;)</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">is het een cijfer (digit)?</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">isspace(&lt;char&gt;)</td>
+<td align="left" valign="top">:</td>
+<td align="left" valign="top">is het spatie of een&nbsp;\n , &nbsp;\t?</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Het volgende programma laadt opnieuw een bestand in, en telt per regel het aantal karakters, cijfers en spaties.</p>
+<pre><code><br />#include &lt;stdio.h&gt;<br />#include &lt;ctype.h&gt;<br />void tel_de_data(char lijn[]);<br />main()<br />{<br />FILE *fp;<br />char lijn[80],bestand[24];<br />char *c;<br />printf("Geef een bestandsnaam -&gt;");scanf("%s",bestand);<br />if((fp=fopen(bestand,"r"))==NULL) {<br />printf("Sorry, ik kan het bestand niet laden");exit(1);}<br />do {<br />c=fgets(lijn,80,fp); /* haal een regel op */<br />if (c!=NULL) { tel_de_data(lijn); }<br />} while (c!=NULL);<br />fclose(fp);<br />}<br />void tel_de_data(char lijn[])<br />{<br />int spatie,kar,cijfer;<br />int index;<br />spatie=kar=cijfer=0;<br />for(index=0;lijn[index]!=0;index++) {<br />if (isalpha(lijn[index])) kar++;<br />if (isdigit(lijn[index])) cijfer++;<br />if (isspace(lijn[index])) spatie++;<br />}<br />printf("%3d%3d%3d %s",spatie,kar,cijfer,lijn);<br />}</code></pre>
+<h2><a name="SECTION12-3"></a>12.3 Logische bewerkingen.</h2>
+<p>In de volgende lijst staan enkele logische bewerken:</p>
+<p></p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp;&nbsp;</td>
+<td align="left" valign="top">Logische AND&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">indien alle bits 1 zijn is het resultaat ook 1</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;</td>
+<td align="left" valign="top">Logische&nbsp; OR&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">indien &eacute;&eacute;n van bits 1 is, is het resultaat ook 1</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^&nbsp;</td>
+<td align="left" valign="top">Logische XOR&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">indien &eacute;&eacute;n en allen &eacute;&eacute;n bit 1 is, is het resultaat ook 1</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~&nbsp;</td>
+<td align="left" valign="top">Inverteer&nbsp;</td>
+<td align="left" valign="top">:&nbsp;</td>
+<td align="left" valign="top">maakt van 0 een 1 en van 1 een 0</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Het volgende programma demonstreert bovenstaande bewerkingen.</p>
+<pre><code><br />#include &lt;stdio.h&gt;<br />main()<br />{<br />char mask;<br />char getal[6];<br />char and,or,xor,inv,index;<br />getal[0]=0X00;<br />getal[1]=0X11;<br />getal[2]=0X22;<br />getal[3]=0X33;<br />getal[4]=0X88;<br />getal[5]=0XFF;<br />printf(" getal mask and or xor inv\n");<br />mask=0X0F;<br />for (index=0;index&lt;=5;index++) {<br />and = mask &amp; getal[index];<br />or = mask | getal[index];<br />xor = mask ^ getal[index];<br />inv = ~getal[index];<br />printf("%5x %5x %5x %5x %5x %5x\n",getal[index],mask,and,or,xor,inv);<br />}<br />printf("\n");<br />mask=0X22;<br />for (index=0;index&lt;6;index++) {<br />and = mask &amp; getal[index];<br />or = mask | getal[index];<br />xor = mask ^ getal[index];<br />inv = ~getal[index];<br />printf("%5x %5x %5x %5x %5x %5x\n",getal[index],mask,and,or,xor,inv);<br />}<br />}</code></pre>
+<h2><a name="SECTION12-4"></a>12.4 Schuif bewerkingen.</h2>
+<p>Ook is het mogelijk om de bits van een getal naar links of rechts te verschuiven, dit gebeurt op de volgende manier.</p>
+<p></p>
+<table cellpadding="3">
+<tbody>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&lt;n&nbsp;</td>
+<td align="left" valign="top">Schuif n plaatsen naar links</td>
+</tr>
+<tr valign="top">
+<td align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;&gt;n&nbsp;</td>
+<td align="left" valign="top">Schuif n plaatsen naar rechts</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Het volgende programma illustreert dit.</p>
+<pre><code><br />main()<br />{<br />int klein,groot,index,teller;<br />printf(" shift left shift right\n\n");<br />klein=1;groot=0X4000;<br />for(index=0;index&lt;17;index++) {<br />printf("%8d %8d %8d %8d\n",klein,klein,groot,groot);<br />klein=klein&lt;&lt;1;<br />groot=groot&gt;&gt;1;<br />}<br />printf("\n");<br />teller=2;klein=1;groot=0X4000;<br />for(index=0;index&lt;9;index++) {<br />printf("%8d %8d %8d %8d\n",klein,klein,groot,groot);<br />klein=klein&lt;&lt;teller;<br />groot=groot&gt;&gt;teller;<br />}<br />}</code></pre>
+<h1><a name="SECTION13"></a>13. Gebruikte Software</h1>
+<ul>
+<li>Debian Linux 1.3</li>
+<li><span style="font-size: xx-small;"><sup>L</sup></span>Y<span style="font-size: xx-small;"><sup>X1000 0.10.7 Beta</sup></span></li>
+<li><span style="font-size: xx-small;"><sup>L<sup>A</sup>T</sup>E<sup>X</sup></span></li>
+<li>Ghostscript</li>
+<li>Ghostview</li>
+<li>XEmacs</li>
+<li>GNU C (gcc)</li>
+<li><span style="font-size: xx-small;"><sup>L<sup>A</sup>T</sup>E<sup>X</sup></span><span style="font-size: xx-small;"><sup>2html</sup></span></li>
+</ul>
+<!--/description-->
+</div>
+
+			
+
+
+
+<!--/folderl05x0Cp-wtO9u8ieRd52mQ /folder-->
+</div>
+<p>
+<br /><br />
+<script type="text/javascript"><!--
+google_ad_client = "pub-4659298941528586";
+google_ad_width = 800;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</p>
+</div>			
+<!-- wrap ends here -->
+</div>
+		
+<!-- footer starts here -->
+<div class="footer">
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* bottom-artikel */
+google_ad_slot = "3673193890";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+
+
+</script>
+<!--
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+//-->
+	
+	<p>	
+	Valid <a href="http://validator.w3.org/check/referer">XHTML</a> |
+   	<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<!-- bottom nav -->				
+	</p>
+
+
+		
+</div>	
+	
+</body>
+</html>

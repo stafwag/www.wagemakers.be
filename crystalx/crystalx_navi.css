@@ -1,0 +1,240 @@
+<style type="text/css">
+
+/*****************/
+/*         yuimenu       */
+/*****************/
+
+/* do not remove .DummyLine{} */
+/* It appears the top item is not considered 
+for formatting ... */
+
+.DummyLine{} 
+
+/* to mask that IE displays open space 
+between menuitems.... */
+
+.yui-skin-sam .yuimenu .bd { 
+display: block ;
+background: #CCDAF9;
+/* For IE7 : */
+min-height: 32px; 
+height: auto;
+/* end IE7 */
+border: none;
+
+} 
+/* No shadows for this theme 
+.yui-skin-sam .yui-menu-shadow{
+visibility:hidden;
+}
+*/
+
+/* Overwrite padding in submenus */
+
+.yui-skin-sam .yuimenu .bd ul { 
+padding: 0px;
+}
+
+
+/*****************/
+/*         yuimenubar       */
+/*****************/
+
+.yui-skin-sam .yuimenubar {
+border: none;
+background: #192666;
+height: 32px;
+overflow: hidden;
+}
+
+
+/*****************/
+/*     yuimenubaritem    */
+/*****************/
+
+.yui-skin-sam .yuimenubaritem { 
+background: url(../uploads/ea/6a/ea6a6a838bd92763014659e30bcd7e06/tab_link.gif) repeat-x scroll; 
+line-height: 34px;
+text-align: left; 
+font-weight: bold; 
+font-size: 9pt;
+-moz-border-radius-topleft: 9px;
+-moz-border-radius-topright: 9px;
+margin: 0 5px 0 0;
+}
+
+.yui-skin-sam .yuimenubaritem-selected { 
+/* Different background for selected item*/
+background: url(../uploads/ae/33/ae332904fd876a1e4016dbad4fb912d6/tab_hover.gif) repeat-x scroll ; 
+line-height: 34px;
+text-align: left; 
+font-weight: bold; 
+font-size: 9pt;
+-moz-border-radius-topleft: 9px;
+-moz-border-radius-topright: 9px;
+margin: 0 5px 0 0;
+}
+
+/* Color for submenuitem at top level; marking selected submenu */
+.yui-skin-sam .yuimenubaritem-selected a{   
+color: #FFFFFF;
+}
+
+.yui-skin-sam .yuimenubaritem-selected a:hover{   
+text-decoration: none;
+ }
+
+
+/*****************/
+/*     yuimenubaritemlabel    */
+/*****************/
+
+/* Provide highlight to selected item whilst page is displayed */
+
+.yui-skin-sam .yuimenubaritemlabel{
+padding: 0px 15px;
+text-decoration: none;
+border: none;
+color: #B5C4E3;
+margin: -2px 0 0;
+} 
+
+
+/*****************/
+/*     yuimenuitem    */
+/*****************/
+
+.yui-skin-sam .yuimenuitem{
+height: 25px;
+line-height: 20px;
+background: #CCDAF9;
+text-align: left;
+width: 170px; 
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #E0E8FA;
+}
+
+.yui-skin-sam .last{
+border-bottom-style: none;
+}
+
+.yui-skin-sam .yuimenuitem A{ 
+color: #192666; 
+background: url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+padding: 3px 0 3px 22px;
+text-decoration: none;
+font-weight: normal;
+} 
+
+.yui-skin-sam .yuimenuitem A:hover{
+background:#D3DFF8 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+font-weight: bold;
+}
+
+.yui-skin-sam .yuimenuitem-selected { 
+height: 25px;
+line-height: 20px;
+background:#D3DFF8 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+font-weight: bold;
+}
+
+/* Marking the current page */
+
+.yui-skin-sam .yuimenubaritem#currentpage { 
+background: #FFFFFF;
+-moz-border-radius-topleft: 9px;
+-moz-border-radius-topright: 9px;
+}
+
+.yui-skin-sam .yuimenubaritem A#currentpagelink { 
+color: #FF9000;
+}
+
+.yui-skin-sam .yuimenuitem#currentpage { 
+background: #E0E8FA;
+}
+
+.yui-skin-sam .yuimenuitem A#currentpagelink { 
+color: #192666;
+background: url(../uploads/05/9f/059fae81a916529dad9fb3121acd7bdc/ico_archive2.gif) no-repeat scroll 5px 50%;
+}
+
+/* Color for submenuitem at level 1; marking selected submenu */
+.yui-skin-sam .yuimenuitem-hassubmenu-selected A{
+color: #192666;
+background:#D3DFF8 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+}
+
+/* Color for submenuitem at level 2; marking selected submenu */
+.yui-skin-sam .yuimenubaritem .bd ul .yuimenuitem .bd ul .yuimenuitem-hassubmenu-selected A{
+color: #192666;
+background:#D3DFF8 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+}
+
+/* Arrows for Submenu at level 1 */
+
+.yui-skin-sam .yuimenuitem-hassubmenu {
+background-image:url(../uploads/39/05/3905ba8b84c3d5ca21096cc1988d10a0/ico_links.gif);
+background-attachment:scroll;
+background-position: center right;
+background-repeat:no-repeat;
+background-color:#CCDAF9;
+color:#192666;
+} 
+
+.yui-skin-sam .yuimenuitem-hassubmenu-selected A:hover{
+background-image:url(../uploads/39/05/3905ba8b84c3d5ca21096cc1988d10a0/ico_links.gif);
+background-attachment:scroll;
+background-position: center right;
+background-repeat:no-repeat;
+background-color:#D3DFF8;
+} 
+
+/* Arrows for Submenu at level 2 */
+
+.yui-skin-sam .yuimenubaritem .bd ul .yuimenuitem-hassubmenu .bd ul .yuimenuitem-hassubmenu A{
+background-image:url(../uploads/39/05/3905ba8b84c3d5ca21096cc1988d10a0/ico_links.gif);
+background-attachment:scroll;
+background-position: center right;
+background-repeat:no-repeat;
+background-color:#CCDAF9;
+} 
+
+.yui-skin-sam .yuimenubaritem .bd ul .yuimenuitem-hassubmenu .bd ul .yuimenuitem-hassubmenu-selected A:hover{
+background-image:url(../uploads/39/05/3905ba8b84c3d5ca21096cc1988d10a0/ico_links.gif);
+background-attachment:scroll;
+background-position: center right;
+background-repeat:no-repeat;
+background-color:#D3DFF8;
+} 
+
+/* MenuItem at level 2 */
+
+.yuimenubaritem .bd ul .yuimenuitem .bd ul .yuimenuitem A{
+background: #CCDAF9 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+text-decoration:none;
+color:#192666;
+}
+
+.yuimenubaritem .bd ul .yuimenuitem .bd ul .yuimenuitem A:hover{
+background: #D3DFF8 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+color:#192666;
+font-weight:bold;
+}
+
+/* MenuItem at level 3 */
+
+.yuimenubaritem .bd ul .yuimenuitem .bd ul .yuimenuitem .bd ul .yuimenuitem A{
+background: #CCDAF9 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+text-decoration:none;
+color:#192666;
+}
+
+.yuimenubaritem .bd ul .yuimenuitem .bd ul .yuimenuitem .bd ul .yuimenuitem A:hover{
+background: #D3DFF8 url(../uploads/de/7e/de7e257d04a7ba9bb53ba944d8c663ac/ico_archive.gif) no-repeat scroll 5px 50%;
+color:#192666;
+font-weight:bold;
+}
+
+</style>

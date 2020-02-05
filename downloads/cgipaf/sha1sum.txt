@@ -1,0 +1,10 @@
+0bb8322869fe7fb52b36f654c24bffc857afeee8  cgipaf-1.2.4.tar.gz
+4ad5868d645e3929e472c72581826c7424d17773  cgipaf-1.3.1.tar.gz
+338a9031f848834a5bee9bcd17084906ad66b269  cgipaf-1.3.2.tar.gz
+8754cc418a7fccffc0a4fefaa78a776505a352a6  cgipaf-1.3.3.tar.gz
+72694500df4de345b8a2e7ce369ed49fc3c9dc0d  cgipaf-1.3.4pre1.tar.gz
+281f282d000c6cdc9765d2312d4b47df4d339fc0  cgipaf-1.3.4.tar.gz
+49476d79967aac01c77cff058a0edf6d21c5a04c  cgipaf-1.3.5.tar.gz
+fc85144431cb38bb8a90292e7bbe8592804bb478  cgipaf-1.4cvs20040727.tar.gz
+0de78c37312e064e471cafa44d6a2b08a513eba6  changepass_sol10_x86.tar.gz
+dbc68357b6f7effa07ad5864489b2683c74772a9  changepass_sol9-1.3.3.tar.gz

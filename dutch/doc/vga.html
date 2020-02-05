@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>  	 Grafisch programmeren in Assembler (DOS) - Staf Wagemakers</title>
+<link rel="stylesheet" type="text/css" href="../../stafwag/css/stafwag.css" />
+<link rel="stylesheet" type="text/css" href="../../stafwag/css/stafwag-webgui.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="generator" content="WebGUI 7.10.23" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><script type="text/javascript">function getWebguiProperty (propName) {var props = new Array();props["extrasURL"] = "/extras/";props["pageURL"] = "/dutch/doc/vga";props["firstDayOfWeek"] = "0";return props[propName];}</script>
+<meta http-equiv="Cache-Control" content="must-revalidate" />
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+
+		<!-- header -->
+
+		<div id="header">
+<!-- google analytics -->
+
+<script type="text/javascript">
+<!--
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37258385-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//-->
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* head_banner */
+google_ad_slot = "5954810285";
+google_ad_width = 468;
+google_ad_height = 58;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+					
+
+			<ul>
+				<li><a href="../../index.html"><span>Home</span></a></li>
+				<li><a href="../../dutch.html"><span>Nederlands</span></a></li>
+				<li><a href="../../english.html"><span>English</span></a></li>
+				<li><a href="../../downloads.html"><span>Downloads</span></a></li>
+				<li><a href="../../links.html"><span>links</span></a></li>
+							
+			</ul>								
+		</div>
+		
+		<div id="header-logo">
+                        <div id="mylogo">Staf&nbsp;Wagemakers</div>
+
+<div id="google-search">
+
+<div id="cse-search-form" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011952366183077168952:clxrudllfuo', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.enableSearchboxOnly("http://www.google.com/cse?cx=011952366183077168952:clxrudllfuo", null, true);
+    customSearchControl.draw('cse-search-form', options);
+  }, true);
+</script>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+				
+		
+
+	<div id="sidebar">
+		<div class="sidebar">
+
+<a name="idIjSy9C91wSVONrzWFkETgg" id="idIjSy9C91wSVONrzWFkETgg"></a>
+
+
+
+
+	<h1>Navigation</h1>
+
+
+
+
+
+<!--
+<ul class="menu bulletList">
+-->
+<div class="left-box">
+<ul class="sidemenu">
+
+
+
+
+	<li class="ancestor">
+	<a href="../../home.html">Home</a>
+
+
+    <ul class="level0">
+
+
+
+
+
+
+	<li class="ancestor">
+	<a href="../../dutch.html">Nederlands</a>
+
+
+    <ul class="level1">
+
+
+
+
+
+
+	<li>
+	<a href="../programs.html">Programma's</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li class="ancestor">
+	<a href="../doc.html">Documentatie</a>
+
+
+    <ul class="level2">
+
+
+
+
+
+
+	<li>
+	<a href="inlc.html">Inleiding C</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="inl_perl.html">Inleiding tot Perl</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li class="current">
+	<a href="vga.html">Grafisch programmeren in ASM</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="quota.html">Quota snelgids</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="samba.html">Samba snelgids</a>
+
+
+    </li>
+
+
+
+
+
+    </ul>
+    </li>
+
+
+	<li>
+	<a href="../toys.html">Speelgoed</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../who_am_i.html">Wie ben ik?</a>
+
+
+    </li>
+
+
+
+
+
+    </ul>
+    </li>
+
+
+	<li>
+	<a href="../../english.html">English</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../../downloads.html">Downloads</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../../links.html">links</a>
+
+
+    </li>
+
+
+
+    
+    </ul>
+    </li>
+    
+
+
+
+</ul>
+</div>
+
+
+<!--/nav2234b2f42f75c1254e36bcd616411382 /nav bulletedList-->
+</div>
+
+		<h1>About me</h1>
+<div class="left-box">
+<ul class="sidemenu">
+<li>
+<ul class="level0">
+
+<li class="ancestor">
+<b>Homepage:</b> <a href="../../index.html">www.wagemakers.be</a>
+</li>
+
+<li class="ancestor">
+<b>Blog:</b> <a href="http://stafwag.github.io/blog">stafwag.github.io/blog</a>
+</li>
+
+<li class="ancestor">
+
+<a href="http://be.linkedin.com/in/stafwagemakers" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View staf wagemakers's LinkedIn profile" style="vertical-align:middle" />View staf wagemakers's profile</span></a>
+
+
+</li>
+
+<li class="ancestor">
+
+<img src="http://ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+<a href="https://google.com/+StafWagemakers"> Staf Wagemakers</a> <br /><br />
+
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//google.com/+StafWagemakers" data-rel="author" >
+
+</div>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</li>
+
+<li class="ancestor">
+
+<a href="https://github.com/stafwag">@stafwag</a> on GitHub
+
+
+</li>
+
+</ul>
+</li>
+</ul>
+
+
+
+		<h1>Login</h1>
+
+		<div class="left-box">
+			<ul class="sidemenu">
+				<li><a class="loginToggleLink" href="vga%3Fop=auth%3Bmethod=init.html">Login</a></li>
+				<li><a href="vga%3Fop=auth%3Bmethod=init.html">View My Account</a></li>
+				
+			</ul>
+		</div>
+
+
+
+
+		</div>
+
+
+
+	    
+
+<!--
+		<h1>WebGUI Links</h1>	
+		<div class="left-box">
+			<ul class="sidemenu"><li><a href="http://webgui.org/addons">Addons and Plugins</a></li></ul>
+		</div>	
+-->
+
+            
+
+	    <div class="ads">
+
+		<br /><br />
+
+
+            <p>
+<a href="http://www.procolix.com"><img src="../../root/themes/staf/images/hosted_by_procolix.png" alt="hosted by procolix" /></a>
+             </p>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a><br />
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valide CSS!" />
+    </a>
+</p>
+
+<p>
+
+
+<!-- vertical link ad -->
+    <br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* side-block */
+google_ad_slot = "2562895628";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+
+
+<!-- vertical link ad ends -->
+
+
+        </p>
+        </div>
+
+	</div>				
+							
+	<div id="main"><div id="folderP4UZ8H0hjZpPmKb6esqxrA" class="folder">
+
+<a name="idP4UZ8H0hjZpPmKb6esqxrA" id="idP4UZ8H0hjZpPmKb6esqxrA"></a>
+
+
+	
+
+	<h3>  	 Grafisch programmeren in Assembler (DOS)</h3>
+
+		
+
+<div class="description">
+	<h1>Inhoudsopgave</h1>
+<ul>
+<li><a href="vga.html#section1">1. Naar een VGA resolutie gaan.</a></li>
+<li><a href="vga.html#section2">2. Naar het video geheugen schrijven</a></li>
+<li><a href="vga.html#section3">3. Aangepaste kleuren</a></li>
+<li><a href="vga.html#section4">4. Uit het VGA scherm lezen</a></li>
+<li><a href="vga.html#section5">5. Scrijfmodes instellen</a></li>
+<li><a href="vga.html#section6">6. Het tekenen van een lijn</a></li>
+<li><a href="vga.html#section7">7. Geraadpleegde werken</a></li>
+</ul>
+<hr />
+<p></p>
+<h1><a name="section1"></a>1. Naar een VGA resolutie gaan.</h1>
+<p>De BIOS interrupt welke voor grafische funktie gebruikt wordt is INT 10h. Met de funktie AH = 00, kunnen naar tussen de verschillende video mode omschakelen (zie onderstaande tabel).</p>
+<div>
+<table class="myTable" border="1" cellpadding="3">
+<tbody>
+<tr><th valign="top" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Al (hex)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th valign="top" align="center">video mode</th></tr>
+<tr>
+<td valign="top" align="center">0</td>
+<td valign="top" align="center">tekst 40 x 25 16 grijswaarden</td>
+</tr>
+<tr>
+<td valign="top" align="center">1</td>
+<td valign="top" align="center">tekst 40 x 25 16 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">2</td>
+<td valign="top" align="center">tekst 80 x 25 16 grijswaarden</td>
+</tr>
+<tr>
+<td valign="top" align="center">3</td>
+<td valign="top" align="center">tekst 80 x 25 16 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">4</td>
+<td valign="top" align="center">grafisch (CGA) 320 x 200 kleur</td>
+</tr>
+<tr>
+<td valign="top" align="center">5</td>
+<td valign="top" align="center">grafisch (CGA) 320 x 200 zwart-wit</td>
+</tr>
+<tr>
+<td valign="top" align="center">6</td>
+<td valign="top" align="center">grafisch (CGA) 640 x 200 zwart-wit</td>
+</tr>
+<tr>
+<td valign="top" align="center">7</td>
+<td valign="top" align="center">tekst 80 x 25 zwart-wit (MDA, Hercules)</td>
+</tr>
+<tr>
+<td valign="top" align="center">...</td>
+<td valign="top" align="center">...</td>
+</tr>
+<tr>
+<td valign="top" align="center">F</td>
+<td valign="top" align="center">grafisch (EGA,VGA) 640x350 monochroom</td>
+</tr>
+<tr>
+<td valign="top" align="center">10</td>
+<td valign="top" align="center">grafisch (EGA,VGA) 640x350 16 keuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">11</td>
+<td valign="top" align="center">grafisch (VGA) 2 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">12</td>
+<td valign="top" align="center">grafisch (VGA) 16 kleuren</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We zullen het in hoofdzaak over de laatste (12h) resolutie hebben in de volgende paragraven. Tegenwoordig hebben de meeste VGA-kaarten ook zgn. "Super VGA" - resoluties, om naar deze resolutie te gaan kunnen we ook INT 10h AH=00h gebruiken. Dit geeft echter problemen doordat elke fabrikant van VGA-kaarten hiervoor anderen waarde voor AL neemt. Of m.a.w. dit is niet gestandaardiseerd. Om deze problemen op te lossen heeft men de VESA-bios ontwikkeld, de meeste moderne VGA-kaarten beschikken over zo'n bios. In onderstaande tabel ziet je hoe je naar de "VESA Super VGA"-resolutie moet gaan.</p>
+<div>
+<table cellpadding="3">
+<tbody>
+<tr>
+<td valign="top" align="left">INT 10h</td>
+<td valign="top" align="left">AX = 4F02h</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td valign="top" align="left">BX = mode</td>
+</tr>
+</tbody>
+</table>
+<table border="1" cellpadding="3">
+<tbody>
+<tr><th valign="top" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th valign="top" align="center">video mode</th></tr>
+<tr>
+<td valign="top" align="center">100h</td>
+<td valign="top" align="center">grafisch 640x400&nbsp;&nbsp;&nbsp;256 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">101h</td>
+<td valign="top" align="center">grafisch 640x480&nbsp;&nbsp;&nbsp;256 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">102h</td>
+<td valign="top" align="center">grafisch 800x600&nbsp;&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">103h</td>
+<td valign="top" align="center">grafisch 800x600&nbsp;&nbsp;&nbsp;256 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">104h</td>
+<td valign="top" align="center">grafisch 1024x768&nbsp;&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">105h</td>
+<td valign="top" align="center">grafisch 1024x768&nbsp;&nbsp;256 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">106h</td>
+<td valign="top" align="center">grafisch 1280x1024&nbsp;16&nbsp;&nbsp;&nbsp;kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">107h</td>
+<td valign="top" align="center">grafisch 1280x1024&nbsp;256 kleuren</td>
+</tr>
+<tr>
+<td valign="top" align="center">108h</td>
+<td valign="top" align="center">tekst 80x60</td>
+</tr>
+<tr>
+<td valign="top" align="center">109h</td>
+<td valign="top" align="center">tekst 132x25</td>
+</tr>
+<tr>
+<td valign="top" align="center">10Ah</td>
+<td valign="top" align="center">tekst 132x43</td>
+</tr>
+<tr>
+<td valign="top" align="center">10Bh</td>
+<td valign="top" align="center">tekst 132x50</td>
+</tr>
+<tr>
+<td valign="top" align="center">10Ch</td>
+<td valign="top" align="center">tekst 132x60</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Indien de funktie wordt ondersteund is AH = 00h, wordt de funktie niet ondersteund komt is AH = 01h. De in de volgende paragraven besproken onderwerpen kunnen ook voor de VESA-resolutie 800 x 600 16 kleuren gebruikt worden.</p>
+<p></p>
+<h1><a name="section2"></a>2. Naar het video geheugen schrijven</h1>
+<p>De standaard IBM VGA kaart heeft 16 kleuren, bijgevolg wordt elke pixel voorgesteld door 4 bits (2^4 = 16). Bij VGA in resolutie 640 x 480 16 kleuren maakt men om dit te bekomen gebruik van kleurbanken (bitplanes voor de engelstaligen), enkel basiskleur (Rood, Groen, Blauw, Intensiteit) heeft zijn eigen geheugengebied (kleurbank) in het geheugen van de VGA kaart. Het basis adres is voor al de 4 kleurbanken gelijk namelijk A000:0000h, en geheugen geori&euml;nteerd (memory mapped), om te bepalen naar welke kleurbank we schrijven kunnen we de VGA kaart instellen met het zgn. Map Mask register. In het Map Mask register kunnen schrijven door in het indexregister van de sequencer in te stellen, dit gebeurt via het poort adres 03C4h. Onderstaande tabel geeft de mogelijke funkties weer, door in het overeenstemmende dataregister (03C5h) te schrijven kunnen we de sequencer programmeren.</p>
+<p>register selektie met poort adres 03C4h.</p>
+<p></p>
+<div>
+<table border="1" cellpadding="3">
+<tbody>
+<tr><th valign="top" align="center">&nbsp;&nbsp;&nbsp;register&nbsp;&nbsp;&nbsp;</th><th valign="top" align="center">naam</th></tr>
+<tr>
+<td valign="top" align="center">00</td>
+<td valign="top" align="center">reset</td>
+</tr>
+<tr>
+<td valign="top" align="center">01</td>
+<td valign="top" align="center">Clocking mode</td>
+</tr>
+<tr>
+<td valign="top" align="center">02</td>
+<td valign="top" align="center">Map Mask</td>
+</tr>
+<tr>
+<td valign="top" align="center">03</td>
+<td valign="top" align="center">Character Map Select&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" align="center">04</td>
+<td valign="top" align="center">Memory mode</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Met het Map Mask register kunnen we dus bepalen naar welke kleurbank we schrijven.</p>
+<p><img src="../../root/images/vga/vga_fig1.jpg" alt="[gfx vga_fig1.jpg]" /></p>
+<p>Is bv. bit 0 gezet dan zal zullen naar de blauwe kleurbank schrijven, zijn bit 0 en 1 gezet (3) dan zullen we naar de blauwe en de groene kleurbank schrijven. Zoals meestal is de theorie ingewikkelder dan de praktijk volgend praktisch voorbeeld zal (hopelijk?) het voorgaande verduidelijken.</p>
+<p></p>
+<pre><code><br />.MODEL SMALL<br />.CODE<br />start:<br />mov ax,012h ;naar VGA mode<br />int 10h ;640 x 480 16kl. gaan.<br />mov ax,0A000h<br />mov es,ax ;zet ES op videosegment.<br />mov dx,03C4h ;dx = indexregister<br />mov ax,0F02h ;INDEX = MASK MAP, <br />out dx,ax ;naar alle banken schrijven.<br />mov di,0 ;DI wijzer (pointer) naar scherm.<br />mov cx,38400 ;(640 * 480)/8 = 38400<br />mov ax,0FFh ;vul alle pixels<br />rep stosb ;maak het scherm wit<br />mov ah,4ch ;verlaat<br />int 21h ; het programma<br />END start<br /></code></pre>
+<p>&nbsp;</p>
+<p>Vermits met mov ax,0F02h , out dx,ax alle kleurbanken geselekteerd zijn krijgen we de kleur wit. In die we dit vervangen door mov ax,0102h krijgen we de kleur blauw.</p>
+<h1><a name="section3"></a>3. Aangepaste kleuren</h1>
+<p>Een groot voordeel van VGA t.o.v. EGA (buiten de hogere resolutie) is de mogelijkheid om kleuren aan te passen. Op deze manier is het mogelijk om tekeningen er "echter" te laten uit zien. Om kleuren aan te passen kan men op 2 manieren te werk gaan; rechtstreeks de hardware programmeren of gebruik maken we van de INT 10h funktie. Deze laatste is het eenvoudigste en garandeert ook de kompatibiliteit met zgn. kloon VGA kaarten. Met INT 10h AX = 1010h kunnen we de kleurwaarde instellen van 1 kleur, BX bevat het kleurregister, CH de groenwaarde, CL de blauwwaarde en DH de roodwaarde. Nu komen het kleurregister en het kleurnummer niet helemaal met elkaar overeen, dit kunnen we oplossen door eerst van een bepaalde kleur eerst het kleurregister waarde op te vragen. Met INT 10h, AX = 1007h kunnen we dit doen, in BL zetten het kleurnummer na uitvoering van INT 10h komt in bh het kleurregisternummer. Volgend voorbeeld bewijs opnieuw dat de praktijk eenvoudiger is dan de theorie.</p>
+<p></p>
+<pre><code> <br />;------------------------------------------<br />;Past een bepaalde kleur aan<br />;BX = kleurnummer<br />;ch = groen waarde<br />;cl = blauw waarde<br />;dh = rood waarde <br />;------------------------------------------<br />pal PROC<br />push ax<br />mov bh,0<br />mov ax,1007h<br />int 10h<br />mov bl,bh<br />mov bh,0<br />mov ax,1010h<br />int 10h<br />pop ax<br />ret<br />pal ENDP<br /></code></pre>
+<p>&nbsp;</p>
+<h1><a name="section4"></a>4. Uit het VGA scherm lezen</h1>
+<p>Het lezen uit het VGA scherm is (zoals je waarschijnlijk al vermoede) analoog aan het schrijven naar het VGA scherm. Nu moeten we de grafische controller instellen in de lees mode dit gebeurt het adres- 03CEh &amp; het dataregister 03CFh. <br />In de onderstaande tabel vindt u de verschillende funktie:</p>
+<p>&nbsp;</p>
+<div>Mode instelling via poort adres 03CEh. <br />&nbsp;
+<table border="1" cellpadding="0">
+<tbody>
+<tr><th valign="top" align="center">&nbsp;&nbsp;&nbsp;register&nbsp;&nbsp;&nbsp;</th><th valign="top" align="center">naam</th></tr>
+<tr>
+<td valign="top" align="center">1</td>
+<td valign="top" align="center">Set/Reset</td>
+</tr>
+<tr>
+<td valign="top" align="center">2</td>
+<td valign="top" align="center">Enable Set/Reset</td>
+</tr>
+<tr>
+<td valign="top" align="center">3</td>
+<td valign="top" align="center">Data Rotate/Function Select&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" align="center">4</td>
+<td valign="top" align="center">Read Map Select</td>
+</tr>
+<tr>
+<td valign="top" align="center">5</td>
+<td valign="top" align="center">Graphics mode</td>
+</tr>
+<tr>
+<td valign="top" align="center">6</td>
+<td valign="top" align="center">Miscellaneous</td>
+</tr>
+<tr>
+<td valign="top" align="center">7</td>
+<td valign="top" align="center">Color don't care</td>
+</tr>
+<tr>
+<td valign="top" align="center">8</td>
+<td valign="top" align="center">Bit Mask</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Door op het poort adres 03CEh de waarde 3 te zetten stellen we dus de lees mode in, met 03CF bepalen de kleurbank waaruit we lezen. In onderstaande tabel ziet u welke waarde over een komt met welke kleurbank.</p>
+<div>kleurbank selektie via poort adres 03CFh
+<table border="1" cellpadding="3">
+<tbody>
+<tr>
+<td valign="top" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />2 <br />1 <br />0</td>
+<td valign="top" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blauw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />groen <br />rood <br />intensiteit</td>
+</tr>
+</tbody>
+</table>
+<p>Onderstaande procedure demonstreert het voorgaande, ze lees uit de 4 kleurbanken (BGRI) een byte, SI geeft aan welke byte gelezen wordt.</p>
+<p></p>
+<pre><code> <br />PUBLIC readbyte<br />;--------------------------------------------<br />;Leest een byte van het grafisch scherm<br />;aanroep : SI byte adres<br />;antwoord: al,ah,bl,bh -&gt; bl,gr,rood,inten<br />;--------------------------------------------<br />readbyte PROC NEAR<br />push cx<br />push dx<br />push si<br />push es<br />mov ax,0A000h<br />mov es,ax<br />mov dx,03ceh<br />mov ax,0005h<br />out dx,ax<br />mov ax,0304h<br />rb01: out dx,ax ;lees mode instellen AH=kleurbank, AL=leesmode<br />mov bh,es:[si] ;lees de blauwe byte<br />dec ah<br />out dx,ax ;AH = groen<br />mov bl,es:[si] ;lees de groene byte<br />dec ah<br />out dx,ax ;AH = rood<br />mov ch,es:[si] ;lees de rode byte<br />dec ah<br />out dx,ax ;AH = intensiteit<br />mov cl,es:[si] ;lees de intensiteit byte<br />mov ax,cx<br />pop es<br />pop si<br />pop dx<br />pop cx<br />ret<br />readbyte ENDP<br /></code></pre>
+<p>&nbsp;</p>
+<h1><a name="section5"></a>5. Schrijfmodes instellen</h1>
+<p>In paragraaf 2 hebben we bekeken hoe we data op het scherm kunnen plaatsen. We kunnen deze data op 4 manieren op het scherm tonen; vervanging, AND, OR en XOR. Dit kunnen we instellen via het "Data Rotate/Function Select" register (zie tabel paragraaf 2.). Door het 03CEh de waarde 3 te plaatsen selekteren we het "Data Rotate/Function Select" data register. <br />Zoals de naam het aangeeft kunnen we hiermee ook data roteren, dit is in de praktijk niet zo intersant omdat het door de eigen microprocessor sneller gebeurd. Met het poort adres 03CFh kunnen we bepalen hoe de data naar het scherm geschreven wordt.</p>
+<p></p>
+<div>mode selektie via poort adres 03CFh
+<table border="1" cellpadding="3">
+<tbody>
+<tr>
+<td valign="top" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bit 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bit3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td valign="top" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;funktie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+<td valign="top" align="center">vervanging <br />AND <br />OR <br />XOR</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>voorbeeld:</p>
+<p></p>
+<pre><code><br />mov ax,1803h<br /><br />mov dx,03CEh<br /><br />out dx,ax<br /></code></pre>
+<p>&nbsp;</p>
+<p>Bovenstaand voorbeeld stelt de VGA-kaart op XOR schrijf mode in.</p>
+<h1><a name="section6"></a>6. Het tekenen van een lijn.</h1>
+<p>Het teken van een lijn in assembler is niet zo eenvoudig, bovendien is het belangrijk niet al te ingewikkelde funktie te gebruiken (zoals vb. cos, sin, ...), dit zou het geheel te moeilijk maken en de procedure vertragen. Het meeste gebruikte algoritme om een lijn te tekenen met pixels is het Bresenham algoritme welk in 1965 in het IBM System Jourlan gepubliceerd werd.</p>
+<p>De vergelijking van een rechte is : y = (dy/dx).x</p>
+<div style="text-align: center;"><img src="../../root/images/vga/vga_fig2.jpg" alt="[gfx] vga_fig2.jpg" /></div>
+<p>Ligt de gewenst lijn dichter tegen het punt A, moet het punt A getekend worden anders het punt B. Of m.a.w. is de afstand a kleiner dan b moet het punt A getekend worden anders B.</p>
+<p></p>
+<pre><code><br />a = (yi+1) - (dy/dx).xi<br /><br />b = (dy/dx).xi - yi<br /><br />(b-a) = 2.(dy/dx).xi - 2.yi - 1<br /><br />(b-a).dx = 2.(dy.xi - yi.dx) - dx<br /><br />Stel di = (b-a).dx<br /><br />di = 2.(dy.xi - yi.dx) - dx<br /></code></pre>
+<p>&nbsp;</p>
+<p>Indien we di uit het vorige punt willen berekenen:</p>
+<p></p>
+<pre><code><br />(di - di-1) = 2.(dy.xi - yi.dx) - dx - 2.(dy.xi-1 - yi-1.dx) + dx<br /><br />(di - di-1) = 2.(dy.(xi - xi-1) - dx(yi - yi-1))<br /></code></pre>
+<p>&nbsp;</p>
+<p>Voor de stap in x-richting (xi - xi-1) nemen we 1.</p>
+<p></p>
+<pre><code><br />(di - di-1) = 2.(dy - dx(yi - yi-1)) <br /></code></pre>
+<p>&nbsp;</p>
+<p>De waarde van (yi - yi-1) is afhankelijk van waar het punt geplaatst moet worden, (yi - yi-1) zal 1 zijn indien het punt A geplaatst wordt (yi-1 + 1) en zal 0 zijn indien het punt B geplaatst wordt (yi = yi-1).</p>
+<p>Indien het punt A geplaatst moet worden is : (di - di-1) = 2.(dy - dx)<br /> Indien het punt B geplaatst moet worden is : (di - di-1) = 2.dy</p>
+<p>Onderstaand Turbo Pascal programma voorbeeld zal het Bresenham algoritme verduidelijken.</p>
+<p></p>
+<pre><code><br />program tst_lijn;<br />uses crt,graph,dos;<br />var regs: registers;<br />d,dx,dy: integer;<br />Aincr,Bincr,Yincr: integer;<br />x,y: integer;<br />procedure lijn (x1,y1,x2,y2 : integer);<br />var j :integer;<br />begin<br />if (x1 &gt; x2) then begin j:=x1;x1:=x2;x2:=j;j:=y1;y1:=y2;y2:=j;end;<br />if (y2 &gt; y1) then yincr:=1 else yincr :=-1;<br />dx := x2 - x1;dy:= abs(y2-y1);<br />d := 2*dy-dx;<br />aincr := 2*(dy-dx); {stap indien punt A geplaatst wordt}<br />bincr := 2*dy; {stap indien punt B geplaatst wordt}<br />x := x1;y:=y1; <br />putpixel(x,y,15); {tekenen van het eerste punt}<br />for x := (x1+1) to x2 do<br />begin<br />if d&gt;=0 then begin y := y+yincr;d := d +aincr;end<br />else d := d+bincr;<br />putpixel (x,y,15);<br />end;<br />end;<br />procedure open_graph;<br />var<br />grdriver,grmode,errcode : integer;<br />begin<br />grdriver:=detect;<br />initgraph(grdriver,grmode,'c:\tp\bgi');<br />errcode:=graphresult;<br />if errcode&lt;&gt;grok then<br /> begin<br /> closegraph;<br /> writeln('Graphics driver niet OK!');<br /> writeln('Programma gestopt.');<br /> halt;<br /> end;<br />end;<br />begin<br /><br />open_graph;<br />lijn(0,0,640,480);<br />repeat until keypressed;<br />end.<br /></code></pre>
+<p>&nbsp;</p>
+<h1><a name="section7"></a>7. Geraadpleegde werken:</h1>
+<ul>
+<li>PC en PS/2 videosystemen van Kluwer.</li>
+<li>Het computer hardware boek van Kluwer.</li>
+<li>Interruptlist (programma) geschreven door Ralp Brown.</li>
+</ul>
+</div>
+<!--/description-->
+</div>
+
+			
+
+
+
+<!--/folderP4UZ8H0hjZpPmKb6esqxrA /folder-->
+</div>
+<p>
+<br /><br />
+<script type="text/javascript"><!--
+google_ad_client = "pub-4659298941528586";
+google_ad_width = 800;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</p>
+</div>			
+<!-- wrap ends here -->
+</div>
+		
+<!-- footer starts here -->
+<div class="footer">
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* bottom-artikel */
+google_ad_slot = "3673193890";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+
+
+</script>
+<!--
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+//-->
+	
+	<p>	
+	Valid <a href="http://validator.w3.org/check/referer">XHTML</a> |
+   	<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<!-- bottom nav -->				
+	</p>
+
+
+		
+</div>	
+	
+</body>
+</html>

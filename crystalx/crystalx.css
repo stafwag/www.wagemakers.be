@@ -1,0 +1,152 @@
+/*
+    Project: CrystalX
+    URL: http://www.nuvio.cz
+    
+    Output device: screen, projection
+    
+    Author: Vit Dlouhy (vit.dlouhy@nuvio.cz); Nuvio (www.nuvio.cz)
+    Last revision: 2006-12-05, 12:00 GMT+1
+
+    Structure:
+        display | position | float | overflow | width | height | border | margin | padding | background | align | font
+*/
+
+* {min-height:1px;}
+body {border:0; margin:0; padding:0; background:#F2F5FE url('../uploads/f4/a5/f4a532cc23be1d1fe8d86c1949376f17/bg.gif') 0 0 repeat-x; font:70%/160% "verdana",sans-serif; color:#192666; text-align:center;}
+
+a {color:#192666;}
+a:hover {color:#4F6AD7;}
+
+p {border:0; margin:15px 0; padding:0;}
+
+div {display:block; border:0; margin:0; padding:0; overflow:hidden;}
+
+h1, h2, h3, h4, h5 {border:0; margin:15px 0 10px 0; padding:0; font-weight:bold;}
+h1 {font-size:260%; line-height:100%; font-family:"georgia",serif; font-weight:normal;}
+h2 {font-size:180%; line-height:100%; font-family:"georgia",serif; font-weight:normal;}
+h3 {font-size:120%; line-height:100%; font-weight:bold;}
+h4 {font-size:120%;}
+h5 {font-size:100%;}
+
+table {display:table; border-collapse:collapse; margin:15px 1px; padding:0; border:1px solid #B7CAF6; font-size:100%;}
+tr {display:table-row;}
+th, td {display: table-cell; border:1px solid #B7CAF6; margin:0; padding:5px; vertical-align:top; text-align:left;}
+th {background:#E7ECFD; text-align:center; color:#192666; font-weight:bold;}
+
+ul, ol {display:block; border:0; margin:15px 0 15px 40px; padding:0;}
+ol {list-style-type:decimal;}
+li {display:list-item; border:0; margin:0; padding:0; min-height:1px;}
+ul ul, ul ol, ol ol, ol ul {margin: 0 0 0 20px;}
+
+dl {border-bottom:1px solid #E0E8FA; margin:0; padding:5px 10px; background:#CEDBF9;}
+dt {border:0; margin:0; padding:0; font-weight:bold;}
+dd {border:0; margin:0 0 0 30px; padding:0;}
+
+form {border:0; margin:0; padding:0;}
+fieldset {border:1px solid #ccc; margin:15px 0; padding:10px;}
+legend {margin-left:10px; font-size:100%; font-weight:bold; color:#008;}
+
+hr {height:1px; width:724px; margin: 5px 23px; padding: 0; background:#CCC; border:0 solid #CCC; color:#CCC;}
+
+a, img, span {border:0; margin:0; padding:0; overflow:hidden;}
+abbr, acronym {border-bottom:1px dotted #CCC; cursor:help;}
+
+del, .through {text-decoration:line-through;}
+strong, .strong {font-weight:bold;}
+cite, em, q, var {font-style:italic;}
+code, kbd, samp {font-family:monospace; font-size:110%;}
+
+.box {min-height:1px;}
+.box:after {content:"."; display:block; line-height:0px; font-size:0px; visibility:hidden; clear:both;}
+
+.nom {margin:0;}
+.noscreen {display:none;}
+
+/* -----------------...........--------------------------------------------------------------------------------------- */
+
+#main {width:770px; margin:0 auto; text-align:left;}
+
+/* Top (empty space for the background img to fit) */
+#main #topspace {position:relative; top:0; left:0; height:50px; margin:0; padding:0;}
+
+/* Header */
+#header {position:relative; width:770px; height:100px; margin:0; padding:0; background:#233C9B url('../uploads/45/c2/45c2f958eff7463027138eceb4e42090/header.jpg') 0 0 no-repeat; color:#FFFFFF;}
+
+    /* Header - logo */
+    #header #logo {position:absolute; top:35px; left:35px; margin:0;}
+    #header #logo a {font-size:260%; line-height:100%; font-family:"georgia",serif; font-weight:bold; color:#FFF;}
+    #header #logo a:hover {color:#B5C4E3; text-decoration:none;}
+
+    /* Header - Search */
+    #header #search form {position:absolute; top:35px; right:20px; height:30px;}
+    #header #search .formContents {position:absolute; top:0; right:0px; width:200px; height:28px; margin:0; padding:0; border:0; background:url('../uploads/04/92/0492cb0d9eeebdd4b70fc444009f2ab5/search.PNG') 0 0 no-repeat; font:bold 90%/100% "verdana",sans-serif; color:#192666;}
+    #header #search input#keywords_formId {width:140px; margin:5px 8px; padding:3px 0; border:0; background:#FFF; font:bold 100%/100% "verdana",sans-serif; color:#192666;}
+    #header #search #search_form {position:absolute; top:0; right:0px; width:41px; height:28px; cursor:point; margin:0; padding:0;}
+
+    /* Search Result*/
+    #header #search #search_result {position:absolute; top:220px;}
+    #header #search #home_link, #header #search #no_result, #header #search #pagination {visibility:hidden;}
+    #page #page-in #pagination {color:#6182D1; font-weight:bold; padding:5px; text-align:right;}
+    #page #page-in #pagination a {color:#6182D1;}
+    #page #page-in #pagination a:hover {color:#192666;}
+    #page #page-in #home_link {padding:5px 5px 15px; color:#6182D1; font-weight:bold; text-align:right;}
+    #page #page-in #home_link a {color:#6182D1;}
+    #page #page-in #home_link a:hover {color:#192666;}
+    #search_result {margin:10px 0;}
+    dl#odd {background:#A0B9F3;}
+    #page #page-in #no_result {margin:0 10px; color:#192666; font-weight:bold;}
+
+/* Main menu (tabs) */
+#menu {background:#192666; margin:0 5px; padding:10px 10px 0; height:32px; overflow:hidden;}
+#menu a {cursor:pointer; font-size:11px;}
+
+/* Page (dynamic) */
+#page {width:770px; background:#FFFFFF url('../uploads/c3/50/c350d7fa8a7eacdde7ac2f5c4103604b/bg_page.JPG') 0 0 repeat-y;}
+#page-in {min-height:400px; background:url('../uploads/01/9c/019c89b58432b1a43258c83a4a34745e/bg_page_in.jpg') 0 0 no-repeat; padding:10px 0 0;}
+
+/* Strip */
+#strip {position:relative; clear:both; padding:3px 20px 10px 20px; color:#6182D1;}
+
+    /* Strip - Location */
+    #strip #location {float: left; background:url('../uploads/0b/19/0b190c9e2a08a95897652c864bef7375/ico_comments.gif') 0 50% no-repeat; padding: 0 15px;}
+    #strip #location a {color:#6182D1;}
+    #strip #location a:hover {color:#192666;}
+    #strip #location a#currentpage {font-weight:bold; text-decoration:none;}
+
+    /* Strip - DateTime */
+    #strip #datetime {float:right; background:url('../uploads/59/e4/59e455b61811af51f7c24ec6c82b890a/ico_date.gif') 0 50% no-repeat; padding: 0 10px 0 15px;}
+
+/* Content Container */
+#contentContainer {margin:0; padding:0 20px; width:730px; overflow:hidden;}
+
+    /* Contents */
+    #contentContainer .content {clear:both; margin:10px 10px 0 0; padding:20px; max-width:710px; background:url('../uploads/fa/be/fabefce70ac29fbdc32bdd173c88ddf5/content_all_bg.PNG') 0 0 no-repeat; overflow:hidden;}
+    #contentContainer .content h2 {margin:0 -10px; padding:10px 25px; color:#192666; background:url('../uploads/b1/39/b139548d37fe7d25dd2c2ad36a2dd261/ico_list.gif') 0 50% no-repeat;}
+    #contentContainer .content p {text-align:justify;}
+    
+/* Utility */
+#utility {background: #FFFFFF url('../uploads/c3/50/c350d7fa8a7eacdde7ac2f5c4103604b/bg_page.JPG') 0 0 repeat-y; padding: 10px 0 15px;}
+
+    /* Utility - Toggles */
+    #toggles {font-size:10px; font-weight:bold; text-align:left; margin-left:42px;}
+    #toggles a {margin:0 10px; padding:2px 0; text-decoration:none; border-bottom:1px dashed; color:#6182D1;}
+    #toggles a:hover {border-bottom:1px solid; color:#4F6AD7;}
+    #toggles span.userAcc {background:url('../uploads/01/fb/01fb466040c071749c3fade1528e9852/ico_user.gif') 0 50% no-repeat; margin: 0 0 0 8px;}
+
+/* Footer */
+#footer {position:relative; clear:both; width:770px; height:80px; margin-bottom:30px; background:url('../uploads/12/78/12780f81d5f39dd138453528e850d33b/footer.jpg') 0 0 no-repeat; color:#6685CC;}
+#footer a {color:#6685CC;}
+#footer a:hover {color:#192666;}
+
+    /* Footer - "back on top" */
+    #top {position:absolute; top:55px; left:550px;}
+    #top p {position:relative; width:30px; height:25px; margin:0; overflow:hidden;}
+    #top p a {display:block; position:absolute; left:0; top:0; z-index:1; width:30px; height:25px; background:url('../uploads/93/e8/93e81dba2b18408240a8d8e33b94d730/ico_top.gif') 0 0 no-repeat; cursor:pointer;}
+    #top a:hover {background:url('../uploads/93/e8/93e81dba2b18408240a8d8e33b94d730/ico_top.gif') -30px 0 no-repeat;}    
+
+    /*  Footer - copyright */
+    #footer p#copyright {position:absolute; top:10px; left:40px; margin:0;}
+
+    /* Footer - created by */
+    #createdby {position:absolute; top:10px; left:562px; margin:0; color:#8CA3D8;}
+    #createdby a {color:#8CA3D8;}

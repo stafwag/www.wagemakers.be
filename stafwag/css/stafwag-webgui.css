@@ -1,0 +1,15 @@
+.wg-toolbar p {
+    margin: 0px;
+}
+
+img.wg-toolbar-icon {
+    border: 0px none;
+}
+
+.toolbarIcon {
+    margin: 0px;
+}
+
+label {
+    display: inline;
+}

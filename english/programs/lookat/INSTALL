@@ -1,0 +1,19 @@
+SUPPORTED SYSTEMS
+
+    lookat / bekijk should compile and run on most Unix alike operation 
+    systems with ncurses.
+    
+    And has been tested with Debian GNU/Linux 3.0 (woody), Mac OSX and 
+    FreeBSD 4.6
+
+    SCO OpenServer users: get the ncurses package from the SCO Skunkware 
+    2000 disk.
+    
+INSTALLATION
+
+    To build and install lookat/bekijk, type:
+
+        $ ./configure --prefix=/usr/local/lookat
+	$ make
+        $ make install
+

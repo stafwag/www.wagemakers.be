@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Howto install Debian GNU/Linux on a SGI Indy - Staf Wagemakers</title>
+<link rel="stylesheet" type="text/css" href="../../stafwag/css/stafwag.css" />
+<link rel="stylesheet" type="text/css" href="../../stafwag/css/stafwag-webgui.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="generator" content="WebGUI 7.10.23" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><script type="text/javascript">function getWebguiProperty (propName) {var props = new Array();props["extrasURL"] = "/extras/";props["pageURL"] = "/english/doc/indy";props["firstDayOfWeek"] = "0";return props[propName];}</script>
+<meta http-equiv="Cache-Control" content="must-revalidate" />
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+
+		<!-- header -->
+
+		<div id="header">
+<!-- google analytics -->
+
+<script type="text/javascript">
+<!--
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37258385-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//-->
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* head_banner */
+google_ad_slot = "5954810285";
+google_ad_width = 468;
+google_ad_height = 58;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+					
+
+			<ul>
+				<li><a href="../../index.html"><span>Home</span></a></li>
+				<li><a href="../../dutch.html"><span>Nederlands</span></a></li>
+				<li><a href="../../english.html"><span>English</span></a></li>
+				<li><a href="../../downloads.html"><span>Downloads</span></a></li>
+				<li><a href="../../links.html"><span>links</span></a></li>
+							
+			</ul>								
+		</div>
+		
+		<div id="header-logo">
+                        <div id="mylogo">Staf&nbsp;Wagemakers</div>
+
+<div id="google-search">
+
+<div id="cse-search-form" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011952366183077168952:clxrudllfuo', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.enableSearchboxOnly("http://www.google.com/cse?cx=011952366183077168952:clxrudllfuo", null, true);
+    customSearchControl.draw('cse-search-form', options);
+  }, true);
+</script>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+				
+		
+
+	<div id="sidebar">
+		<div class="sidebar">
+
+<a name="idIjSy9C91wSVONrzWFkETgg" id="idIjSy9C91wSVONrzWFkETgg"></a>
+
+
+
+
+	<h1>Navigation</h1>
+
+
+
+
+
+<!--
+<ul class="menu bulletList">
+-->
+<div class="left-box">
+<ul class="sidemenu">
+
+
+
+
+	<li class="ancestor">
+	<a href="../../home.html">Home</a>
+
+
+    <ul class="level0">
+
+
+
+
+
+
+	<li>
+	<a href="../../dutch.html">Nederlands</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li class="ancestor">
+	<a href="../../english.html">English</a>
+
+
+    <ul class="level1">
+
+
+
+
+
+
+	<li>
+	<a href="../programs.html">Programs</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li class="ancestor">
+	<a href="../doc.html">Documentation</a>
+
+
+    <ul class="level2">
+
+
+
+
+
+
+	<li>
+	<a href="vga.html">Graphical programming in asm</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li class="current">
+	<a href="indy.html">Howto install Debian GNU/Linux on a SGI Indy</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="flarssh.html">Create a flar over a ssh tunnel (nfs port forwarding)</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="showprogress.html">Show progress in scripting</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="linux_kvm_private_virtual_switch.html">Linux kvm private virtual switch with libvirtd</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="tripwire.html">Tripwire quick guide</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="disksuite.html">Solaris: Disk Mirroring with DiskSuite</a>
+
+
+    </li>
+
+
+
+
+
+    </ul>
+    </li>
+
+
+	<li>
+	<a href="../toys.html">Toys</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../who_am_i.html">Who am I?</a>
+
+
+    </li>
+
+
+
+
+
+    </ul>
+    </li>
+
+
+	<li>
+	<a href="../../downloads.html">Downloads</a>
+
+
+    </li>
+
+
+
+
+
+
+	<li>
+	<a href="../../links.html">links</a>
+
+
+    </li>
+
+
+
+    
+    </ul>
+    </li>
+    
+
+
+
+</ul>
+</div>
+
+
+<!--/nav2234b2f42f75c1254e36bcd616411382 /nav bulletedList-->
+</div>
+
+		<h1>About me</h1>
+<div class="left-box">
+<ul class="sidemenu">
+<li>
+<ul class="level0">
+
+<li class="ancestor">
+<b>Homepage:</b> <a href="../../index.html">www.wagemakers.be</a>
+</li>
+
+<li class="ancestor">
+<b>Blog:</b> <a href="http://stafwag.github.io/blog">stafwag.github.io/blog</a>
+</li>
+
+<li class="ancestor">
+
+<a href="http://be.linkedin.com/in/stafwagemakers" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View staf wagemakers's LinkedIn profile" style="vertical-align:middle" />View staf wagemakers's profile</span></a>
+
+
+</li>
+
+<li class="ancestor">
+
+<img src="http://ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+<a href="https://google.com/+StafWagemakers"> Staf Wagemakers</a> <br /><br />
+
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//google.com/+StafWagemakers" data-rel="author" >
+
+</div>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</li>
+
+<li class="ancestor">
+
+<a href="https://github.com/stafwag">@stafwag</a> on GitHub
+
+
+</li>
+
+</ul>
+</li>
+</ul>
+
+
+
+		<h1>Login</h1>
+
+		<div class="left-box">
+			<ul class="sidemenu">
+				<li><a class="loginToggleLink" href="indy%3Fop=auth%3Bmethod=init.html">Login</a></li>
+				<li><a href="indy%3Fop=auth%3Bmethod=init.html">View My Account</a></li>
+				
+			</ul>
+		</div>
+
+
+
+
+		</div>
+
+
+
+	    
+
+<!--
+		<h1>WebGUI Links</h1>	
+		<div class="left-box">
+			<ul class="sidemenu"><li><a href="http://webgui.org/addons">Addons and Plugins</a></li></ul>
+		</div>	
+-->
+
+            
+
+	    <div class="ads">
+
+		<br /><br />
+
+
+            <p>
+<a href="http://www.procolix.com"><img src="../../root/themes/staf/images/hosted_by_procolix.png" alt="hosted by procolix" /></a>
+             </p>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a><br />
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valide CSS!" />
+    </a>
+</p>
+
+<p>
+
+
+<!-- vertical link ad -->
+    <br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* side-block */
+google_ad_slot = "2562895628";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+
+
+<!-- vertical link ad ends -->
+
+
+        </p>
+        </div>
+
+	</div>				
+							
+	<div id="main"><div id="folderc0VfnoykxMDGPV6_i5-DLw" class="folder">
+
+<a name="idc0VfnoykxMDGPV6_i5-DLw" id="idc0VfnoykxMDGPV6_i5-DLw"></a>
+
+
+	
+
+	<h3>Howto install Debian GNU/Linux on a SGI Indy</h3>
+
+		
+
+<div class="description">
+	<p><strong><span style="color: #ff0000;"> This document is outdated, the Debian MIPS team has worked very hard to create "bootfloppies" for the Debian/Mips port<br /> Somebodyelse already created a new howto, therefor there is no need to update this document. </span></strong></p>
+<p>The link to the new howto is on the Debian MIPS port page: <a href="http://www.debian.org/ports/mips/">http://www.debian.org/ports/mips/</a></p>
+<p>A more up-to-date howto is available at: <a href="http://www.pvv.org/%7Epladsen/Indy/HOWTO.html">http://www.pvv.org/~pladsen/Indy/HOWTO.html</a></p>
+<hr />
+<h1>Howto install Debian GNU/Linux on a SGI Indy</h1>
+<h2>Staf Wagemakers ( <a href="mailto:staf%20at%20wagemakers.be">staf at wagemakers.be</a>)</h2>
+<p>v0.0.3, 18 Jun. 2001</p>
+<p></p>
+<hr />
+<p><em>This document describes how you can install the base Debian Gnu/Linux distribution on your Indy.</em></p>
+<hr />
+<h2><a name="s1"></a>1. Getting Debian Gnu/Linux</h2>
+<h2><a name="s1.1"></a>1.1 Get the base distribution</h2>
+<p>The base distribution is available at <a href="ftp://ftp.uni-mainz.de/pub/Linux/debian-local/mips/">ftp://ftp.uni-mainz.de/pub/Linux/debian-local/mips/</a> <br /> Create a /indy on your installation linux box and extract the base.x.x.x.tgz</p>
+<pre><kbd><tt><br />mkdir /indy<br />cd /indy<br />cp /path/base.2_2.2.tgz .<br />tar xzvf /path/base.2_2.2.tgz<br /></tt></kbd></pre>
+<h2><a name="s1.2"></a>1.2 Get the linux kernel</h2>
+<p>You need a linux kernel that is compiled for a mips system, a pre-compiled kernel is available at <a href="ftp://ftp.rfc822.org/pub/local/debian-mips/kernel/">ftp://ftp.rfc822.org/pub/local/debian-mips/kernel/</a> <br />Extract the kernel tar file to /indy</p>
+<pre><kbd><tt><br />cd /indy<br />cp /path/kernel-image-2.4.0-test9-ip22-r4k.tgz .<br />tar xzvf kernel-image-2.4.0-test9-ip22-r4k.tgz<br /></tt></kbd></pre>
+<h2><a name="s2"></a>2. Setup the installation host</h2>
+<h2><a name="s2.1"></a>2.1 Setup a DHCP server</h2>
+<p>Install the dhcp server ( just type "apt-get install dhcp" if you are using Debian Gnu/Linux :) )<br /> And edit your dhcp configuration file, below you'll find my modifications</p>
+<pre><code><tt><br />host indy2 {<br /> hardware ethernet 08:00:69:09:25:c9;<br /> fixed-address 192.168.10.3;<br /> option host-name "indy2";<br /> option domain-name-servers 192.168.10.1;<br /> option routers 192.168.10.1;<br /> option root-path "/sgi"<br /> filename "vmlinux-2.4.0-test9.ecoff"<br /> }<br /></tt></code></pre>
+<p>And restart the dhcp server ( /etc/init.d/dhcp restart )</p>
+<p>If you use a 2.4 kernel on your DHCP server you've to run</p>
+<pre><tt><kbd><br />echo 1 &gt; /proc/sys/net/ipv4/ip_no_pmtu_disc<br /></kbd></tt></pre>
+<h2><a name="s2.2"></a>2.2 Setup the tftp service</h2>
+<p>The indy will download the linux kernel by tftp at the boot time, so we need to export /indy.<br /> Edit /etc/inetd.conf and modify the ftp entry.</p>
+<pre><code><tt><br />tftp dgram udp wait nobody /usr/sbin/tcpd /usr/sbin/in.tftpd /indy<br /></tt></code></pre>
+<p>and the reload the configuration (<kbd>killall -1 inetd</kbd>)</p>
+<p><a href="mailto:erich.schubert%20at%20mucl.de">Erich Schubert</a> reported that he had a problem with tftp and the 2.4 kernel series:</p>
+<blockquote>
+<p><em> With Kernel 2.4 there's a problem with a bug in the Indy's PROM: tftp doesn't work if the Port is above 32768, which is default with 2.4, and wasn't with 2.2.</em></p>
+<pre><kbd><tt><br />echo 2048 32767 &gt; /proc/sys/net/ipv4/ip_local_port_range<br /></tt></kbd></pre>
+<p><em>tells the tftp server to use a port below 32768, which made tftp work for me.</em></p>
+</blockquote>
+<h2><a name="s.2.3"></a>2.3 Setup the nfs-server</h2>
+<p>We need a nfs root filesystem therefor we need to export /indy by nfs.<br /> Edit /etc/exports</p>
+<pre><code><tt><br />/indy 192.168.10.3(rw)<br /></tt></code></pre>
+<p>and run <kbd>exportfs -va</kbd></p>
+<h2><a name="s3"></a>3 Installation</h2>
+<h2><a name="s3.1"></a>3.1 boot time</h2>
+<p>Power on your indy and select "Stop for system maintenance" during the boot phase. Select "Enter command monitor" from the main menu.</p>
+<p>I'm not sure this really necessary but it's recommended to set the netaddr system variable to the right ip-address. You can get the current value with the "printenv netaddr" command.</p>
+<pre><kbd><tt><br />setenv netaddr 192.168.10.3<br /></tt></kbd></pre>
+<p>Other people told me that they had to</p>
+<pre><tt><kbd>unset netaddr</kbd></tt></pre>
+<p>, but this doesn't seems to work on my Indy.</p>
+<p>And the boot the linux kernel with the boot command</p>
+<pre><kbd><tt><br />boot -f bootp()vmlinux-2.4.0-test9.ecoff init=/bin/bash nfsroot=192.168.10.1:/indy<br /></tt></kbd></pre>
+<p>If everything goes right the indy will boot and you'll get a shell prompt</p>
+<h2><a name="s3.2"></a>3.2 Partition your hard drive</h2>
+<p><strong>Attention:</strong> you will lose all data on your disk if you follow the next step!</p>
+<p>Partition your hd with "fdisk /dev/sda", my partition table looks like this</p>
+<pre><code><tt><br />------- partitions -----<br /> Device Info Start End Sectors Id System<br />/dev/sda1 boot 101 3000 1924000 83 Linux system<br />/dev/sda2 swap 3801 4018 113360 82 Linux swap<br />/dev/sda9 0 100 52520 0 SGI volhdr<br />/dev/sda11 0 4018 2089880 6 SGI volume<br /></tt></code></pre>
+<h2><a name="s3.3"></a>3.3 Install the base fs</h2>
+<p>Format your root fs <kbd>mkfs.ext2 /dev/sda1</kbd>. Mount it to /mnt <kbd>mount /dev/sda1 /mnt</kbd>. And extract the base + kernel archive:</p>
+<pre><kbd><tt><br />cd /mnt<br />tar xzvf /base.2_2.2.tgz<br />tar xzvf /kernel-image-2.4.0-test9-ip22-r4k.tgz<br /></tt></kbd></pre>
+<p>Move /sbin/unconfigured.sh to /sbin/unconfigured.sh.org.</p>
+<h2><a name="s3.4"></a>3.4 Install the kernel</h2>
+<p>Install the kernel to your boot disk.</p>
+<pre><kbd><tt><br />dvhtool -d /dev/sda --unix-to-vh vmlinux-2.4.0-test9.ecoff linux<br /></tt></kbd></pre>
+<h2><a name="s4"></a>4. Finish your installation</h2>
+<h2><a name="s4.1"></a>4.1 Boot from your hd</h2>
+<p>Reboot your system and go to the "command mode" and type:</p>
+<pre><kbd><tt><br />linux root=/dev/sda1<br /></tt></kbd></pre>
+<p>The indy will boot from the kernel we've installed and use /dev/sda1 as his root fs.</p>
+<h2><a name="s4.2"></a>4.2 Update your configuration</h2>
+<p>"/" is mounted as read-only in order to modify some configuration files we have to remount it.<br /> Logon to the system and type</p>
+<pre><kbd><tt><br />mount -o remount,rw /dev/sda1 /<br /></tt></kbd></pre>
+<p>Modify the most important configuration files (/etc/fstab etc) and reboot the Indy.</p>
+<p><em>Have fun...</em></p>
+<!--/description-->
+</div>
+
+			
+
+
+
+<!--/folderc0VfnoykxMDGPV6_i5-DLw /folder-->
+</div>
+<p>
+<br /><br />
+<script type="text/javascript"><!--
+google_ad_client = "pub-4659298941528586";
+google_ad_width = 800;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</p>
+</div>			
+<!-- wrap ends here -->
+</div>
+		
+<!-- footer starts here -->
+<div class="footer">
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4659298941528586";
+/* bottom-artikel */
+google_ad_slot = "3673193890";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+
+
+</script>
+<!--
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+//-->
+	
+	<p>	
+	Valid <a href="http://validator.w3.org/check/referer">XHTML</a> |
+   	<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<!-- bottom nav -->				
+	</p>
+
+
+		
+</div>	
+	
+</body>
+</html>
